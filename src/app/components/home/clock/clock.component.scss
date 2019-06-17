@@ -1,0 +1,43 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+* {
+    font-family: 'Noto Sans', sans-serif;
+    color: $textColor;
+    letter-spacing: 0.5vh;
+    &:hover {
+        cursor: default;
+    }
+}
+
+.clock {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 10vw;
+    float: left;
+    @include wrapper(1050px) {
+        opacity: 1;
+    }
+}
+
+#date {
+    @include wrapper(1050px) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-orientation: upright;
+        writing-mode: vertical-rl;
+        font-size: -webkit-calc(3vh);
+    }
+}
+
+#time {
+    @include wrapper(1050px) {
+        display: flex;
+        justify-content: center;
+        font-size: -webkit-calc(3vh + 1vw);
+        margin-top: 4vh;
+        font-size: -webkit-calc(2vh);
+    }
+}

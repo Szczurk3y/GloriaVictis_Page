@@ -1,0 +1,67 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+#container {
+    width: 100vw;
+    height: 100vh;
+    background: url("../../../assets/images/background.png") no-repeat center center;
+    background-size: 200% 100%;
+    position: absolute;
+    background-position-x: -100vw;
+    @include wrapper(1050px) {
+        background-position-x: 0;
+        background-size: 100% 100vh;
+    }
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    background: url("../../../assets/images/logo_gora.png") no-repeat center center;
+    background-size: 100% 100%;
+    margin-top: 3%;
+    @include wrapper(1050px) {
+        background-size: 85% 100%;
+        width: 15vw;
+        height: 25vh;
+        margin-top: 3%;
+        margin-left: 7%;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.arrowRight {
+    @include wrapper(1050px) {
+        float: right;
+        width: 3vw;
+        height: 5vh;
+        background: url("../../../assets/images/strzalkawprawo.png") no-repeat center center;
+        background-size: 40% 70%;
+        margin-right: 4%;
+        margin-top: 9%;
+        cursor: pointer;
+        &:hover {
+            transition: .2s;
+            background-size: 50% 85%;
+        }
+    }
+}
+
+.arrowBottom {
+    @include wrapper(1050px) {
+        clear: both;
+        width: 2.5vw;
+        height: 4vh;
+        background: url("../../../assets/images/strzalkawdo.png") no-repeat center center;
+        background-size: 70% 50%;
+        transition: .2s;
+        cursor: pointer;
+        margin-left: 48.5vw;
+        margin-right: 48.5vw;
+        &:hover {
+            transition: .2s;
+            background-size: 80% 60%;
+        }
+    }
+}

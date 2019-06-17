@@ -1,0 +1,50 @@
+@import "../../../scss/variables";
+.frame {
+    width: 30vw;
+    height: 32vh;
+    background: url("../../../../assets/images/ramka.png") no-repeat center center;
+    // background-color: orange;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5%;
+    transition: .2s;
+    padding: 1vw;
+}
+
+.content {
+    margin: 3%;
+    height: 85%;
+    width: 89%;
+    margin-left: 5.5%;
+    box-shadow: 0px 1px 8px $textColor;
+    cursor: pointer;
+}
+
+.line {
+    width: 90%;
+    height: 2%;
+    background-color: $redColor;
+    margin-left: 5.5%;
+    animation: pull 8s ease-out .1s infinite;
+    opacity: 0.8;
+    border-radius: 2px;
+}
+
+@keyframes pull {
+    0% {
+        width: 90%;
+    }
+    7% {
+        width: 0%;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        width: 90%;
+        opacity: 1;
+    }
+}

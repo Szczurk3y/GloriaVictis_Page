@@ -1,0 +1,198 @@
+@import "../../../scss/mixins";
+@import "../../../scss/variables";
+$top: -15%;
+$bottom: -15%;
+$left: -3%;
+$right: -3%;
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    @include wrapper(1050px) {
+        float: left;
+    }
+}
+
+nav {
+    margin: 5vw;
+    width: 40vw;
+    @include wrapper(1050px) {
+        width: 40vw;
+        margin: 0;
+        position: absolute;
+        top: 10%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+ul {
+    font-size: -webkit-calc(3vh + 1vw);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 2px;
+    @include wrapper(1050px) {
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.8vw;
+        padding: 0;
+    }
+}
+
+li {
+    margin: 0.5vh;
+    text-align: left;
+    border-radius: 1px;
+    width: auto;
+    @include wrapper(1050px) {
+        margin: 0;
+        text-align: center;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+    }
+}
+
+a {
+    transform: translate(5vw);
+    text-decoration: none;
+    color: $textColor;
+    display: block;
+    padding: 1vh;
+    letter-spacing: 2px;
+    position: relative;
+    animation: loaderNav 2s ease-in-out;
+    opacity: 1;
+    @include wrapper(1050px) {
+        animation: none;
+        transform: none;
+        opacity: 1;
+        &:hover {
+            color: $redColor;
+        }
+        span:first-child:before {
+            content: '';
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: transparent;
+            border-top: 2px solid $redColor;
+            border-left: 2px solid $redColor;
+            opacity: 0;
+            transition: .2s;
+        }
+        span:first-child:after {
+            content: '';
+            top: 0;
+            right: 0;
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: transparent;
+            border-top: 2px solid $redColor;
+            border-right: 2px solid $redColor;
+            opacity: 0;
+            transition: .2s;
+        }
+        span:last-child:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 8px;
+            height: 8px;
+            background: transparent;
+            border-bottom: 2px solid $redColor;
+            border-left: 2px solid $redColor;
+            opacity: 0;
+            transition: .2s;
+        }
+        span:last-child:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 8px;
+            height: 8px;
+            background: transparent;
+            border-bottom: 2px solid $redColor;
+            border-right: 2px solid $redColor;
+            transition: .2s;
+            opacity: 0;
+        }
+        &:hover span:first-child::before {
+            top: $top;
+            left: $left;
+            opacity: 1;
+        }
+        &:hover span:first-child::after {
+            top: $top;
+            right: $right;
+            opacity: 1;
+        }
+        &:hover span:last-child::before {
+            bottom: $bottom;
+            left: $left;
+            opacity: 1;
+        }
+        &:hover span:last-child::after {
+            bottom: $bottom;
+            right: $right;
+            opacity: 1;
+        }
+    }
+    &:before {
+        animation: loaderLine 2s ease-in-out;
+        top: -0.20vh;
+        padding: 0;
+        content: '';
+        position: absolute;
+        display: block;
+        overflow: hidden;
+        width: 0.5vw;
+        height: 100%;
+        background-color: $redColor;
+        transform: translate(-4vw);
+        @include wrapper(1050px) {
+            animation: none;
+            content: none;
+        }
+    }
+}
+
+@keyframes loaderNav {
+    0% {
+        transform: translate(-3vw);
+        opacity: 0;
+    }
+    30% {
+        transform: translate(5vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(5vw);
+        opacity: 1;
+    }
+}
+
+@keyframes loaderLine {
+    0% {
+        transform: translate(10vw);
+    }
+    30% {
+        transform: translate(-4vw);
+    }
+    100% {
+        transform: translate(-4vw);
+    }
+}

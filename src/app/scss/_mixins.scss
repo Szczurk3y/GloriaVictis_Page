@@ -1,0 +1,5 @@
+@mixin wrapper($arg...) {
+    @media screen and (min-width: nth($list: $arg, $n: 1)) {
+        @content;
+    }
+}
