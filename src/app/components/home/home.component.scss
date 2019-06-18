@@ -18,13 +18,12 @@
     height: 200px;
     background: url("../../../assets/images/logo_gora.png") no-repeat center center;
     background-size: 100% 100%;
-    margin-top: 3%;
     @include wrapper(1050px) {
         background-size: 85% 100%;
         width: 15vw;
         height: 25vh;
-        margin-top: 3%;
         margin-left: 7%;
+        margin-top: 1%;
     }
     &:hover {
         cursor: pointer;

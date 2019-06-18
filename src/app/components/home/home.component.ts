@@ -12,6 +12,10 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+  
+  setBackground() {
+    console.log("ELOELOELOELOELOELOELOELOELOELOELO");
     this.background = "../../../assets/images/bg1.jpg";
   }
 

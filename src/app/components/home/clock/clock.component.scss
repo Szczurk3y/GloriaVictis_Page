@@ -18,6 +18,7 @@
     float: left;
     @include wrapper(1050px) {
         opacity: 1;
+        margin-top: 2%;
     }
 }
 

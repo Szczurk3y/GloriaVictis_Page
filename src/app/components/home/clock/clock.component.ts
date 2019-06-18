@@ -37,6 +37,7 @@ export class ClockComponent implements OnInit {
       this.day = "0" + this.day;
     }
     if (parseInt(this.month) < 10) {
+      this.month++;
       this.month = "0" + this.month;
     }
     if (parseInt(this.hour) < 10) {
