@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/home/nav/nav.component';
 import { ClockComponent } from './components/home/clock/clock.component';
 import { NewsComponent } from './components/home/news/news.component';
+import { CounterComponent } from './components/home/counter/counter.component';
 
 @NgModule({
    declarations: [
@@ -15,6 +16,7 @@ import { NewsComponent } from './components/home/news/news.component';
       NavComponent,
       ClockComponent,
       NewsComponent,
+      CounterComponent,
    ],
    imports: [
       BrowserModule,

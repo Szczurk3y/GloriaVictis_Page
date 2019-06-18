@@ -49,7 +49,6 @@
 
 .arrowBottom {
     @include wrapper(1050px) {
-        clear: both;
         width: 2.5vw;
         height: 4vh;
         background: url("../../../assets/images/strzalkawdo.png") no-repeat center center;

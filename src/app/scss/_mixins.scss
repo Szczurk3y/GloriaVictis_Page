@@ -1,5 +1,40 @@
+@import "./variables";
 @mixin wrapper($arg...) {
     @media screen and (min-width: nth($list: $arg, $n: 1)) {
         @content;
     }
+}
+
+@mixin hoverAnimation($arg...) {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    opacity: 0;
+    transition: .6s;
+    @each $item in $arg {
+        @if $item=='border-top' {
+            border-top: 2px solid complement($color: $redColor);
+        }
+        @if $item=='border-bottom' {
+            border-bottom: 2px solid complement($color: $redColor);
+        }
+        @if $item=='border-left' {
+            border-left: 2px solid complement($color: $redColor);
+        }
+        @if $item=='border-right' {
+            border-right: 2px solid complement($color: $redColor);
+        }
+    }
+}
+
+@mixin textDecoration {
+    color: $textColor;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
 }

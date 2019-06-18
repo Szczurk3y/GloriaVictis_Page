@@ -14,17 +14,18 @@
 }
 
 .content {
-    height: 85%;
-    width: 89%;
-    margin-left: 5.5%;
-    box-shadow: 0px 1px 8px $textColor;
+    height: 83%;
+    width: 88%;
+    margin-left: 6%;
+    margin-top: 2%;
+    box-shadow: 0px 1px 8px complement($color: $redColor);
     cursor: pointer;
 }
 
 .line {
     width: 90%;
     height: 2%;
-    background-color: $redColor;
+    background-color: complement($redColor);
     margin-left: 5.5%;
     animation: pull 8s ease-out .1s infinite;
     opacity: 0.8;
@@ -34,7 +35,7 @@
 
 @keyframes pull {
     0% {
-        width: 90%;
+        width: 88%;
     }
     7% {
         width: 1%;
@@ -44,7 +45,7 @@
         opacity: 1;
     }
     100% {
-        width: 90%;
+        width: 88%;
         opacity: 1;
     }
 }

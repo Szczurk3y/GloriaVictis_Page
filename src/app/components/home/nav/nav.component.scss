@@ -4,18 +4,13 @@ $top: -15%;
 $bottom: -15%;
 $left: -3%;
 $right: -3%;
-body {
+* {
     padding: 0;
     margin: 0;
 }
 
 .container {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
+    @include textDecoration;
     @include wrapper(1050px) {
         float: left;
     }
@@ -68,67 +63,35 @@ a {
     color: $textColor;
     display: block;
     padding: 1vh;
-    letter-spacing: 3px;
     position: relative;
+    animation: loaderNav 2s ease-in-out;
     opacity: 1;
     @include wrapper(1050px) {
         animation: none;
         transform: none;
         opacity: 1;
         &:hover {
-            color: $redColor;
+            color: complement($redColor);
         }
         span:first-child:before {
-            content: '';
             top: 0;
             left: 0;
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: transparent;
-            border-top: 2px solid $redColor;
-            border-left: 2px solid $redColor;
-            opacity: 0;
-            transition: .4s;
+            @include hoverAnimation('border-top', 'border-left');
         }
         span:first-child:after {
-            content: '';
             top: 0;
             right: 0;
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: transparent;
-            border-top: 2px solid $redColor;
-            border-right: 2px solid $redColor;
-            opacity: 0;
-            transition: .4s;
+            @include hoverAnimation('border-top', 'border-right');
         }
         span:last-child:before {
-            content: '';
-            position: absolute;
             bottom: 0;
             left: 0;
-            width: 8px;
-            height: 8px;
-            background: transparent;
-            border-bottom: 2px solid $redColor;
-            border-left: 2px solid $redColor;
-            opacity: 0;
-            transition: .4s;
+            @include hoverAnimation('border-bottom', 'border-left');
         }
         span:last-child:after {
-            content: '';
-            position: absolute;
             bottom: 0;
             right: 0;
-            width: 8px;
-            height: 8px;
-            background: transparent;
-            border-bottom: 2px solid $redColor;
-            border-right: 2px solid $redColor;
-            transition: .4s;
-            opacity: 0;
+            @include hoverAnimation('border-bottom', 'border-right');
         }
         &:hover span:first-child::before {
             top: $top;
