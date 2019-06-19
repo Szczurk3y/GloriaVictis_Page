@@ -1,0 +1,53 @@
+@import "../../../scss/mixins";
+@import "../../../scss/variables";
+* {
+    @include commonDivStylizer;
+}
+
+.container {
+    @include textDecoration;
+    margin-left: 7vw;
+}
+
+#upper {
+    width: 100%;
+    letter-spacing: 1vw;
+    font-size: 300%;
+    span {
+        color: $redColor;
+    }
+    animation: moveInRight 1s ease-out;
+}
+
+#below {
+    width: 100%;
+    letter-spacing: 0.5vw;
+    color: complement($color: $redColor);
+    font-size: 100%;
+    span {
+        color: $redColor;
+    }
+    animation: moveInLeft 1s ease-out;
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-3vw);
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(3vw);
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}

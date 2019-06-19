@@ -5,6 +5,11 @@
     }
 }
 
+@mixin commonDivStylizer {
+    padding: 0;
+    margin: 0;
+}
+
 @mixin hoverAnimation($arg...) {
     content: '';
     position: absolute;

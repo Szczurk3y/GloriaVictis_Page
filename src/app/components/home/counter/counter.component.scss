@@ -10,8 +10,8 @@
     height: 25vh;
     display: flex;
     flex-direction: column;
+    margin-top: 25vh;
     @include textDecoration;
-    margin-top: 30vh;
 }
 
 .text {

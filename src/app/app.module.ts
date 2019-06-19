@@ -8,6 +8,7 @@ import { NavComponent } from './components/home/nav/nav.component';
 import { ClockComponent } from './components/home/clock/clock.component';
 import { NewsComponent } from './components/home/news/news.component';
 import { CounterComponent } from './components/home/counter/counter.component';
+import { WelcomeAnimationComponent } from './components/home/welcome-animation/welcome-animation.component';
 
 @NgModule({
    declarations: [
@@ -17,6 +18,7 @@ import { CounterComponent } from './components/home/counter/counter.component';
       ClockComponent,
       NewsComponent,
       CounterComponent,
+      WelcomeAnimationComponent,
    ],
    imports: [
       BrowserModule,
