@@ -17,7 +17,7 @@ $right: -3%;
 }
 
 nav {
-    margin: 5vw;
+    width: -webkit-calc(20vw + 15vh);
     @include wrapper(1050px) {
         width: 40vw;
         margin: 0;

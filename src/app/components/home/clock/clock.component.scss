@@ -3,31 +3,42 @@
 * {
     font-family: 'Noto Sans', sans-serif;
     color: $textColor;
-    letter-spacing: 0.5vh;
+    padding: 0;
+    margin: 0;
     &:hover {
         cursor: default;
     }
 }
 
 .clock {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    letter-spacing: 0.5vh;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    margin-right: 20px;
-    width: 10vw;
-    float: left;
     @include wrapper(1050px) {
         opacity: 1;
+        width: auto;
+        height: auto;
+        letter-spacing: 0.5vh;
+        float: left;
+        width: 10vw;
+        margin-right: 20px;
         margin-top: 2%;
     }
 }
 
 #date {
-    opacity: 0;
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     @include wrapper(1050px) {
-        opacity: 1;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        width: auto;
+        height: auto;
         text-orientation: upright;
         writing-mode: vertical-rl;
         font-size: -webkit-calc(3vh);
@@ -35,10 +46,14 @@
 }
 
 #time {
+    width: 0;
+    height: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
     @include wrapper(1050px) {
-        display: flex;
-        justify-content: center;
-        font-size: -webkit-calc(3vh + 1vw);
+        width: auto;
+        height: auto;
         margin-top: 4vh;
         font-size: -webkit-calc(2vh);
     }

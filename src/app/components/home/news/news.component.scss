@@ -2,10 +2,12 @@
 @import "../../../scss/mixins";
 .frame {
     opacity: 0;
-    @include wrapper(870px) {
+    width: 0;
+    height: 0;
+    @include wrapper(600px) {
         opacity: 1;
-        width: 450px;
-        height: 245px;
+        width: 55vw;
+        height: 33vw;
         background: url("../../../../assets/home/ramka.png") no-repeat center center;
         background-size: 100% 100%;
         display: flex;
