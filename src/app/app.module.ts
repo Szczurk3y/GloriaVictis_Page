@@ -10,6 +10,9 @@ import { NewsComponent } from './components/home/news/news.component';
 import { CounterComponent } from './components/home/counter/counter.component';
 import { WelcomeAnimationComponent } from './components/home/welcome-animation/welcome-animation.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { TeamComponent } from './components/team/team.component';
+
 @NgModule({
    declarations: [
       AppComponent,
@@ -19,10 +22,12 @@ import { WelcomeAnimationComponent } from './components/home/welcome-animation/w
       NewsComponent,
       CounterComponent,
       WelcomeAnimationComponent,
+      TeamComponent
    ],
    imports: [
       BrowserModule,
-      AppRoutingModule
+      AppRoutingModule,
+      HttpClientModule
    ],
    providers: [],
    bootstrap: [

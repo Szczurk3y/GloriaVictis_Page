@@ -1,0 +1,13 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+.container {
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    top: 100vh;
+    background-color: #fff;
+    img {
+        width: 100vw;
+        height: 40vh;
+    }
+}

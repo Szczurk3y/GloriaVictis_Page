@@ -6,28 +6,43 @@
 
 .container {
     @include textDecoration;
-    margin-left: 7vw;
-}
-
-#upper {
-    width: 100%;
-    letter-spacing: 1vw;
-    font-size: 300%;
-    span {
-        color: $redColor;
+    margin-top: 5%;
+    #upper {
+        letter-spacing: 1vw;
+        font-size: -webkit-calc(3vh + 1vw);
+        span {
+            color: $redColor;
+        }
+        animation: moveInRight 1s ease-out;
     }
-    animation: moveInRight 1s ease-out;
-}
-
-#below {
-    width: 100%;
-    letter-spacing: 0.5vw;
-    color: complement($color: $redColor);
-    font-size: 100%;
-    span {
-        color: $redColor;
+    #below {
+        letter-spacing: 0.75vw;
+        color: complement($color: $redColor);
+        font-size: 115%;
+        animation: moveInLeft 1s ease-out;
     }
-    animation: moveInLeft 1s ease-out;
+    @include wrapper(1050px) {
+        float: left;
+        margin-right: 0;
+        margin-top: 0;
+        margin-left: 7vw;
+        #upper {
+            width: 100%;
+            letter-spacing: 1vw;
+            font-size: -webkit-calc(3vh + 1vw);
+            span {
+                color: $redColor;
+            }
+            animation: moveInRight 1s ease-out;
+        }
+        #below {
+            width: 100%;
+            letter-spacing: 0.75vw;
+            color: complement($color: $redColor);
+            font-size: 115%;
+            animation: moveInLeft 1s ease-out;
+        }
+    }
 }
 
 @keyframes moveInRight {

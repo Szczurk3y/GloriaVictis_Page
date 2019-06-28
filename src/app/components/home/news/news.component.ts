@@ -14,9 +14,9 @@ export class NewsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.images[0] = "../../../../assets/images/bg1.jpg";
-    this.images[1] = "../../../../assets/images/bg2.jpg";
-    this.images[2] = "../../../../assets/images/team.png";
+    this.images[0] = "../../../../assets/home/bg1.jpg";
+    this.images[1] = "../../../../assets/home/bg2.jpg";
+    this.images[2] = "../../../../assets/home/team.png";
     this.changeImg();    
     setInterval(()=>{
       this.changeImg();

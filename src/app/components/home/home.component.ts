@@ -16,7 +16,8 @@ export class HomeComponent implements OnInit {
   
   setBackground() {
     console.log("ELOELOELOELOELOELOELOELOELOELOELO");
-    this.background = "../../../assets/images/bg1.jpg";
+
+    this.background = "../../../assets/home/bg1.jpg";
   }
 
 }
