@@ -29,7 +29,9 @@ import { TeamComponent } from './components/team/team.component';
       AppRoutingModule,
       HttpClientModule
    ],
-   providers: [],
+   providers: [
+      NavComponent
+   ],
    bootstrap: [
       AppComponent
    ]

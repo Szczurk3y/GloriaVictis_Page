@@ -1,9 +1,9 @@
 <div id="container">
     <div #elo class="logo" routerLink='home'>
     </div>
-    <div app-nav style="float: left;"> </div>
+    <div app-nav (menuEvent)="isMenuClicked = $event"> </div>
     <div app-clock></div>
-    <div app-news style="float: left;"></div>
+    <div app-news [isMenuClicked]="!isMenuClicked"></div>
     <div app-welcome-animation style="float: left;"></div>
     <div app-counter style="float: left;"></div>
 </div>

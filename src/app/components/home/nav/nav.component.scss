@@ -16,9 +16,37 @@ $right: -3%;
     }
 }
 
-nav {
-    width: -webkit-calc(20vw + 15vh);
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 0.7vw;
+    color: complement($color: $redColor);
+    cursor: pointer;
+    font-size: -webkit-calc(2.5vh + 1vw);
+    border-top: 5px solid white;
+    border-radius: 2px;
     @include wrapper(1050px) {
+        display: none;
+    }
+}
+
+.activated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.disactivated {
+    display: none;
+}
+
+nav {
+    display: none;
+    margin-left: 3vw;
+    @include wrapper(1050px) {
+        display: block;
         width: 40vw;
         margin: 0;
         position: absolute;
@@ -29,25 +57,25 @@ nav {
 }
 
 ul {
-    font-size: -webkit-calc(3vh + 1vw);
-    list-style: none;
     display: flex;
+    list-style: none;
     flex-direction: column;
-    margin: 0;
-    padding-left: 2px;
     @include wrapper(1050px) {
+        margin: 0;
+        display: flex;
         flex-direction: row;
         justify-content: center;
-        font-size: 0.8vw;
+        padding-left: 2px;
     }
 }
 
 li {
-    margin: 0.5vh;
-    text-align: left;
-    border-radius: 1px;
-    width: auto;
+    margin: 5px;
+    width: 20%;
     @include wrapper(1050px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         margin: 0;
         text-align: center;
         border: none;
@@ -58,63 +86,28 @@ li {
 
 a {
     transform: translate(5vw);
+    font-family: 'Poppins', sans-serif;
+    font-size: -webkit-calc(2vh + 1vw);
     text-decoration: none;
     color: $textColor;
     display: block;
     padding: 1vh;
-    position: relative;
-    animation: loaderNav 2s ease-in-out;
+    text-align: left;
+    animation: loaderNav .8s ease-in-out;
     opacity: 1;
     @include wrapper(1050px) {
+        display: flex;
+        font-size: 0.8vw;
         animation: none;
         transform: none;
+        padding: 0;
         opacity: 1;
         &:hover {
             color: complement($redColor);
         }
-        span:first-child:before {
-            top: 0;
-            left: 0;
-            @include hoverAnimation('border-top', 'border-left');
-        }
-        span:first-child:after {
-            top: 0;
-            right: 0;
-            @include hoverAnimation('border-top', 'border-right');
-        }
-        span:last-child:before {
-            bottom: 0;
-            left: 0;
-            @include hoverAnimation('border-bottom', 'border-left');
-        }
-        span:last-child:after {
-            bottom: 0;
-            right: 0;
-            @include hoverAnimation('border-bottom', 'border-right');
-        }
-        &:hover span:first-child::before {
-            top: $top;
-            left: $left;
-            opacity: 1;
-        }
-        &:hover span:first-child::after {
-            top: $top;
-            right: $right;
-            opacity: 1;
-        }
-        &:hover span:last-child::before {
-            bottom: $bottom;
-            left: $left;
-            opacity: 1;
-        }
-        &:hover span:last-child::after {
-            bottom: $bottom;
-            right: $right;
-            opacity: 1;
-        }
     }
     &:before {
-        animation: loaderLine 2s ease-in-out;
+        animation: loaderLine 1s ease-in-out;
         top: -0.20vh;
         padding: 0;
         content: '';
@@ -124,10 +117,9 @@ a {
         width: 0.5vw;
         height: 100%;
         background-color: $redColor;
-        transform: translate(-4vw);
+        transform: translate(-3vw);
         @include wrapper(1050px) {
-            animation: none;
-            content: none;
+            display: none;
         }
     }
 }
@@ -137,10 +129,6 @@ a {
         transform: translate(-3vw);
         opacity: 0;
     }
-    30% {
-        transform: translate(5vw);
-        opacity: 1;
-    }
     100% {
         transform: translate(5vw);
         opacity: 1;
@@ -149,12 +137,15 @@ a {
 
 @keyframes loaderLine {
     0% {
-        transform: translate(10vw);
+        opacity: 0;
+        transform: translate(7vw);
     }
-    30% {
-        transform: translate(-4vw);
+    80% {
+        opacity: 1;
+        transform: translate(-3vw);
     }
     100% {
-        transform: translate(-4vw);
+        opacity: 1;
+        transform: translate(-3vw);
     }
 }

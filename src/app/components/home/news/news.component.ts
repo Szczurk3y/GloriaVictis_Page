@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { NavComponent } from '../nav/nav.component';
+
 
 @Component({
   selector: '[app-news]',
@@ -7,13 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsComponent implements OnInit {
 
+  @Input() isMenuClicked: boolean = false;
+
   public images = [];
   public currentImage;
   public i = 1;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+
     this.images[0] = "../../../../assets/home/bg1.jpg";
     this.images[1] = "../../../../assets/home/bg2.jpg";
     this.images[2] = "../../../../assets/home/team.png";

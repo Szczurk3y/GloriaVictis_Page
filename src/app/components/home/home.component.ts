@@ -8,15 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   public background = "";
-
+  public isMenuClicked: boolean = false;
+  
   constructor() { }
 
   ngOnInit() {
   }
   
   setBackground() {
-    console.log("ELOELOELOELOELOELOELOELOELOELOELO");
-
     this.background = "../../../assets/home/bg1.jpg";
   }
 

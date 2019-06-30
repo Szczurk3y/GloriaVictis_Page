@@ -6,8 +6,9 @@
 }
 
 .container {
-    opacity: 0;
+    display: none;
     @include wrapper(1050px) {
+        display: block;
         opacity: 1;
         width: 30vw;
         height: 25vh;

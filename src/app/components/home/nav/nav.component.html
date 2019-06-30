@@ -1,18 +1,17 @@
-<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
 <div class="container">
-    <nav>
-        <span></span>
+    <div class="menu" (click)="expandList()">menu</div>
+    <nav id="navigation" [class.activated]="isMenuClicked==false" [class.disactivated]="isMenuClicked==true">
         <ul>
-            <li><a routerLink='home'>home<span></span><span></span></a>
+            <li><a routerLink='home'>home</a>
             </li>
-            <li><a routerLink=''>team<span></span><span></span></a>
+            <li><a routerLink=''>team</a>
             </li>
-            <li><a routerLink=''>scores<span></span><span></span></a>
+            <li><a routerLink=''>scores</a>
             </li>
-            <li><a routerLink=''>shop<span></span><span></span></a>
+            <li><a routerLink=''>shop</a>
             </li>
-            <li><a routerLink=''>contact<span></span><span></span></a></li>
+            <li><a routerLink=''>contact</a></li>
         </ul>
-        <span></span>
     </nav>
 </div>

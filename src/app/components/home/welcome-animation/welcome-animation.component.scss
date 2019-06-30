@@ -2,6 +2,8 @@
 @import "../../../scss/variables";
 * {
     @include commonDivStylizer;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -19,18 +21,19 @@
     #below {
         letter-spacing: 0.75vw;
         color: complement($color: $redColor);
-        font-size: 115%;
+        font-size: -webkit-calc(1vh + 1vw);
         animation: moveInLeft 1s ease-out;
     }
     @include wrapper(1050px) {
+        width: 35vw;
         float: left;
         margin-right: 0;
         margin-top: 0;
-        margin-left: 7vw;
+        margin-left: 5vw;
         #upper {
             width: 100%;
             letter-spacing: 1vw;
-            font-size: -webkit-calc(3vh + 1vw);
+            font-size: -webkit-calc(1.5vw + 1vw);
             span {
                 color: $redColor;
             }
@@ -38,6 +41,7 @@
         }
         #below {
             width: 100%;
+            margin-top: 0.5vh;
             letter-spacing: 0.75vw;
             color: complement($color: $redColor);
             font-size: 115%;
