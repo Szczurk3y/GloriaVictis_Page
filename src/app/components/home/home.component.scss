@@ -15,9 +15,9 @@
 
 .logo {
     width: 100vw;
-    height: 100px;
+    height: 150px;
     background: url("../../../assets/home/logo_gora.png") no-repeat center center;
-    background-size: 100px 100px;
+    background-size: 130px 130px;
     @include wrapper(400px) {
         background-size: 200px 200px;
         height: 200px;

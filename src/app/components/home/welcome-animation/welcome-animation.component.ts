@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { NavComponent } from '../nav/nav.component';
 
 @Component({
   selector: '[app-welcome-animation]',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome-animation.component.scss']
 })
 export class WelcomeAnimationComponent implements OnInit {
+
+  @Input() isMenuClicked: boolean = true;
 
   constructor() { }
 

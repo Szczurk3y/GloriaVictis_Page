@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
 <div class="container">
     <div class="menu" (click)="expandList()">menu</div>
-    <nav id="navigation" [class.activated]="isMenuClicked==false" [class.disactivated]="isMenuClicked==true">
+    <nav id="navigation" [class.activated]="isMenuClicked" [class.disactivated]="!isMenuClicked">
         <ul>
             <li><a routerLink='home'>home</a>
             </li>

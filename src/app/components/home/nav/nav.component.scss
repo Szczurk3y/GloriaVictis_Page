@@ -40,10 +40,12 @@ $right: -3%;
 
 .disactivated {
     display: none;
+    @include wrapper(1050px) {
+        display: block;
+    }
 }
 
 nav {
-    display: none;
     margin-left: 3vw;
     @include wrapper(1050px) {
         display: block;

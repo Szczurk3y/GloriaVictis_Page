@@ -23,6 +23,5 @@ export class NavComponent implements OnInit {
   expandList() {
     this.isMenuClicked = !this.isMenuClicked;
     this.menuEvent.emit(this.isMenuClicked);
-    console.log("ELO", this.isMenuClicked);
   }
 }
