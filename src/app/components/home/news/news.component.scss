@@ -30,6 +30,7 @@
         margin-top: 2%;
     }
     @include wrapper(1050px) {
+        display: flex;
         float: left;
         max-width: none;
         max-height: none;
