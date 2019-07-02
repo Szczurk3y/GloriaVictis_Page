@@ -1,6 +1,6 @@
 # Gloria Victis WebPage
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+Check it out here: https://szczurk3y.github.io/GloriaVictis_Page/home
 
 ## Development server
 
