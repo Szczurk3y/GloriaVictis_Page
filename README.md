@@ -1,6 +1,6 @@
 # Gloria Victis WebPage
 
-Check it out here: https://szczurk3y.github.io/GloriaVictis_Page/home
+Check it out here: https://szczurk3y.github.io/GloriaVictis_Page/
 
 ## Development server
 
