@@ -1,16 +1,25 @@
 @import "../../../scss/mixins";
 @import "../../../scss/variables";
+
 * {
+    @include textDecoration;
     @include commonDivStylizer;
-    padding: 0;
-    margin: 0;
 }
 
 .container {
-    @include textDecoration;
-    margin-top: 5%;
+    cursor: default;
     width: 100vw;
-    #upper {
+    height: 15vw;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         letter-spacing: 1vw;
         font-size: -webkit-calc(3vh + 1vw);
         span {
@@ -18,42 +27,22 @@
         }
         animation: moveInRight 1s ease-out;
     }
-    #below {
-        letter-spacing: 0.75vw;
-        color: complement($color: $redColor);
-        font-size: -webkit-calc(1vh + 1vw);
+    #bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        letter-spacing: 0.5vw;
+        color: $complementColor;
+        font-size: -webkit-calc(0.5vw + 1vh);
         animation: moveInLeft 1s ease-out;
-    }
-    @include wrapper(1050px) {
-        width: 35vw;
-        float: left;
-        margin-right: 0;
-        margin-top: 0;
-        margin-left: 5vw;
-        #upper {
-            width: 100%;
-            letter-spacing: 1vw;
-            font-size: -webkit-calc(1.5vw + 1vw);
-            span {
-                color: $redColor;
-            }
-            animation: moveInRight 1s ease-out;
-        }
-        #below {
-            width: 100%;
-            margin-top: 0.5vh;
-            letter-spacing: 0.75vw;
-            color: complement($color: $redColor);
-            font-size: 115%;
-            animation: moveInLeft 1s ease-out;
-        }
     }
 }
 
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(-3vw);
+        transform: translateX(-4vw);
     }
     100% {
         transform: translate(0);
@@ -64,7 +53,7 @@
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translate(3vw);
+        transform: translate(4vw);
     }
     100% {
         transform: translate(0);

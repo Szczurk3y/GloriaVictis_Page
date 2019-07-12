@@ -13,7 +13,7 @@ export class NavComponent implements OnInit {
   
   @Output("menuEvent") menuEvent = new EventEmitter<boolean>();
 
-  public isMenuClicked = false;
+  public isMenuClicked = true;
 
   constructor() { }
 

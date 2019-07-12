@@ -3,13 +3,12 @@
 #container {
     width: 100vw;
     height: 100vh;
-    background: url("../../../assets/home/background.png") no-repeat center center;
+    background: url("../../../assets/home/background.png") no-repeat;
     background-size: 250% 100%;
-    position: absolute;
     background-position-x: -100vw;
     @include wrapper(1050px) {
         background-position-x: 0;
-        background-size: 100% 100vh;
+        background-size: 100vw;
     }
 }
 
@@ -23,11 +22,11 @@
         height: 200px;
     }
     @include wrapper(1050px) {
+        margin: 2vw;
+        float: left;
         background-size: 85% 100%;
         width: 15vw;
         height: 13vw;
-        margin-left: 7%;
-        margin-top: 1%;
     }
     &:hover {
         cursor: pointer;

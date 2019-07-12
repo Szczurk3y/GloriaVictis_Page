@@ -8,38 +8,19 @@
 @mixin commonDivStylizer {
     padding: 0;
     margin: 0;
-}
-
-@mixin hoverAnimation($arg...) {
-    content: '';
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: transparent;
-    opacity: 0;
-    transition: .6s;
-    @each $item in $arg {
-        @if $item=='border-top' {
-            border-top: 2px solid complement($color: $redColor);
-        }
-        @if $item=='border-bottom' {
-            border-bottom: 2px solid complement($color: $redColor);
-        }
-        @if $item=='border-left' {
-            border-left: 2px solid complement($color: $redColor);
-        }
-        @if $item=='border-right' {
-            border-right: 2px solid complement($color: $redColor);
-        }
+    box-sizing: border-box;
+    &::after, ::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
     }
+    
+    
 }
 
 @mixin textDecoration {
     color: $textColor;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    justify-content: center;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
 }

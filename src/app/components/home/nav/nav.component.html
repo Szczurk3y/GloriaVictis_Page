@@ -1,17 +1,19 @@
 <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
 <div class="container">
     <div class="menu" (click)="expandList()">menu</div>
-    <nav id="navigation" [class.activated]="isMenuClicked" [class.disactivated]="!isMenuClicked">
-        <ul>
-            <li><a routerLink='home'>home</a>
+    <nav class="navigation" [class.activated]="isMenuClicked" [class.disactivated]="!isMenuClicked">
+        <ul> 
+            <span class="navigation__item-name--1"></span>
+            <li><a>home</a>
             </li>
-            <li><a routerLink=''>team</a>
+            <li><a>team</a>
             </li>
-            <li><a routerLink=''>scores</a>
+            <li><a>scores</a>
             </li>
-            <li><a routerLink=''>shop</a>
+            <li><a>shop</a>
             </li>
-            <li><a routerLink=''>contact</a></li>
+            <li><a>contact</a></li>
+            <span class="navigation__item-name--2"></span>            
         </ul>
     </nav>
 </div>
