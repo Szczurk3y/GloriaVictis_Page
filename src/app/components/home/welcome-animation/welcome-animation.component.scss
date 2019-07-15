@@ -3,13 +3,12 @@
 
 * {
     @include textDecoration;
-    @include commonDivStylizer;
+    @include commonPageStylizer;
 }
 
 .container {
     cursor: default;
     width: 100vw;
-    height: 15vw;
     clear: both;
     display: flex;
     flex-direction: column;

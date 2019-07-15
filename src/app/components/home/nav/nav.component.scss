@@ -2,7 +2,7 @@
 @import "../../../scss/variables";
 
 * {
-    @include commonDivStylizer;
+    @include commonPageStylizer;
     @include textDecoration;
     letter-spacing: 4px;
 }
@@ -63,7 +63,6 @@
             border-left: 1px solid $complementColor;
             border-bottom: 1px solid $complementColor;
             margin-top: 5%;
-    
         }
         &__item-name--2 {
             margin-bottom: 5%;
@@ -96,7 +95,7 @@ li {
     @include wrapper(1050px) {
         &:hover {
             transition: all .3s;
-            background-color: rgba(#9d9d9d, 0.4);
+            background-color: rgba(#bb1b36, 0.4);
             cursor: pointer;
         }
         margin: 0;

@@ -2,7 +2,7 @@
 @import "../../../scss/mixins";
 
 * {
-    @include commonDivStylizer;
+    @include commonPageStylizer;
 }
 
 .container {
@@ -12,6 +12,7 @@
     @include wrapper(1050px) {
         margin-left: 2vw;
         width: 15vw;
+        float: left;
     }
 }
 
@@ -46,7 +47,7 @@ i {
     transition: color .2s ease-in;
     font-size: 7vw;
     @include wrapper(1050px) {
-        font-size: 3vw;
+        font-size: 4rem;
     }
     text-align: center;
     display: flex;

@@ -10,6 +10,7 @@ import { WelcomeAnimationComponent } from './components/home/welcome-animation/w
 import { HttpClientModule } from '@angular/common/http';
 import { TeamComponent } from './components/team/team.component';
 import { SocialMediaComponent } from './components/home/social-media/social-media.component';
+import { NewsComponent } from './components/home/news/news.component';
 
 @NgModule({
    declarations: [
@@ -18,7 +19,8 @@ import { SocialMediaComponent } from './components/home/social-media/social-medi
       NavComponent,
       WelcomeAnimationComponent,
       TeamComponent,
-      SocialMediaComponent
+      SocialMediaComponent,
+      NewsComponent
    ],
    imports: [
       BrowserModule,
