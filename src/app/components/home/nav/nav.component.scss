@@ -11,12 +11,11 @@
     @include wrapper(1050px) {
         float: left;
         width: 80vw;
-        height: 14vw;
+        height: 7vw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
-
     }
 }
 
@@ -62,14 +61,19 @@
             height: 15px;
             border-left: 1px solid $complementColor;
             border-bottom: 1px solid $complementColor;
-            margin-top: 5%;
+            position: absolute;
+            bottom: -1rem;
+            left: -1rem;
+
         }
         &__item-name--2 {
-            margin-bottom: 5%;
             width: 15px;
             height: 15px;
             border-right: 1px solid $complementColor;
             border-top: 1px solid $complementColor;
+            position: absolute;
+            right: -1rem;
+            top: -1rem;
         }
     }
 }
@@ -82,8 +86,9 @@ ul {
         flex-direction: row;
         padding: 1vw;
         width: 50vw;
-        height: 2vw;
+        height: 5vw;
         align-items: center;
+        
     }
 }
 
@@ -94,8 +99,8 @@ li {
     width: 20%;
     @include wrapper(1050px) {
         &:hover {
-            transition: all .3s;
-            background-color: rgba(#bb1b36, 0.4);
+            transition: all .52s;
+            background-color: rgba(grey, 0.4);
             cursor: pointer;
         }
         margin: 0;
@@ -105,6 +110,7 @@ li {
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
 }
 

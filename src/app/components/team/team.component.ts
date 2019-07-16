@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PlayersServiceService } from "../../services/players-service.service";
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: '[app-team]',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
-  constructor() { }
+  public players = [];
+  public currentDescription:string;
+  public currentNickname:string;
+
+  constructor(private _playerService: PlayersServiceService) {
+  }
 
   ngOnInit() {
+    this._playerService.getPlayers().pipe(
+      take(1)
+    ).subscribe((res:any) => {
+      this.players = res.playersList;
+      this.currentDescription = this.players[0].desc;
+      this.currentNickname = this.players[0].nickname;
+    })
   }
 
 }

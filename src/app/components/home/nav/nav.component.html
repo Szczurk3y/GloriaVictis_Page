@@ -3,8 +3,9 @@
     <div class="menu" (click)="expandList()">menu</div>
     <nav class="navigation" [class.activated]="isMenuClicked" [class.disactivated]="!isMenuClicked">
         <ul> 
+            <li>
             <span class="navigation__item-name--1"></span>
-            <li><a>home</a>
+            <a>home</a>
             </li>
             <li><a>team</a>
             </li>
@@ -12,8 +13,9 @@
             </li>
             <li><a>shop</a>
             </li>
-            <li><a>contact</a></li>
+            <li>
             <span class="navigation__item-name--2"></span>            
+            <a>contact</a></li>
         </ul>
     </nav>
 </div>
