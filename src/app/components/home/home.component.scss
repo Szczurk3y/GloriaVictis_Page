@@ -3,7 +3,7 @@
 #container {
     width: 100vw;
     height: 100vh;
-    background: url("../../../assets/home/background.png") no-repeat center center;
+    background: url("/assets/home/background.png") no-repeat center center;
     background-size: 250% 100%;
     background-position-x: -100vw;
     @include wrapper(1050px) {
