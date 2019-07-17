@@ -1,5 +1,10 @@
 @import "../../scss/mixins";
 @import "../../scss/variables";
+
+* {
+    @include commonPageStylizer;
+}
+
 .container {
     width: 100vw;
     height: 50vh;
@@ -15,11 +20,17 @@
 }
 
 .content {
-    width: 45%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
+    &:first-child {
+        width: 45%;
+    }
+    &:last-child {
+        width: 55%;
+    }
 }
+
 .header {
     @include textDecoration;
     color: $redColor;
@@ -45,13 +56,6 @@
     line-height: 3rem;
 }
 
-.players {
-    display: flex;
-    flex-direction: column;
-    width: 55%;
-    height: 100%;
-}
-
 .nickname {
     display: flex;
     justify-content: center;
@@ -62,4 +66,57 @@
     letter-spacing: 0.7rem;
     justify-content: center;
     align-items: flex-end;
+}
+
+.players {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    .arrow {
+        margin: 5%;
+        width: 5%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 50%;
+            height: 75%;
+            cursor: pointer;
+            &:hover {
+                width: 60%;
+                height: 85%;
+                transition: all .1s linear;
+            }
+        }
+    }
+    .side {
+        padding-right: 1%;
+        width: 25%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .primary {
+        padding-right: 1%;
+        margin: 5%;
+        width: 40%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+            height: 120%;
+        }
+    }
 }
