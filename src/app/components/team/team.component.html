@@ -2,17 +2,16 @@
 <div class="container">
     <div class="content">
         <div class="header">team</div>
-        <div class="description">{{currentDescription}}</div>
+        <div class="description">{{players[(1+abs(i))%this.playersPicture.length].desc}}</div>
     </div>
     <div class="content">
-        <div class="nickname">{{currentNickname}}</div>
+        <div class="nickname">{{players[(1+abs(i))%this.playersPicture.length].nickname}}</div>
         <div class="players">
-            <div class="arrow"><img src="../../../assets/team/arrays/array_left.png" alt="array_left"></div>
-            <div class="side"><img src="../../../assets/team/player/player.png" alt="sideplayer"></div>
-            <div class="primary"><img src="../../../assets/team/player/player.png" alt="sideplayer"></div>
-            <div class="side"><img src="../../../assets/team/player/player.png" alt="sideplayer"></div>
-            <div class="arrow"><img src="../../../assets/team/arrays/array_right.png" alt="array_right"></div>
-            
+            <div class="arrow"><img (click)="onArrowLeftClick()" src="../../../assets/team/arrays/array_left.png" alt="array_left"></div>
+            <div class="side"><img src="{{playersPicture[(0+abs(i))%this.playersPicture.length]}}" alt="sideplayer"></div>
+            <div class="primary" ><img src="{{playersPicture[(1+abs(i))%this.playersPicture.length]}}" alt="primaryplayer"></div>
+            <div class="side"><img src="{{playersPicture[(2+abs(i))%this.playersPicture.length]}}" alt="sideplayer"></div>
+            <div class="arrow"><img (click)="onArrowRightClick()" src="../../../assets/team/arrays/array_right.png" alt="array_right"></div>
         </div>
     </div>
 </div>

@@ -12,12 +12,29 @@ export class PlayersServiceService {
   players = {
     playersList: [
         {
-            nickname: "Szczurk3y",
-            desc: "Eget mi proin sed libero enim sed. Ut morbi tincidunt augue interdum velit. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed. Vel quam elementum pulvinar etiam non quam. Dolor morbi non arcu risu"            
+          nickname: "Szczurk3y",
+          desc: "Eget mi proin sed libero enim sed. Ut morbi tincidunt augue interdum velit. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed. Vel quam elementum pulvinar etiam non quam. Dolor morbi non arcu risu",          
+          picture: "../../assets/team/players/stewie2k.png"
         },
         {
-            nickname: "Glazu",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Magna fermentum iaculis eu non diam phasellus vestibulum"            
+          nickname: "Glazu",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Magna fermentum iaculis eu non diam phasellus vestibulum",
+          picture: "../../assets/team/players/neo.png"
+        },
+        {
+          nickname: "FranekLubki",
+          desc: "HAAAAAAAAAAAAAAAAA POZDRO ZIOMECZKI",
+          picture: "../../assets/team/players/simple.png"
+        },
+        {
+          nickname: "Kowadło",
+          desc: "HAAAA JESTEM KOWADŁO POZDRO",
+          picture: "../../assets/team/players/pashabiceps.png"
+        },
+        {
+          nickname: "GRABARZ",
+          desc: "ELO LUBIE PIWO POZDERKI",
+          picture: "../../assets/team/players/device.png"
         }
     ]
   }
