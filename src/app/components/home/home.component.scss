@@ -1,15 +1,18 @@
 @import "../../scss/mixins";
 @import "../../scss/variables";
-#container {
+#home {
     width: 100vw;
-    height: 85vh;
-    background: url("/assets/home/background.png") no-repeat center center;
+    height: 100vh;
+    background: url("/assets/home/background.png") no-repeat;
     background-size: 250% 100%;
     background-position-x: -100vw;
     @include wrapper(1050px) {
         background-position-x: 0;
-        background-size: 100vw;
-        height: 50vw;
+        background-size: 120% 100%;
+    }
+
+    @include wrapper(1600px) {
+        background-size: 100% 100%;
     }
 }
 
@@ -23,7 +26,13 @@
         height: 200px;
     }
     @include wrapper(1050px) {
-        margin: 2vw;
+        float: left;
+        width: 20vw;
+        height: 30vh;
+        background-size: 220px 220px;
+    }
+
+    @include wrapper(1600px) {
         float: left;
         background-size: 85% 100%;
         width: 15vw;

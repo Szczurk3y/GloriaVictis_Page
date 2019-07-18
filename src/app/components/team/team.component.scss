@@ -5,55 +5,81 @@
     @include commonPageStylizer;
 }
 
-.container {
+#team {
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     background: url("/../assets/team/background/background.png") no-repeat;
     background-size: 200% 100%;
     background-position-x: 50%;
     @include wrapper(1050px) {
-        height: 44vw;
-        background-size: 100% 100%;
+        background-size: 150% 100%;
         display: flex;
         flex-direction: row;
+        position: relative;
+    }
+    @include wrapper(1600px) {
+        background-size: 120% 100%;
     }
 }
 
 .content {
-    height: 100%;
+    height: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;  
     &:first-child {
-        width: 45%;
+        @include wrapper(1050px) {
+            height: 100%;
+            width: 45%;
+        }
     }
     &:last-child {
-        width: 55%;
+        @include wrapper(1050px) {
+            height: 100%;
+            width: 55%;
+        }
     }
+    
 }
 
 .header {
     @include textDecoration;
     color: $redColor;
-    font-size: 4rem;
-    letter-spacing: 2rem;
+    font-size: -webkit-calc(2vw + 2vh);
+    letter-spacing: 10px;
     width: 85%;
     height: 30%;
     display: flex;
+    margin-left: 10%;
     align-items: center;
-    align-self: flex-end;
     font-family: 'Catamaran', sans-serif;
+    @include wrapper(1050px) {
+        margin-left: 0;
+        letter-spacing: 2rem;
+        font-size: 4rem;
+        align-self: flex-end;
+    }
+    @include wrapper(1600px) {
+        margin-top: 0;
+    }
 }
 
 .description {
-    height: 40%;
+    font-size: -webkit-calc(0.5vw + 1vh);
+    line-height: -webkit-calc(0.5vw + 2vh);
     width: 85%;
     display: flex;
-    align-self: flex-end;
     color: $textColor;
-    font-size: 1rem;
-    @include textDecoration;
     letter-spacing: 0.2rem;
-    line-height: 3rem;
+    margin-left: 10%;
+    @include textDecoration;
+    @include wrapper(1050px) {
+        margin-left: 0;
+        font-size: 1rem;
+        line-height: 3rem;
+        height: 40%;
+        align-self: flex-end;
+    }
 }
 
 .nickname {
@@ -61,30 +87,40 @@
     justify-content: center;
     height: 25%;
     color: $textColor;
-    font-size: 2rem;
+    font-size: -webkit-calc(2vw + 2vh);    
     @include textDecoration;
-    letter-spacing: 0.7rem;
+    letter-spacing: 0.3rem;
     justify-content: center;
     align-items: flex-end;
     margin-bottom: 5%;
+    @include wrapper(1050px) {
+        margin: 0;
+        height: 30%;
+        font-size: 2rem;
+        letter-spacing: 0.7rem;
+    }
 }
 
 .players {
-    height: 30%;
     width: 100%;
+    height: 60%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 3%;
     transition: all .2s linear;
+    @include wrapper(1050px) {
+        height: 40%;
+    }
     .arrow {
         margin: 5%;
-        width: 5%;
-        height: 15%;
+        width: 30px;
+        height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-grow: 0;
+        flex-shrink: 0;
         img {
             width: 50%;
             height: 75%;
@@ -97,36 +133,53 @@
         }
     }
     .side {
-        padding-right: 1%;
-        width: 25%;
-        height: 70%;
+        width: 50px;
+        height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
         overflow: hidden;
         box-shadow: -5px 5px 19px 3px #242424;
         img {
             width: 150%;
             height: 120%;
         }
+        @include wrapper(500px) {
+            width: 100px;
+            height: 100px;
+        }
+        @include wrapper(1600px) {
+            width: 150px;
+            height: 150px;
+        }
     }
     .primary {
-        padding-right: 1%;
+        flex-grow: 0;
+        flex-shrink: 0;
         margin: 5%;
-        width: 40%;
-        height: 120%;
+        width: 100px;
+        height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 100%;
         box-shadow: -5px 5px 19px 3px #242424;
-        background-color: #fff;
         overflow: hidden;
         img {
             object-fit: cover;
             width: 120%;
             height: 120%;
+        }
+        @include wrapper(500px) {
+            width: 200px;
+            height: 200px;
+        }
+        @include wrapper(1600px) {
+            width: 250px;
+            height: 250px;
         }
     }
 }

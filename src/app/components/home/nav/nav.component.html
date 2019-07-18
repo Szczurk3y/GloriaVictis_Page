@@ -1,21 +1,25 @@
 <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
-<div class="container">
+<div id="navContainer">
     <div class="menu" (click)="expandList()">menu</div>
-    <nav class="navigation" [class.activated]="isMenuClicked" [class.disactivated]="!isMenuClicked">
+    <nav class="navigation" [class.activated]="isMenuClicked" [class.disactivated]="!isMenuClicked" [class.scrolling]="is_a_clicked">
         <ul> 
             <li>
-            <span class="navigation__item-name--1"></span>
-            <a>home</a>
-            </li>
-            <li><a>team</a>
-            </li>
-            <li><a>scores</a>
-            </li>
-            <li><a>shop</a>
+                <span class="navigation__item-name--1"></span>
+                <a (click)="onClick()" href="#home">home</a>
             </li>
             <li>
-            <span class="navigation__item-name--2"></span>            
-            <a>contact</a></li>
+                <a (click)="onClick()" href="#team">team</a>
+            </li>
+            <li>
+                <a (click)="onClick()" href="#scores">scores</a>
+            </li>
+            <li>
+                <a (click)="onClick()" href="#shop">shop</a>
+            </li>
+            <li>
+                <span class="navigation__item-name--2"></span>           
+                <a (click)="onClick()" href="#contact">contact</a>
+            </li>
         </ul>
     </nav>
 </div>

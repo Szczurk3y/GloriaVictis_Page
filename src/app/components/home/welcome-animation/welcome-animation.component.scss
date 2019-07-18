@@ -6,25 +6,33 @@
     @include commonPageStylizer;
 }
 
-.container {
+#welcomeanimationContainer {
     cursor: default;
     width: 100vw;
-    clear: both;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    @include wrapper(1050px) {
+        width: 75vw;
+        height: 20vh;
+        float: left;
+    }
     #top {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         letter-spacing: 1vw;
-        font-size: -webkit-calc(3vh + 1vw);
+        font-size: -webkit-calc(1vh + 5vw);
         span {
             color: $redColor;
         }
         animation: moveInRight 1s ease-out;
+        @include wrapper(1050px) {
+            font-size: -webkit-calc(1vh + 3vw);
+        }
     }
     #bottom {
         display: flex;
@@ -33,8 +41,11 @@
         width: 100%;
         letter-spacing: 0.5vw;
         color: $complementColor;
-        font-size: -webkit-calc(0.5vw + 1vh);
+        font-size: -webkit-calc(2.5vw + 0.5vh);
         animation: moveInLeft 1s ease-out;
+        @include wrapper(1050px) {
+            font-size: -webkit-calc(1vh + 1vw);
+        }
     }
 }
 

@@ -40,11 +40,11 @@ export class TeamComponent implements OnInit {
   }
 
   onArrowLeftClick() {
-    this.i--;
+    this.i++;
   }
 
   onArrowRightClick() {
-    this.i++;
+    this.i--;
   }
 
   abs(n: number): number {

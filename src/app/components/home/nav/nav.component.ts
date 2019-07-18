@@ -13,7 +13,8 @@ export class NavComponent implements OnInit {
   
   @Output("menuEvent") menuEvent = new EventEmitter<boolean>();
 
-  public isMenuClicked = true;
+  public isMenuClicked = false;
+  public is_a_clicked = false;
 
   constructor() { }
 
@@ -23,5 +24,14 @@ export class NavComponent implements OnInit {
   expandList() {
     this.isMenuClicked = !this.isMenuClicked;
     this.menuEvent.emit(this.isMenuClicked);
+  }
+
+  onClick() {
+    this.is_a_clicked = true;
+    console.log(this.is_a_clicked);
+    setTimeout(() => {
+      this.is_a_clicked = false;
+      console.log(this.is_a_clicked);
+    }, 500);
   }
 }

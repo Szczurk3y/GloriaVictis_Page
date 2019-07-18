@@ -7,15 +7,19 @@
     letter-spacing: 4px;
 }
 
-.container {
+#navContainer {
     @include wrapper(1050px) {
         float: left;
+        height: 30vh;
+        width: 75vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    @include wrapper(1600px) {
         width: 80vw;
         height: 7vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
     }
 }
 
@@ -52,10 +56,10 @@
     @include wrapper(1050px) {
         margin: 0;
         display: flex;
-        align-items: center;
-        margin-left: 25%;
-    }
-    @include wrapper(1050px) {
+        position: fixed;
+        z-index: 1;
+        top: 5%;
+        right: 5%;
         &__item-name--1 {
             width: 15px;
             height: 15px;
@@ -76,6 +80,11 @@
             top: -1rem;
         }
     }
+
+    @include wrapper(1600px) {
+        top: 5%;
+        right: 7%;   
+    }
 }
 
 ul {
@@ -86,13 +95,9 @@ ul {
         flex-direction: row;
         padding: 1vw;
         width: 50vw;
-        height: 5vw;
-        align-items: center;
-        
+        height: 5vw;  
     }
 }
-
-
 
 li {
     margin: 5px;
@@ -130,7 +135,13 @@ a {
         transform: none;
         font-size: 1vw;
         padding: 0;
-        text-align: center;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @include wrapper(1600px) {
+        font-size: 1vw;
     }
     &:before {
         animation: loaderLine 1s ease-in-out;
@@ -148,6 +159,10 @@ a {
             display: none;
         }
     }
+}
+
+.scrolling {
+    animation: scrollAnimation .5s linear;
 }
 
 @keyframes loaderNav {
@@ -173,5 +188,17 @@ a {
     100% {
         opacity: 1;
         transform: translate(-3vw);
+    }
+}
+
+@keyframes scrollAnimation {
+    0% {
+        display: none;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
