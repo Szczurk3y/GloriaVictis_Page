@@ -7,79 +7,114 @@
 #shop {
     width: 100vw;
     height: 100vh;
-    background: url("/../assets/shop/background/background.png") no-repeat;
-    background-size: 150% 110%;
-    background-position-x: 40%;
+    background: url("../../../assets/shop/background/background_small.png") no-repeat;
+    background-size: 250% 100%;
+    background-position-x: 7%;
     position: relative;
     display: flex;
+    justify-content: flex-end;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     @include wrapper(1050px) {
+        background: url("/../assets/shop/background/background.png") no-repeat;
         background-size: 100% 110%;
     }
-    @include wrapper(1600px) {}
 }
 
 .content {
-    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    &:first-child {
+        display: none;
+        @include wrapper(1050px) {
+            display: flex;
+            width: 50%;
+        }
+    }
+    &:last-child {
+        width: 100%;
+        @include wrapper(1050px) {
+            width: 50%;
+        }
+    }
 }
 
 .description {
     @include textDecoration;
-    height: 100%;
     width: 100%;
-    align-self: center;
+    height: 100%;
     color: $textColor;
-    text-align: right;
-    font-size: -webkit-calc(0.7vw);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 25%;
-    margin-right: 10%;
-    line-height: 2.5vw;
     padding: 10%;
-    padding-top: 0;
+    padding-top: 10%;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 0.1vw;
+    @include wrapper(1050px) {
+        text-align: right;
+        margin-top: 25%;
+    }
     span {
         margin: 0;
         padding: 0;
         font-family: 'Open Sans', sans-serif;
-        text-align: right;
+        text-align: center;
         width: 100%;
         color: $redColor;
-        font-size: -webkit-calc(2.1vw);
+        font-size: -webkit-calc(4vw);
         letter-spacing: 0.9vw;
-        padding-bottom: 1vw;
+        padding-bottom: 3vw;
+        @include wrapper(1050px) {
+            font-size: -webkit-calc(2.1vw);
+            text-align: right;
+            margin-right: 5%;
+        }
     }
     #desc {
         width: 100%;
-        height: 50%;
-        padding: 10%;
-        padding-top: 0;
-        padding-right: 2%;
+        font-size: -webkit-calc(2vw);
+        line-height: 4vw;
+        text-align: center;
+        @include wrapper(1050px) {
+            font-size: -webkit-calc(0.7vw);
+            line-height: 2.5vw;
+            margin-right: 10%;
+            text-align: right;
+            padding-left: 10%;
+            padding-bottom: 10%;
+        }
     }
 }
 
 .buttonsContainer {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10%;
+    @include wrapper(1050px) {
+        justify-content: center;
+        margin: 0;
+    }
 }
 
 .button {
     @include textDecoration;
-    font-size: 150%;
-    width: 35%;
-    height: 130%;
+    width: 30vw;
+    height: 10vw;
     background-color: red;
+    letter-spacing: 0.7vw;
     color: white;
-    border-radius: 25px;
-    letter-spacing: 0.3vw;
-    text-align: center;
+    border-radius: 50px;
     text-transform: uppercase;
+    max-width: 300px;
+    font-size: 3vw;
+    @include wrapper(1050px) {
+        letter-spacing: 0.3vw;
+        font-size: 150%;
+        width: 35%;
+        height: 130%;
+    }
 }

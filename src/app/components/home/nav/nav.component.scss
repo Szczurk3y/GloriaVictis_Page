@@ -6,6 +6,7 @@
 }
 
 #navContainer {
+    text-transform: uppercase;
     @include wrapper(1050px) {
         float: left;
         height: 30vh;
@@ -13,7 +14,6 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        text-transform: uppercase;
     }
     @include wrapper(1600px) {
         width: 80vw;

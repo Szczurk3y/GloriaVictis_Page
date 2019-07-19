@@ -1,10 +1,9 @@
 @import "../../../scss/variables";
 @import "../../../scss/mixins";
 #socialmediaContainer {
-    clear: both;
-    width: 100vw;
+    display: none;
     @include wrapper(1050px) {
-        float: left;
+        display: block;
         width: 20vw;
     }
     @include wrapper(1600px) {
@@ -27,14 +26,13 @@ ul {
 }
 
 .icon {
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all .2s ease-in;
-    font-size: 220%;
     cursor: pointer;
-    width: 60px;
-    height: 60px;
     border-radius: 50%;
     background-color: #e5002a;
     color: white;
@@ -48,5 +46,10 @@ ul {
         &:last-child {
             background-color: #00acee;
         }
+    }
+    @include wrapper(1050px) {
+        width: 60px;
+        font-size: 220%;
+        height: 60px;
     }
 }
