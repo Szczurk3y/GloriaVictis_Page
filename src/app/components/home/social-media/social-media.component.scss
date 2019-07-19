@@ -1,77 +1,52 @@
 @import "../../../scss/variables";
 @import "../../../scss/mixins";
-
-* {
-    @include commonPageStylizer;
-}
-
 #socialmediaContainer {
-    opacity: 0.8;
     clear: both;
     width: 100vw;
     @include wrapper(1050px) {
-        margin: 0;
-        width: 20vw;
-        height: 70vh;
         float: left;
+        width: 20vw;
     }
     @include wrapper(1600px) {
-        margin: 0;
         width: 15vw;
     }
 }
 
+div {
+    &:not(:last-child) {
+        margin-right: 5%;
+    }
+}
+
 ul {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    flex-direction: row;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @include wrapper(1050px) {
-        flex-direction: column;
-        justify-content: left;
-    }
 }
 
-li {
-    margin: 5%;
+.icon {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    width: 8vw;
-    height: 8vw;
-    @include wrapper(1050px) {
-        margin: 10%;
-        width: 8vw;
-        height: 8vw;
-    }
-}
-
-i {
-    color: $textColor;
-    transition: color .2s ease-in;
-    font-size: 7vw;
-    text-align: center;
-    display: flex;
+    align-items: center;
+    transition: all .2s ease-in;
+    font-size: 220%;
     cursor: pointer;
-    @include wrapper(1050px) {
-        font-size: 4rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e5002a;
+    color: white;
+    &:hover {
+        &:first-child {
+            background-color: rgb(60, 90, 153);
+        }
+        &:nth-child(2) {
+            background-color: rgb(131, 58, 180);
+        }
+        &:last-child {
+            background-color: #00acee;
+        }
     }
-    
-}
-.fa-facebook-square:hover {
-    color: #3b5998;
-}
-.fa-instagram:hover {
-
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-}
-.fa-twitter-square:hover {
-    color:  #00acee;   
 }

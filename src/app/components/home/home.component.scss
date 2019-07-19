@@ -31,7 +31,6 @@
         height: 30vh;
         background-size: 220px 220px;
     }
-
     @include wrapper(1600px) {
         float: left;
         background-size: 85% 100%;

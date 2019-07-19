@@ -9,18 +9,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    &::after, ::before {
+    &::after,
+     ::before {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
     }
-    
-    
 }
 
 @mixin textDecoration {
     color: $textColor;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
 }

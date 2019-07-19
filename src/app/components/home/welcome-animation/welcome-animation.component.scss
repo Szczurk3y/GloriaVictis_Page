@@ -1,6 +1,5 @@
 @import "../../../scss/mixins";
 @import "../../../scss/variables";
-
 * {
     @include textDecoration;
     @include commonPageStylizer;
@@ -11,40 +10,33 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     @include wrapper(1050px) {
-        width: 75vw;
-        height: 20vh;
-        float: left;
+        margin-top: 5%;
     }
     #top {
         display: flex;
         justify-content: center;
-        align-items: center;
         width: 100%;
         letter-spacing: 1vw;
-        font-size: -webkit-calc(1vh + 5vw);
+        font-size: -webkit-calc(1vh + 2vw);
         span {
             color: $redColor;
         }
         animation: moveInRight 1s ease-out;
         @include wrapper(1050px) {
-            font-size: -webkit-calc(1vh + 3vw);
+            font-size: -webkit-calc(1vh + 2vw);
         }
     }
     #bottom {
         display: flex;
         justify-content: center;
-        align-items: center;
         width: 100%;
         letter-spacing: 0.5vw;
         color: $complementColor;
-        font-size: -webkit-calc(2.5vw + 0.5vh);
+        font-size: -webkit-calc(1vw + 1vh);
         animation: moveInLeft 1s ease-out;
         @include wrapper(1050px) {
-            font-size: -webkit-calc(1vh + 1vw);
+            font-size: -webkit-calc(1vh + 0.5vw);
         }
     }
 }

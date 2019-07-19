@@ -1,10 +1,8 @@
 @import "../../../scss/mixins";
 @import "../../../scss/variables";
-
 * {
     @include commonPageStylizer;
     @include textDecoration;
-    letter-spacing: 4px;
 }
 
 #navContainer {
@@ -15,8 +13,8 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        text-transform: uppercase;
     }
-    
     @include wrapper(1600px) {
         width: 80vw;
         height: 7vw;
@@ -27,7 +25,7 @@
     display: flex;
     justify-content: center;
     font-family: 'Catamaran', sans-serif;
-    letter-spacing: 0.7vw;
+    letter-spacing: 1vw;
     color: complement($color: $redColor);
     cursor: pointer;
     font-size: -webkit-calc(2.5vh + 1vw);
@@ -68,7 +66,6 @@
             position: absolute;
             bottom: -0.5rem;
             left: -0.5rem;
-
         }
         &__item-name--2 {
             width: 15px;
@@ -80,10 +77,9 @@
             top: -0.5rem;
         }
     }
-
     @include wrapper(1600px) {
         top: 5%;
-        right: 7%;   
+        right: 7%;
     }
 }
 
@@ -95,7 +91,7 @@ ul {
         flex-direction: row;
         padding: 1vw;
         width: 50vw;
-        height: 5vw;  
+        height: 5vw;
     }
 }
 
@@ -124,6 +120,7 @@ a {
     transform: translate(5vw);
     animation: loaderNav .8s ease-in-out;
     font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5vw;
     font-size: -webkit-calc(2vh + 1vw);
     text-decoration: none;
     color: $textColor;

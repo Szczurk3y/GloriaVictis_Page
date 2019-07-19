@@ -1,6 +1,5 @@
 @import "../../scss/mixins";
 @import "../../scss/variables";
-
 * {
     @include commonPageStylizer;
 }
@@ -26,7 +25,7 @@
     height: 40%;
     width: 100%;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     &:first-child {
         @include wrapper(1050px) {
             height: 100%;
@@ -39,7 +38,6 @@
             width: 55%;
         }
     }
-    
 }
 
 .header {
@@ -87,7 +85,7 @@
     justify-content: center;
     height: 25%;
     color: $textColor;
-    font-size: -webkit-calc(2vw + 2vh);    
+    font-size: -webkit-calc(2vw + 2vh);
     @include textDecoration;
     letter-spacing: 0.3rem;
     justify-content: center;
