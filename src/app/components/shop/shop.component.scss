@@ -1,0 +1,85 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+* {
+    @include commonPageStylizer;
+}
+
+#shop {
+    width: 100vw;
+    height: 100vh;
+    background: url("/../assets/shop/background/background.png") no-repeat;
+    background-size: 150% 110%;
+    background-position-x: 40%;
+    position: relative;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    @include wrapper(1050px) {
+        background-size: 100% 110%;
+    }
+    @include wrapper(1600px) {
+
+    }
+}
+
+.content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    @include textDecoration;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    color: $textColor;
+    text-align: right;
+    font-size: -webkit-calc(0.7vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25%;
+    margin-right: 10%;
+    line-height: 2.5vw;
+    padding: 10%;
+    padding-top: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.1vw;
+    span {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        text-align: right;
+        width: 100%;
+        color: $redColor;
+        font-size: -webkit-calc(2.1vw);
+        letter-spacing: 0.9vw;
+        padding-bottom: 1vw;
+    }
+    #desc {
+        width: 100%;
+        height: 50%;
+        padding: 10%;
+        padding-top: 0;
+        padding-right: 2%;
+    }
+}
+
+.buttonsContainer {
+    display: flex;
+    width: 100%;  
+    justify-content: space-around;
+}
+.button {
+    @include textDecoration;
+    font-size: 150%;
+    width: 35%;
+    height: 130%;
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    letter-spacing: 0.3vw;
+    text-align: center;
+}

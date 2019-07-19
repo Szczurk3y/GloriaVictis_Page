@@ -32,6 +32,6 @@ export class NavComponent implements OnInit {
     setTimeout(() => {
       this.is_a_clicked = false;
       console.log(this.is_a_clicked);
-    }, 500);
+    }, 1000);
   }
 }

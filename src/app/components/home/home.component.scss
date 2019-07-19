@@ -6,11 +6,11 @@
     background: url("/assets/home/background.png") no-repeat;
     background-size: 250% 100%;
     background-position-x: -100vw;
+    position: relative;
     @include wrapper(1050px) {
         background-position-x: 0;
         background-size: 120% 100%;
     }
-
     @include wrapper(1600px) {
         background-size: 100% 100%;
     }
