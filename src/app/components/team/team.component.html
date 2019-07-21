@@ -1,16 +1,25 @@
 <div id="team">
     <div class="content">
         <div class="header">team</div>
-        <div class="description">{{players[(1+abs(i))%this.playersPicture.length].desc}}</div>
+        <div class="description">{{currentDescription}}</div>
     </div>
     <div class="content">
-        <div class="nickname"><span>„</span>{{players[(1+abs(i))%this.playersPicture.length].nickname}}<span>”</span></div>
-        <div class="players">
-            <div class="arrow"><img (click)="onArrowLeftClick()" src="../../../assets/team/arrays/array_left.png" alt="array_left"></div>
-            <div class="side"><img src="{{playersPicture[(0+abs(i))%this.playersPicture.length]}}" alt="sideplayer"></div>
-            <div class="primary"><img src="{{playersPicture[(1+abs(i))%this.playersPicture.length]}}" alt="primaryplayer"></div>
-            <div class="side"><img src="{{playersPicture[(2+abs(i))%this.playersPicture.length]}}" alt="sideplayer"></div>
-            <div class="arrow"><img (click)="onArrowRightClick()" src="../../../assets/team/arrays/array_right.png" alt="array_right"></div>
+        <div class="nickname"><span>„</span>{{currentNickname}}<span>”</span></div>
+        <div (mouseleave)="setDefault()" class="container">
+            <div class="topPlayers">
+                <div *ngFor="let tempPlayer of currentPlayers | slice:0:3" (mouseenter)="div(tempPlayer.nickname, tempPlayer.description)" class="player topPlayer">
+                    <img src="{{tempPlayer.picture}}" alt="playerpicture">
+                </div>
+            </div>
+            <div class="bottomPlayers">
+                <div *ngFor="let tempPlayer of currentPlayers | slice:3:5" (mouseenter)="div(tempPlayer.nickname, tempPlayer.description)" class="player bottomPlayer">
+                    <img src="{{tempPlayer.picture}}" alt="playerpicture">
+                </div>
+            </div>
+        </div>
+        <div class="buttonsContainer">
+            <button mat-flat-button (click)="onCsgoButtonClick()" class="button"><div id="text">&nbsp;Counter Strike</div></button>
+            <button mat-flat-button (click)="onLolButtonClick()" class="button"><div id="text">&nbsp;League of Legends</div></button>
         </div>
     </div>
 </div>

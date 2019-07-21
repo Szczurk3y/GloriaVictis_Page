@@ -10,44 +10,85 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class TeamComponent implements OnInit {
 
-  public players = [];
-  public playersPicture = [];
+  public csgoPlayers = [
+    {
+      nickname: "Szczurk3y",
+      description: "Siema jestem Szczurk3y",
+      picture: "../../../assets/team/players/simple.png"
+    },
+    {
+      nickname: "Głazu",
+      description: "Siema jestem Głazu",
+      picture: "../../../assets/team/players/simple.png"
+    },
+    {
+      nickname: "Kubuś",
+      description: "Siema jestem Kubuś",
+      picture: "../../../assets/team/players/simple.png"
+    },
+    {
+      nickname: "franeklubi",
+      description: "Siema jestem franeklubi",
+      picture: "../../../assets/team/players/simple.png"
+    },
+    {
+      nickname: "kowadło",
+      description: "Siema jestem kowadło",
+      picture: "../../../assets/team/players/simple.png"
+    }
+  ];
+  public lolPlayers = [
+    {
+      nickname: "Szczurk3y2",
+      description: "Siema jestem Szczurk3y2",
+      picture: "../../../assets/team/players/stewie2k.png"
+    },
+    {
+      nickname: "Głazu2",
+      description: "Siema jestem Głazu2",
+      picture: "../../../assets/team/players/stewie2k.png"
+    },
+    {
+      nickname: "Kubuś2",
+      description: "Siema jestem Kubuś2",
+      picture: "../../../assets/team/players/stewie2k.png"
+    },
+    {
+      nickname: "franeklubi2",
+      description: "Siema jestem franeklubi2",
+      picture: "../../../assets/team/players/stewie2k.png"
+    },
+    {
+      nickname: "kowadło2",
+      description: "Siema jestem kowadło2",
+      picture: "../../../assets/team/players/stewie2k.png"
+    }
+  ];
+  public currentPlayers = [];
   public currentDescription: string;
   public currentNickname: string;
-  public currentLeftSidePicture: string;
-  public currentRightSidePicture: string;
-  public currentPrimaryPicture: string;
-  public i: number = 1;
 
   constructor(private _playerService: PlayersServiceService) {
   }
 
   ngOnInit() {
-    this.playersPicture.push("../../../assets/team/players/stewie2k.png");
-    this.playersPicture.push("../../../assets/team/players/neo.png");
-    this.playersPicture.push("../../../assets/team/players/simple.png");
-    this.playersPicture.push("../../../assets/team/players/pashabiceps.png");
-    this.playersPicture.push("../../../assets/team/players/device.png");
-
-    this._playerService.getPlayers().pipe(
-      take(1)
-    ).subscribe((res:any) => {
-      this.players = res.playersList;
-      this.currentDescription = this.players[0].desc;
-      this.currentNickname = this.players[0].nickname;   
-    })
-    this.currentPrimaryPicture = this.playersPicture[1];
+    this.currentPlayers= this.csgoPlayers;
   }
 
-  onArrowLeftClick() {
-    this.i++;
+  onCsgoButtonClick() {
+    this.currentPlayers= this.csgoPlayers;
   }
 
-  onArrowRightClick() {
-    this.i--;
+  onLolButtonClick() {
+    this.currentPlayers = this.lolPlayers;
   }
 
-  abs(n: number): number {
-    return Math.abs(n)
+  div(nick:string, description:string) {
+    this.currentNickname = nick;
+    this.currentDescription = description;
+  }
+  setDefault() {
+    this.currentDescription = "Hover a player to show his description";
+    this.currentNickname = "Hover on a player";
   }
 }

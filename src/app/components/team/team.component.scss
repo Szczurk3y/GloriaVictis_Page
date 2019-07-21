@@ -99,38 +99,19 @@
     }
 }
 
-.players {
+.container {
     width: 100%;
     height: 60%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    ;
     justify-content: center;
     align-items: center;
     transition: all .2s linear;
     @include wrapper(1050px) {
         height: 40%;
     }
-    .arrow {
-        margin: 5%;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-grow: 0;
-        flex-shrink: 0;
-        img {
-            width: 50%;
-            height: 75%;
-            cursor: pointer;
-            &:hover {
-                width: 60%;
-                height: 85%;
-                transition: all .1s linear;
-            }
-        }
-    }
-    .side {
+    .player {
         width: 50px;
         height: 50px;
         display: flex;
@@ -144,6 +125,11 @@
         img {
             width: 150%;
             height: 120%;
+            transition: .6s;
+            cursor: default;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
         @include wrapper(500px) {
             width: 100px;
@@ -154,30 +140,58 @@
             height: 150px;
         }
     }
-    .primary {
-        flex-grow: 0;
-        flex-shrink: 0;
-        margin: 5%;
-        width: 100px;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 100%;
-        box-shadow: -5px 5px 19px 3px #242424;
-        overflow: hidden;
-        img {
-            object-fit: cover;
-            width: 120%;
-            height: 120%;
-        }
-        @include wrapper(500px) {
-            width: 200px;
-            height: 200px;
-        }
-        @include wrapper(1600px) {
-            width: 250px;
-            height: 250px;
-        }
+}
+
+.topPlayers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bottomPlayers {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.topPlayer {
+    &:not(:first-child) {
+        margin-left: 7%;
+    }
+}
+
+.bottomPlayer {
+    margin-top: 2%;
+    &:not(:first-child) {
+        margin-left: 7%;
+    }
+}
+
+.buttonsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    @include wrapper(1050px) {
+        padding-right: 10%;
+        padding-left: 10%;
+        margin: 0;
+    }
+}
+
+.button {
+    @include textDecoration;
+    background-color: red;
+    letter-spacing: 0.7vw;
+    color: white;
+    height: 35px;
+    width: 200px;
+    border-radius: 30px;
+    font-size: 3vw;
+    @include wrapper(1050px) {
+        letter-spacing: 0.3vw;
+        font-size: 100%;
+        height: 50px;
+        width: 300px;
     }
 }
