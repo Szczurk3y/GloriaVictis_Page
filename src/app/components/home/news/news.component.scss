@@ -9,6 +9,10 @@
     justify-content: center;
     width: 100vw;
     height: 65vh;
+    @include wrapper(850px) {
+        width: 100vw;
+        height: 60vh;
+    }
     @include wrapper(1050px) {
         display: block;
         height: 20vw;
@@ -18,11 +22,15 @@
 }
 
 .content {
-    width: 70%;
-    height: 100%;
+    width: 60%;
+    height: 90%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    @include wrapper(850px) {
+        width: 50%;
+        height: 100%;
+    }
     @include wrapper(1050px) {
         width: 100%;
         flex-direction: row;
@@ -47,13 +55,16 @@
             height: 100%;
         }
     }
+    @include wrapper(850px) {
+        max-width: none;
+        max-height: none;
+        height: 100%;
+    }
     @include wrapper(1050px) {
         margin-top: 0;
         width: 30%;
         height: 80%;
         margin-right: 4%;
-        max-width: none;
-        max-height: none;
         &:first-child {
             margin-left: 2%;
         }

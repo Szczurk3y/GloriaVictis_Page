@@ -13,6 +13,8 @@ import { TeamComponent } from './components/team/team.component';
 import { SocialMediaComponent } from './components/home/social-media/social-media.component';
 import { NewsComponent } from './components/home/news/news.component';
 import { ShopComponent } from './components/shop/shop.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { SponsorsComponent } from './components/home/sponsors/sponsors.component';
 
 @NgModule({
    declarations: [
@@ -23,7 +25,9 @@ import { ShopComponent } from './components/shop/shop.component';
       TeamComponent,
       SocialMediaComponent,
       NewsComponent,
-      ShopComponent
+      ShopComponent,
+      ContactComponent,
+      SponsorsComponent
    ],
    imports: [
       BrowserModule,
