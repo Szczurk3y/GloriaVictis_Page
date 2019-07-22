@@ -7,6 +7,7 @@
     background-size: 250% 100%;
     background-position-x: -100vw;
     position: relative;
+    overflow: hidden;
     @include wrapper(1050px) {
         background-position-x: 0;
         background-size: 120% 100%;
@@ -22,17 +23,16 @@
     background: url("../../../assets/home/logo_gora.png") no-repeat center center;
     background-size: 130px 130px;
     @include wrapper(400px) {
+        float: left;
         background-size: 200px 200px;
         height: 200px;
     }
     @include wrapper(1050px) {
-        float: left;
         width: 20vw;
         height: 30vh;
         background-size: 220px 220px;
     }
     @include wrapper(1600px) {
-        float: left;
         background-size: 85% 100%;
         width: 15vw;
         height: 13vw;

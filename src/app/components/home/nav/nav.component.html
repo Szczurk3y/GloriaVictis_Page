@@ -1,8 +1,8 @@
 <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
-<div id="navContainer">
+<div class="container">
     <div class="menu" (click)="expandList()">menu</div>
     <nav class="navigation" [class.activated]="isMenuClicked" [class.disactivated]="!isMenuClicked" [class.scrolling]="is_a_clicked">
-        <ul> 
+        <ul>
             <li>
                 <span class="navigation__item-name--1"></span>
                 <a (click)="onClick()" href="#home">home</a>
@@ -17,7 +17,7 @@
                 <a (click)="onClick()" href="#scores">scores</a>
             </li>
             <li>
-                <span class="navigation__item-name--2"></span>           
+                <span class="navigation__item-name--2"></span>
                 <a (click)="onClick()" href="#contact">contact</a>
             </li>
         </ul>

@@ -3,22 +3,7 @@
 * {
     @include commonPageStylizer;
     @include textDecoration;
-}
-
-#navContainer {
     text-transform: uppercase;
-    @include wrapper(1050px) {
-        float: left;
-        height: 30vh;
-        width: 75vw;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    @include wrapper(1600px) {
-        width: 80vw;
-        height: 7vw;
-    }
 }
 
 .menu {
@@ -26,6 +11,7 @@
     justify-content: center;
     font-family: 'Catamaran', sans-serif;
     letter-spacing: 1vw;
+    clear: both;
     color: complement($color: $redColor);
     cursor: pointer;
     font-size: -webkit-calc(2.5vh + 1vw);
@@ -52,10 +38,9 @@
 .navigation {
     margin-left: 3vw;
     @include wrapper(1050px) {
-        margin: 0;
-        display: flex;
-        position: fixed;
         z-index: 1;
+        margin: 0;
+        position: fixed;
         top: 5%;
         right: 5%;
         &__item-name--1 {

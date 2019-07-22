@@ -3,6 +3,7 @@
 #socialmediaContainer {
     display: none;
     @include wrapper(1050px) {
+        clear: both;
         display: block;
         width: 20vw;
     }

@@ -8,11 +8,11 @@
 #welcomeanimationContainer {
     display: none;
     @include wrapper(1050px) {
-        margin-top: 5%;
         display: flex;
         cursor: default;
         width: 100vw;
         flex-direction: column;
+        margin-top: 8%;
     }
     #top {
         display: flex;
