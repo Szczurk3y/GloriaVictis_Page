@@ -73,6 +73,7 @@ export class TeamComponent implements OnInit {
 
   ngOnInit() {
     this.currentPlayers= this.csgoPlayers;
+    this.setDefault();
   }
 
   onCsgoButtonClick() {
