@@ -1,6 +1,81 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
 #contact {
     width: 100vw;
-    height: 15vh;
+    height: 8vw;
     position: relative;
-    background-color: green;
+    display: flex;
+    background-color: #060b15;
+}
+
+.content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    img {
+        align-self: flex-start;
+        margin-top: 2%;
+    }
+}
+
+.contact {
+    width: 50%;
+    @include textDecoration;
+    margin-top: 2%;
+    align-self: flex-start;
+    font-size: 120%;
+    a {
+        color: red;
+        margin-right: 2%;
+    }
+}
+
+.logo {
+    width: 8vw;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 80%;
+        height: 100%;
+    }
+}
+
+.social {
+    width: 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    div {
+        &:not(:first-child) {
+            margin-left: 10%;
+        }
+    }
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #e5002a;
+    color: white;
+    &:hover {
+        &:first-child {
+            background-color: rgb(60, 90, 153);
+        }
+        &:nth-child(2) {
+            background-color: rgb(131, 58, 180);
+        }
+        &:last-child {
+            background-color: #00acee;
+        }
+    }
 }

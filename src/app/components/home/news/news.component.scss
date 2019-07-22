@@ -41,7 +41,6 @@
     max-width: 322px;
     max-height: 170px;
     margin-top: 5%;
-    border-bottom: solid 1px red;
     align-self: center;
     height: 90%;
     display: flex;
@@ -52,6 +51,7 @@
     &:hover {
         span {
             height: 100%;
+            border: solid 1px red;
         }
     }
     @include wrapper(750px) {
@@ -89,6 +89,7 @@ span {
     background-color: rgba($color: black, $alpha: 0.8);
     width: 100%;
     height: 35%;
+    border-bottom: solid 1px red;
     font-size: -webkit-calc(1.5vw + 2vh);
     transition: all .2s ease-in;
     color: white;

@@ -4,7 +4,8 @@
     display: none;
     @include wrapper(1050px) {
         clear: both;
-        display: block;
+        display: flex;
+        justify-content: center;
         width: 20vw;
     }
     @include wrapper(1600px) {
@@ -16,14 +17,6 @@ div {
     &:not(:last-child) {
         margin-right: 5%;
     }
-}
-
-ul {
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
 }
 
 .icon {
