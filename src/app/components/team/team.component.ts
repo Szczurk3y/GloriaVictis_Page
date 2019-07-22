@@ -90,6 +90,6 @@ export class TeamComponent implements OnInit {
   }
   setDefault() {
     this.currentDescription = "Hover a player to show his description";
-    this.currentNickname = "Hover on a player";
+    this.currentNickname = "Hover on player";
   }
 }

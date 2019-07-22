@@ -101,14 +101,13 @@ li {
 }
 
 a {
-    color: $textColor;
     transform: translate(5vw);
     animation: loaderNav .8s ease-in-out;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5vw;
     font-size: -webkit-calc(2vh + 1vw);
     text-decoration: none;
-    color: $textColor;
+    color: white;
     display: block;
     padding: 1vh;
     text-align: left;

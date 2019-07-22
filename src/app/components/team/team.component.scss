@@ -8,7 +8,8 @@
     width: 100vw;
     height: 100vh;
     background: url("/../assets/team/background/background.png") no-repeat;
-    background-size: 300% 100%;
+    background-size: 400% 100%;
+    background-position-x: 10%;
     @include wrapper(1050px) {
         background-size: 100% 100%;
         display: flex;
@@ -51,9 +52,9 @@
     align-items: center;
     font-family: 'Catamaran', sans-serif;
     @include wrapper(1050px) {
+        font-size: -webkit-calc(3vw + 2vh);
         margin-left: 0;
-        letter-spacing: 2rem;
-        font-size: 4rem;
+        letter-spacing: 3rem;
         align-self: flex-end;
     }
     @include wrapper(1600px) {
@@ -72,7 +73,6 @@
     @include textDecoration;
     @include wrapper(1050px) {
         margin-left: 0;
-        font-size: 1rem;
         line-height: 3rem;
         height: 40%;
         align-self: flex-end;
@@ -86,12 +86,11 @@
     font-size: -webkit-calc(2vw + 2vh);
     @include textDecoration;
     letter-spacing: 0.3rem;
-    justify-content: center;
     align-items: flex-end;
     @include wrapper(1050px) {
-        margin: 0;
-        height: 30%;
-        font-size: 2rem;
+        font-size: 3rem;
+        padding-top: 15%;
+        padding-bottom: 5%;
         letter-spacing: 0.7rem;
     }
     span {
@@ -119,15 +118,18 @@
         flex-grow: 0;
         flex-shrink: 0;
         overflow: hidden;
-        box-shadow: -5px 5px 19px 3px #242424;
         img {
             width: 150%;
             height: 120%;
             transition: .6s;
-            cursor: default;
+            cursor: pointer;
             &:hover {
                 transform: scale(1.2);
             }
+        }
+        &:hover {
+            transition: 1s;
+            box-shadow: 0 0 50px 1px $redColor;
         }
         @include wrapper(400px) {
             width: 100px;
@@ -136,6 +138,14 @@
         @include wrapper(550px) {
             width: 150px;
             height: 150px;
+        }
+        @include wrapper(800px) {
+            width: 175px;
+            height: 175px;
+        }
+        @include wrapper(1050px) {
+            width: 200px;
+            height: 200px;
         }
     }
 }
@@ -169,7 +179,7 @@
 .buttonsContainer {
     display: flex;
     justify-content: space-around;
-    @include wrapper(1050px) {
+    @include wrapper(750px) {
         padding-right: 10%;
         padding-left: 10%;
         margin: 0;
