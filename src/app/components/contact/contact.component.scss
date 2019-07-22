@@ -27,6 +27,8 @@
     margin-top: 2%;
     align-self: flex-start;
     font-size: 120%;
+    line-height: 2.5rem;
+    ;
     a {
         color: red;
         margin-right: 2%;
@@ -44,7 +46,7 @@
     }
 }
 
-.social {
+.icons {
     width: 8vw;
     display: flex;
     flex-direction: row;
@@ -57,8 +59,8 @@
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,6 +69,7 @@
     border-radius: 50%;
     background-color: #e5002a;
     color: white;
+    font-size: 150%;
     &:hover {
         &:first-child {
             background-color: rgb(60, 90, 153);
