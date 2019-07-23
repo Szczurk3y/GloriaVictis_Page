@@ -39,6 +39,8 @@
         display: none;
         @include wrapper(1050px) {
             display: block;
+            width: 50vw;
+            height: 50vw;
         }
     }
     &:nth-child(2) {
@@ -111,7 +113,7 @@
     width: 100%;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
     @include wrapper(1050px) {
         justify-content: center;
         margin: 0;
@@ -128,7 +130,7 @@
     text-transform: uppercase;
     max-width: 300px;
     font-size: 20px;
-    @include wrapper(750px) {
+    @include wrapper(850px) {
         margin: 0;
         letter-spacing: 0.3vw;
         font-size: 20px;
