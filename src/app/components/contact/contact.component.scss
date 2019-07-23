@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     margin-left: 10%;
-    img {
+    img { 
         align-self: flex-start;
         margin-top: 2%;
     }
@@ -26,9 +26,10 @@
     @include textDecoration;
     margin-top: 2%;
     align-self: flex-start;
-    font-size: 120%;
+    font-size: 150%;
     line-height: 2.5rem;
-    ;
+    font-family: 'Darker Grotesque', sans-serif;
+    letter-spacing: 1px;
     a {
         color: red;
         margin-right: 2%;
@@ -36,7 +37,7 @@
 }
 
 .logo {
-    width: 8vw;
+    width: 7vw;
     height: 7vw;
     display: flex;
     justify-content: center;

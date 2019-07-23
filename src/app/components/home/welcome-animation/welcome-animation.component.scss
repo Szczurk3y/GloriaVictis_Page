@@ -7,14 +7,15 @@
 
 #welcomeanimationContainer {
     display: none;
+    cursor: default;
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 8%;
     @include wrapper(1050px) {
         display: flex;
-        cursor: default;
-        width: 100vw;
-        flex-direction: column;
-        margin-top: 8%;
     }
     #top {
+        font-size: -webkit-calc(1vh + 2vw);
         display: flex;
         justify-content: center;
         width: 100%;
@@ -25,9 +26,6 @@
             color: $redColor;
         }
         animation: moveInRight 1s ease-out;
-        @include wrapper(1050px) {
-            font-size: -webkit-calc(1vh + 2vw);
-        }
     }
     #bottom {
         display: flex;
@@ -35,11 +33,10 @@
         width: 100%;
         letter-spacing: 0.5vw;
         color: $complementColor;
-        font-size: -webkit-calc(1vw + 1vh);
+        font-size: -webkit-calc(1vw + 0.5vh);
         animation: moveInLeft 1s ease-out;
-        @include wrapper(1050px) {
-            font-size: -webkit-calc(1vh + 0.5vw);
-        }
+        font-family: 'Darker Grotesque', sans-serif;
+        font-weight: bold;
     }
 }
 

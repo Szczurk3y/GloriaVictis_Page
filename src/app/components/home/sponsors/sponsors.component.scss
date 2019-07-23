@@ -22,13 +22,14 @@
 
 span {
     @include wrapper(1050px) {
+        font-family: 'Darker Grotesque', sans-serif;
         width: 15%;
         margin-top: 1%;
         align-self: flex-start;
         text-align: center;
-        font-family: 'Courgette', cursive;
         color: #fff;
-        font-size: 2rem;
+        font-size: 2.5rem;
+        font-weight: bold;
         letter-spacing: 5px;
         cursor: default;
     }
