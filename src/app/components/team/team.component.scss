@@ -179,14 +179,13 @@
     display: flex;
     justify-content: space-around;
     @include wrapper(750px) {
-        padding-right: 10%;
-        padding-left: 10%;
         margin-top: 5%;
+        justify-content: space-around;
+        width: 70%;
     }
 }
 
 .button {
-    @include textDecoration;
     letter-spacing: 0.7vw;
     background-color: red;
     color: white;
@@ -194,9 +193,12 @@
     border-radius: 30px;
     font-size: 50%;
     font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Darker Grotesque', sans-serif;
     @include wrapper(750px) {
         letter-spacing: 0.3vw;
-        font-size: 100%;
+        font-size: 120%;
         height: 50px;
+        width: 350px;
     }
 }

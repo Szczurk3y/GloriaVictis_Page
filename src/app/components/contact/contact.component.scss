@@ -16,24 +16,24 @@
     align-items: center;
     justify-content: center;
     margin-left: 5%;
-    img { 
+    img {
         align-self: flex-start;
-        width: 35%;
-        height: 15%;
+        width: 25vw;
+        height: 4vw;
         @include wrapper(1050px) {
             margin-top: 2%;
             width: auto;
-            height: auto;;
+            height: auto;
+            ;
         }
     }
     &:last-child {
         margin: 0;
-        width: 35%;        
+        width: 35%;
         flex-direction: row;
         @include wrapper(1050px) {
             justify-content: flex-end;
             margin-right: 5%;
-
         }
     }
     @include wrapper(1050px) {
@@ -57,7 +57,11 @@
             font-size: 100%;
         }
     }
-    @include wrapper(1050px) {
+    @include wrapper(750px) {
+        font-size: 125%;
+        line-height: 1.5rem;
+    }
+    @include wrapper(1000px) {
         margin-top: 1%;
         line-height: 2.5rem;
         font-size: 150%;
@@ -89,7 +93,7 @@
         }
     }
     @include wrapper(1050px) {
-        width: 50%;    
+        width: 50%;
     }
 }
 
@@ -121,7 +125,9 @@
         height: 40px;
         font-size: 125%;
     }
-    @include wrapper(1050px) {
+    @include wrapper(1000px) {
         font-size: 150%;
+        width: 50px;
+        height: 50px;
     }
 }

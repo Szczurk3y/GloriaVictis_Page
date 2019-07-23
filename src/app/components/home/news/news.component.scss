@@ -60,6 +60,8 @@
         height: 100%;
     }
     @include wrapper(1050px) {
+        max-width: none;
+        max-height: none;
         margin-top: 0;
         width: 30%;
         height: 80%;

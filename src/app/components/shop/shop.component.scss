@@ -12,7 +12,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    
     overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
@@ -22,7 +21,6 @@
         background-size: 100% 100%;
         justify-content: center;
         align-items: center;
-        
     }
 }
 
@@ -136,6 +134,7 @@
     color: white;
     border-radius: 50px;
     text-transform: uppercase;
+    font-family: 'Darker Grotesque', sans-serif;
     max-width: 300px;
     font-size: 20px;
     @include wrapper(850px) {
