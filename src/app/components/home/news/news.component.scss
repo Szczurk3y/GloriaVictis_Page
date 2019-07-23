@@ -55,8 +55,8 @@
         }
     }
     @include wrapper(750px) {
-        max-width: none;
-        max-height: none;
+        max-width: 512px;
+        max-height: 247px;
         height: 100%;
     }
     @include wrapper(1050px) {
