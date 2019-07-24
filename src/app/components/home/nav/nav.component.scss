@@ -43,24 +43,6 @@
         position: fixed;
         top: 5%;
         right: 5%;
-        &__item-name--1 {
-            width: 15px;
-            height: 15px;
-            border-left: 1px solid $complementColor;
-            border-bottom: 1px solid $complementColor;
-            position: absolute;
-            bottom: -0.5rem;
-            left: -0.5rem;
-        }
-        &__item-name--2 {
-            width: 15px;
-            height: 15px;
-            border-right: 1px solid $complementColor;
-            border-top: 1px solid $complementColor;
-            position: absolute;
-            right: -0.5rem;
-            top: -0.5rem;
-        }
     }
     @include wrapper(1600px) {
         top: 5%;
