@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatIconModule} from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +15,7 @@ import { NewsComponent } from './components/home/news/news.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SponsorsComponent } from './components/home/sponsors/sponsors.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
    declarations: [
@@ -35,7 +36,9 @@ import { SponsorsComponent } from './components/home/sponsors/sponsors.component
       HttpClientModule,
       BrowserAnimationsModule,
       MatButtonModule,
-      MatCheckboxModule
+      MatCheckboxModule,
+      MatIconModule,
+      AngularFontAwesomeModule
    ],
    providers: [
       NavComponent

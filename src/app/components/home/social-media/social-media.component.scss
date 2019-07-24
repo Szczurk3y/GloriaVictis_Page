@@ -2,27 +2,20 @@
 @import "../../../scss/mixins";
 #socialmediaContainer {
     display: none;
-    @include wrapper(1050px) {
-        clear: both;
+    @include wrapper(1300px) {
+        width: 20vw;
         display: flex;
-        width: 100vw;
+        justify-content: center;
     }
 }
 
-
-
-.content {
-    width: 20vw;
+.icons {
     display: flex;
-    justify-content: center;
+    margin-left: 5%;
     div {
         &:not(:last-child) {
-            margin-right: 5%;
+            margin-right: 20px;
         }
-    }
-    @include wrapper(1600px) {
-        width: 15vw;
-
     }
 }
 
@@ -54,6 +47,11 @@
         height: 60px;
     }
 }
+
+.buttons {
+    width: 25%;
+}
+
 .button {
     letter-spacing: 0.7vw;
     background-color: #6300e5;
@@ -65,8 +63,12 @@
     text-transform: uppercase;
     font-family: 'Darker Grotesque', sans-serif;
     @include wrapper(750px) {
+        margin-right: 5%;
         letter-spacing: 0.3vw;
         font-size: 120%;
         height: 100%;
+    }
+    &:last-child {
+        background-color: rgb(219, 147, 12);
     }
 }

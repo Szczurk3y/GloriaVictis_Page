@@ -1,22 +1,37 @@
-<link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div class="container">
     <div class="menu" (click)="expandList()">menu</div>
     <nav class="navigation" [class.activated]="isMenuClicked" [class.disactivated]="!isMenuClicked" [class.scrolling]="is_a_clicked">
         <ul>
             <li>
-                <a (click)="onClick()" href="#home">&nbsp;home</a>
+                <a mat-flat-button (click)="onClick()" href="#home">
+                    <mat-icon>home</mat-icon>
+                    home
+                </a>
             </li>
             <li>
-                <a (click)="onClick()" href="#team">&nbsp;team</a>
+                <a mat-flat-button (click)="onClick()" href="#team">
+                    <mat-icon>supervisor_account</mat-icon>
+                    team
+                </a>
             </li>
             <li>
-                <a (click)="onClick()" href="#shop">&nbsp;shop</a>
+                <a mat-flat-button (click)="onClick()" href="#shop">
+                    <mat-icon>shopping_cart</mat-icon>
+                    shop
+                </a>
             </li>
             <li>
-                <a (click)="onClick()" href="#scores">&nbsp;trophies</a>
+                <a mat-flat-button (click)="onClick()" href="#scores">
+                    <mat-icon>shopping_cart</mat-icon>
+                    trophies
+                </a>
             </li>
             <li>
-                <a (click)="onClick()" href="#contact">&nbsp;contact</a>
+                <a mat-flat-button (click)="onClick()" href="#contact">
+                    <mat-icon>forum</mat-icon>
+                    contact
+                </a>
             </li>
         </ul>
     </nav>

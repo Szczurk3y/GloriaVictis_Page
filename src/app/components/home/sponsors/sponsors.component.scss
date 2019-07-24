@@ -1,6 +1,5 @@
 @import "../../../scss/variables";
 @import "../../../scss/mixins";
-
 * {
     @include commonPageStylizer;
 }
@@ -14,10 +13,10 @@
         align-items: center;
         flex-direction: column;
     }
-   @include wrapper(1050px) {
+    @include wrapper(1050px) {
         margin-top: 1%;
         flex-direction: row;
-   }
+    }
 }
 
 span {
@@ -28,12 +27,13 @@ span {
         align-self: flex-start;
         text-align: center;
         color: #fff;
-        font-size: 150%;
+        font-size: 200%;
         font-weight: bold;
         letter-spacing: 5px;
         cursor: default;
     }
 }
+
 .sponsors {
     display: flex;
     flex-direction: row;
@@ -60,6 +60,4 @@ span {
         width: 100%;
         height: 100%;
     }
-    
 }
-

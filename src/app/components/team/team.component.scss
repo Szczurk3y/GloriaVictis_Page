@@ -8,6 +8,7 @@
     width: 100vw;
     height: 100vh;
     background: url("/../assets/team/background/background.png") no-repeat;
+    // background-color: #060b15;
     background-size: 400% 100%;
     background-position-x: 10%;
     @include wrapper(1050px) {
@@ -92,7 +93,6 @@
     align-items: flex-end;
     @include wrapper(1050px) {
         font-size: 2.5rem;
-        padding-top: 15%;
         padding-bottom: 5%;
         letter-spacing: 0.7rem;
     }
@@ -143,8 +143,8 @@
             height: 150px;
         }
         @include wrapper(1250px) {
-            width: 175px;
-            height: 175px;
+            width: 200px;
+            height: 200px;
         }
     }
 }
@@ -180,7 +180,7 @@
     justify-content: space-around;
     width: 100%;
     @include wrapper(1050px) {
-        margin-top: 5%;
+        margin-top: 10%;
         justify-content: space-around;
         width: 70%;
     }
@@ -188,14 +188,14 @@
 
 .button {
     letter-spacing: 0.7vw;
-    background-color: red;
+    background-color: #e5002a;
     color: white;
     cursor: pointer;
     border-radius: 30px;
     font-size: 75%;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Darker Grotesque', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     @include wrapper(750px) {
         letter-spacing: 0.3vw;
         font-size: 120%;

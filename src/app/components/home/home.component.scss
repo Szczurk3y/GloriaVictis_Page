@@ -3,11 +3,11 @@
 #home {
     width: 100vw;
     height: 100vh;
-    background: url("/assets/home/background.png") no-repeat;
+    // background: url("/assets/home/background.png") no-repeat;
+    background-color: #060b15;
     background-size: 250% 100%;
     background-position-x: -100vw;
     position: relative;
-    overflow: hidden;
     @include wrapper(1050px) {
         background-position-x: 0;
         background-size: 120% 100%;
@@ -19,23 +19,23 @@
 
 .logo {
     width: 100vw;
-    height: 150px;
-    background: url("../../../assets/home/logo_gora.png") no-repeat center center;
-    background-size: 130px 130px;
-    @include wrapper(400px) {
-        float: left;
-        background-size: 200px 200px;
-        height: 200px;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 100px;
+        height: 100px;
+        @include wrapper(700px) {
+            width: 200px;
+            height: 200px;
+        }
+        @include wrapper(1300px) {
+            width: 220px;
+            height: 220px;
+        }
     }
-    @include wrapper(1050px) {
-        width: 20vw;
-        height: 30vh;
-        background-size: 220px 220px;
-    }
-    @include wrapper(1600px) {
-        background-size: 85% 100%;
-        width: 15vw;
-        height: 13vw;
+    @include wrapper (1300px) {
+        justify-content: flex-start;
+        margin-left: 2%;
     }
     &:hover {
         cursor: pointer;
