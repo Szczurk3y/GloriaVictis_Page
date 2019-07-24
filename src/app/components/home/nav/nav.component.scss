@@ -74,8 +74,7 @@ ul {
     flex-direction: column;
     @include wrapper(1050px) {
         flex-direction: row;
-        padding: 1vw;
-        width: 50vw;
+        width: 60vw;
         height: 5vw;
     }
 }
@@ -92,7 +91,6 @@ li {
         margin: 0;
         width: 20%;
         height: 2.5vw;
-        align-items: center;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -116,15 +114,11 @@ a {
         transform: none;
         font-size: 1vw;
         padding: 0;
-        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         height: 100%;
-    }
-    @include wrapper(1600px) {
-        font-size: 1vw;
     }
     &:before {
         animation: loaderLine 1s ease-in-out;

@@ -7,6 +7,7 @@
 #newsContainer {
     display: flex;
     justify-content: center;
+    clear: both;
     width: 100vw;
     height: 65vh;
     @include wrapper(750px) {
@@ -14,9 +15,8 @@
         height: 60vh;
     }
     @include wrapper(1050px) {
-        display: block;
+        display: flex;
         height: 20vw;
-        float: left;
     }
 }
 
@@ -54,21 +54,13 @@
             border: solid 1px red;
         }
     }
-    @include wrapper(750px) {
-        max-width: 512px;
-        max-height: 247px;
-        height: 100%;
-    }
     @include wrapper(1050px) {
         max-width: none;
         max-height: none;
         margin-top: 0;
         width: 30%;
         height: 80%;
-        margin-right: 4%;
-        &:first-child {
-            margin-left: 2%;
-        }
+
     }
 }
 

@@ -136,7 +136,7 @@
     text-transform: uppercase;
     font-family: 'Darker Grotesque', sans-serif;
     max-width: 300px;
-    font-size: 20px;
+    font-size: 75%;
     @include wrapper(850px) {
         margin: 0;
         letter-spacing: 0.3vw;

@@ -178,7 +178,8 @@
 .buttonsContainer {
     display: flex;
     justify-content: space-around;
-    @include wrapper(750px) {
+    width: 100%;
+    @include wrapper(1050px) {
         margin-top: 5%;
         justify-content: space-around;
         width: 70%;
@@ -191,7 +192,7 @@
     color: white;
     cursor: pointer;
     border-radius: 30px;
-    font-size: 50%;
+    font-size: 75%;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Darker Grotesque', sans-serif;

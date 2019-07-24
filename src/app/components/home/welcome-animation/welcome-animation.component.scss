@@ -10,7 +10,6 @@
     cursor: default;
     width: 100vw;
     flex-direction: column;
-    margin-top: 8%;
     @include wrapper(1050px) {
         display: flex;
     }

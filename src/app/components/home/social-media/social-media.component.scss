@@ -5,17 +5,24 @@
     @include wrapper(1050px) {
         clear: both;
         display: flex;
-        justify-content: center;
-        width: 20vw;
-    }
-    @include wrapper(1600px) {
-        width: 15vw;
+        width: 100vw;
     }
 }
 
-div {
-    &:not(:last-child) {
-        margin-right: 5%;
+
+
+.content {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    div {
+        &:not(:last-child) {
+            margin-right: 5%;
+        }
+    }
+    @include wrapper(1600px) {
+        width: 15vw;
+
     }
 }
 
@@ -45,5 +52,21 @@ div {
         width: 60px;
         font-size: 220%;
         height: 60px;
+    }
+}
+.button {
+    letter-spacing: 0.7vw;
+    background-color: #6300e5;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 75%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Darker Grotesque', sans-serif;
+    @include wrapper(750px) {
+        letter-spacing: 0.3vw;
+        font-size: 120%;
+        height: 100%;
     }
 }

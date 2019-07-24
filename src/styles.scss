@@ -11,6 +11,18 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    width: 1rem;
+    background-color: #0a1224;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: red;
+    outline: 1px solid red;
+    border-radius: 25px;
+}
+
+
 body {
     height: 100%;
     margin: 0;
