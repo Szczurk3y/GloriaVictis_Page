@@ -75,8 +75,8 @@
     padding: 10%;
     padding-top: 10%;
     font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: 0.1vw;
     @include wrapper(1050px) {
+        width: auto;
         justify-content: center;
         align-items: center;
         text-align: right;
@@ -89,9 +89,12 @@
         text-align: center;
         width: 100%;
         color: $redColor;
-        font-size: -webkit-calc(4vw);
+        font-size: 115%;
         letter-spacing: 0.9vw;
         padding-bottom: 3vw;
+        @include wrapper(700px) {
+            font-size: 30px;
+        }
         @include wrapper(1050px) {
             font-size: -webkit-calc(2.1vw);
             text-align: right;
@@ -100,9 +103,14 @@
     }
     #desc {
         width: 100%;
-        font-size: -webkit-calc(2vw);
-        line-height: 4vw;
+        font-size: 7px;
+        line-height: 20px;
         text-align: center;
+        letter-spacing: 1px;
+        @include wrapper(700px) {
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
         @include wrapper(1050px) {
             font-size: -webkit-calc(0.7vw);
             line-height: 2.5vw;

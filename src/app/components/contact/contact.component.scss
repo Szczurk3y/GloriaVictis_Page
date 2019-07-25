@@ -16,17 +16,6 @@
     align-items: center;
     justify-content: center;
     margin-left: 5%;
-    img {
-        align-self: flex-start;
-        width: 25vw;
-        height: 4vw;
-        @include wrapper(1050px) {
-            margin-top: 2%;
-            width: auto;
-            height: auto;
-            ;
-        }
-    }
     &:last-child {
         margin: 0;
         width: 35%;
@@ -50,6 +39,14 @@
     letter-spacing: 1px;
     line-height: 1rem;
     margin-top: 5%;
+    span {
+        font-size: 200%;
+        letter-spacing: 5px;
+        @include wrapper (1050px) {
+            font-size: 200%;
+            letter-spacing: 10px;
+        }
+    }
     a {
         color: red;
         margin-right: 1%;

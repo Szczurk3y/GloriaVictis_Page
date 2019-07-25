@@ -16,6 +16,7 @@ import { ShopComponent } from './components/shop/shop.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SponsorsComponent } from './components/home/sponsors/sponsors.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { HomeMiddleButtonsComponent } from './components/home/home-middle-buttons/home-middle-buttons.component';
 
 @NgModule({
    declarations: [
@@ -28,7 +29,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
       NewsComponent,
       ShopComponent,
       ContactComponent,
-      SponsorsComponent
+      SponsorsComponent,
+      HomeMiddleButtonsComponent
    ],
    imports: [
       BrowserModule,

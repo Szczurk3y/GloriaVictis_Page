@@ -1,10 +1,8 @@
 <div id="team">
-    <div class="content">
-        <div class="header">team</div>
-        <div class="description">{{currentDescription}}</div>
+    <div class="content--1">
+        <div class="description"><span>„{{currentNickname}}”</span><br/><br/>{{currentDescription}}</div>
     </div>
-    <div class="content">
-        <div class="nickname"><span>„</span>{{currentNickname}}<span>”</span></div>
+    <div class="content--2">
         <div (mouseleave)="setDefault()" class="container">
             <div class="topPlayers">
                 <div *ngFor="let tempPlayer of currentPlayers | slice:0:3" (mouseenter)="div(tempPlayer.nickname, tempPlayer.description)" class="player topPlayer">

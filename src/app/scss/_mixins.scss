@@ -5,6 +5,12 @@
     }
 }
 
+@mixin wrapperHW($arg...) {
+    @media screen and (max-height: nth($list: $arg, $n: 1)) {
+        @content;
+    }
+}
+
 @mixin commonPageStylizer {
     padding: 0;
     margin: 0;

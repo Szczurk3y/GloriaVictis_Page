@@ -6,7 +6,7 @@
 
 #newsContainer {
     display: flex;
-    clear: both;
+    flex-shrink: 2;
 }
 
 .content {
@@ -16,17 +16,36 @@
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
+    flex-shrink: 2;
     width: 100vw;
-    @include wrapper(1300px) {
-        flex-flow: nowrap;
+    @include wrapper(1300px) {}
+}
+
+.button {
+    letter-spacing: 0.7vw;
+    background-color: #6300e5;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 75%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Darker Grotesque', sans-serif;
+    @include wrapper(750px) {
+        letter-spacing: 0.3vw;
+        font-size: 120%;
+        height: 100%;
+        width: 100%;
     }
 }
 
-.squats {
-    margin-top: 5%;
+li {
+    margin-top: 5vh;
     align-self: center;
-    width: 75vw;
-    height: 35vw;
+    width: 73vw;
+    height: 36vw;
+    max-width: 327px;
+    max-height: 161px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -38,7 +57,18 @@
             border: solid 1px red;
         }
     }
+    &:nth-child(4) {
+        width: 250px;
+        height: auto;
+    }
+    &:nth-child(5) {
+        width: 250px;
+        height: auto;
+    }
     @include wrapper(600px) {
+        max-width: none;
+        max-height: none;
+        box-shadow: 0px 0px 50px 10px #000000;
         width: 300px;
         height: 150px;
     }
@@ -47,13 +77,16 @@
         height: 200px;
     }
     @include wrapper(1200px) {
-        margin-top: 2%;
+        margin-top: 2vh;
         width: 450px;
         height: 240px;
     }
-    @include wrapper(1599px) {
+    @include wrapper(1600px) {
         width: 520px;
         height: 285px;
+    }
+    @include wrapper(1800px) {
+        width: 550px;
     }
 }
 

@@ -7,97 +7,77 @@
 #team {
     width: 100vw;
     height: 100vh;
-    background: url("/../assets/team/background/background.png") no-repeat;
-    // background-color: #060b15;
-    background-size: 400% 100%;
-    background-position-x: 10%;
+    background-color: #101d36;
+    position: relative;
     @include wrapper(1050px) {
         background-size: 100% 100%;
         display: flex;
         flex-direction: row;
-        position: relative;
     }
 }
 
-.content {
-    height: 30%;
+.content--1 {
     width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    @include wrapper(1050px) {
+        height: 100%;
+        width: 45%;
+    }
+}
+
+.content--2 {
+    width: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
-    &:first-child {
-        @include wrapper(1050px) {
-            height: 100%;
-            width: 45%;
-        }
-    }
-    &:last-child {
-        height: 60%;
-        justify-content: flex-end;
-        align-items: center;
-        @include wrapper(1050px) {
-            justify-content: center;
-            height: 100%;
-            width: 55%;
-        }
-    }
-}
-
-.header {
-    @include textDecoration;
-    margin-top: 20%;
-    color: $redColor;
-    font-size: -webkit-calc(2vw + 2vh);
-    letter-spacing: 10px;
-    width: 85%;
-    height: 30%;
-    display: flex;
-    margin-left: 10%;
     align-items: center;
-    font-family: 'Catamaran', sans-serif;
-    @include wrapper(1050px) {
-        font-size: -webkit-calc(3vw + 2vh);
-        margin-left: 0;
-        letter-spacing: 3rem;
-        align-self: flex-end;
+    @include wrapper(800px) {
+        justify-content: space-evenly;
     }
-    @include wrapper(1600px) {
-        margin-top: 0;
+    @include wrapper(1050px) {
+        justify-content: space-evenly;
+        height: 100%;
+        width: 55%;
     }
 }
 
 .description {
-    font-size: -webkit-calc(0.5vw + 1vh);
-    line-height: -webkit-calc(0.5vw + 2vh);
-    width: 85%;
-    display: flex;
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 100%;
+    line-height: 20px;
     color: $textColor;
     letter-spacing: 0.2rem;
-    margin-left: 10%;
-    @include textDecoration;
-    @include wrapper(1050px) {
-        margin-left: 0;
-        line-height: 3rem;
-        height: 40%;
-        align-self: flex-end;
-    }
-}
-
-.nickname {
     display: flex;
-    justify-content: center;
-    color: $textColor;
-    font-size: -webkit-calc(2vw + 1vh);
-    @include textDecoration;
-    letter-spacing: 0.3rem;
-    align-items: flex-end;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
     @include wrapper(1050px) {
-        font-size: 2.5rem;
-        padding-bottom: 5%;
-        letter-spacing: 0.7rem;
+        width: 80%;
+        margin-left: 0;
+        line-height: 1rem;
     }
     span {
-        color: $complementColor;
+        font-size: 20px;
+        letter-spacing: 7px;
+        display: flex;
+        justify-content: center;
+        color: $redColor;
+        font-weight: bold;
+        font-family: 'Catamaran', sans-serif;
+        @include wrapper(1250px) {
+            font-size: 30px;
+            letter-spacing: 10px;
+        }
+        @include wrapper(1600px) {
+            font-size: 300%;
+            letter-spacing: 10px;
+        }
     }
 }
 
@@ -121,6 +101,7 @@
         flex-grow: 0;
         flex-shrink: 0;
         overflow: hidden;
+        box-shadow: 0 0 75px 1px black;
         img {
             width: 150%;
             height: 120%;
@@ -131,18 +112,18 @@
             }
         }
         &:hover {
-            transition: 1s;
+            transition: .7s;
             box-shadow: 0 0 75px 1px $redColor;
         }
         @include wrapper(400px) {
             width: 100px;
             height: 100px;
         }
-        @include wrapper(750px) {
+        @include wrapper(700px) {
             width: 150px;
             height: 150px;
         }
-        @include wrapper(1250px) {
+        @include wrapper(1600px) {
             width: 200px;
             height: 200px;
         }
@@ -179,10 +160,8 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    @include wrapper(1050px) {
-        margin-top: 10%;
+    @include wrapper(1350px) {
         justify-content: space-around;
-        width: 70%;
     }
 }
 
@@ -192,14 +171,16 @@
     color: white;
     cursor: pointer;
     border-radius: 30px;
-    font-size: 75%;
+    font-size: 50%;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
-    @include wrapper(750px) {
+    @include wrapper(450px) {
+        font-size: 75%;
+    }
+    @include wrapper(800px) {
         letter-spacing: 0.3vw;
-        font-size: 120%;
+        font-size: 100%;
         height: 50px;
-        width: 350px;
     }
 }

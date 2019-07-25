@@ -67,6 +67,7 @@ export class TeamComponent implements OnInit {
   public currentPlayers = [];
   public currentDescription: string;
   public currentNickname: string;
+  public csgoButtonClicked: boolean = true;
 
   constructor(private _playerService: PlayersServiceService) {
   }
@@ -78,10 +79,13 @@ export class TeamComponent implements OnInit {
 
   onCsgoButtonClick() {
     this.currentPlayers= this.csgoPlayers;
+    this.csgoButtonClicked = true;
   }
 
   onLolButtonClick() {
     this.currentPlayers = this.lolPlayers;
+    this.csgoButtonClicked = false;
+
   }
 
   div(nick:string, description:string) {
