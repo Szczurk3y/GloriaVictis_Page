@@ -17,13 +17,13 @@ li {
     width: 150px;
     margin-top: 5vh;
     height: 30px;
-    @include wrapper(700px) {
+    @include wrapper(800px) {
         width: 250px;
         height: 50px;
     }
     &:nth-child(2) {
         display: block;
-        @include wrapper(1300px) {
+        @include wrapper(1350px) {
             display: none;
         }
     }

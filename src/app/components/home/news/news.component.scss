@@ -15,6 +15,9 @@
 
 .disactivated {
     display: none;
+    @include wrapper(1300px) {
+        display: flex;
+    }
 }
 
 .content {
@@ -42,19 +45,17 @@ li {
     align-items: flex-end;
     cursor: pointer;
     transition: all .2s ease-in;
+    &:nth-child(3) {
+        display: none;
+        @include wrapper(600px) {
+            display: flex;
+        }
+    }
     &:hover {
         span {
             height: 100%;
             border: solid 1px red;
         }
-    }
-    &:nth-child(4) {
-        width: 250px;
-        height: auto;
-    }
-    &:nth-child(5) {
-        width: 250px;
-        height: auto;
     }
     @include wrapper(600px) {
         max-width: none;
