@@ -47,7 +47,7 @@
 
 .description {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 20px;
     width: 100%;
     line-height: 20px;
     color: $textColor;
@@ -59,10 +59,10 @@
     @include wrapper(1050px) {
         width: 80%;
         margin-left: 0;
-        line-height: 1rem;
+        line-height: 25px;
     }
     span {
-        font-size: 20px;
+        font-size: 40px;
         letter-spacing: 7px;
         display: flex;
         justify-content: center;
@@ -70,7 +70,7 @@
         font-weight: bold;
         font-family: 'Catamaran', sans-serif;
         @include wrapper(1250px) {
-            font-size: 30px;
+            font-size: 50px;
             letter-spacing: 10px;
         }
         @include wrapper(1600px) {
