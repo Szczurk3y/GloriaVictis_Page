@@ -2,27 +2,19 @@
 @import "../../scss/variables";
 #home {
     width: 100vw;
-    min-height: 100vh;
-    // background: url("/assets/home/background.png") no-repeat;
+    height: 100vh;
+    overflow: hidden;
     background-color: #0e1a31;
-    background-size: 250% 100%;
-    background-position-x: -100vw;
     position: relative;
     display: flex;
     flex-direction: column;
-    @include wrapper(1050px) {
-        background-position-x: 0;
-        background-size: 120% 100%;
-    }
-    @include wrapper(1600px) {
-        background-size: 100% 100%;
-    }
 }
 
 .content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-flow: row wrap;
+    height: 70vh;
 }
 
 .logo {
@@ -32,20 +24,35 @@
     img {
         width: 100px;
         height: 100px;
-        @include wrapper(700px) {
-            width: 200px;
-            height: 200px;
-        }
-        @include wrapper(1300px) {
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+/* Media screen */
+
+@include wrapper(700px) {
+    .logo img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@include wrapper(1300px) {
+    .logo {
+        justify-content: flex-start;
+        margin-left: 2%;
+        img {
             width: 220px;
             height: 220px;
         }
     }
-    @include wrapper (1300px) {
-        justify-content: flex-start;
-        margin-left: 2%;
-    }
-    &:hover {
-        cursor: pointer;
+}
+
+@include wrapper(1600px) {
+    #home {
+        min-height: 100vh;
     }
 }

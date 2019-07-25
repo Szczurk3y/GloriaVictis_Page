@@ -2,11 +2,6 @@
 @import "../../../scss/mixins";
 #socialmediaContainer {
     display: none;
-    @include wrapper(1300px) {
-        width: 20vw;
-        display: flex;
-        justify-content: center;
-    }
 }
 
 .icons {
@@ -41,11 +36,6 @@
             background-color: #00acee;
         }
     }
-    @include wrapper(1050px) {
-        width: 60px;
-        font-size: 220%;
-        height: 60px;
-    }
 }
 
 .buttons {
@@ -62,13 +52,35 @@
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Darker Grotesque', sans-serif;
-    @include wrapper(750px) {
+    &:last-child {
+        background-color: rgb(219, 147, 12);
+    }
+}
+
+
+/* Media screen */
+
+@include wrapper(750px) {
+    .button {
         margin-right: 5%;
         letter-spacing: 0.3vw;
         font-size: 120%;
         height: 100%;
     }
-    &:last-child {
-        background-color: rgb(219, 147, 12);
+}
+
+@include wrapper(1050px) {
+    .icon {
+        width: 60px;
+        font-size: 220%;
+        height: 60px;
+    }
+}
+
+@include wrapper(1300px) {
+    #socialmediaContainer {
+        width: 20vw;
+        display: flex;
+        justify-content: center;
     }
 }

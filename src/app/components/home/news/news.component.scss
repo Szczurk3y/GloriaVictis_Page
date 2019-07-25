@@ -5,8 +5,7 @@
 }
 
 #newsContainer {
-    display: flex;
-    flex-shrink: 2;
+    display: block;
 }
 
 .activated {
@@ -26,15 +25,14 @@
     list-style: none;
     display: flex;
     justify-content: space-around;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     flex-shrink: 2;
     width: 100vw;
-    @include wrapper(1300px) {}
 }
 
 li {
-    box-shadow: 0px 0px 50px 10px #000000;
     margin-top: 5vh;
+    box-shadow: 0px 0px 30px 0 #000000;
     align-self: center;
     width: 73vw;
     height: 36vw;
@@ -47,37 +45,12 @@ li {
     transition: all .2s ease-in;
     &:nth-child(3) {
         display: none;
-        @include wrapper(600px) {
-            display: flex;
-        }
     }
     &:hover {
         span {
             height: 100%;
             border: solid 1px red;
         }
-    }
-    @include wrapper(600px) {
-        max-width: none;
-        max-height: none;
-        width: 300px;
-        height: 150px;
-    }
-    @include wrapper(750px) {
-        width: 375px;
-        height: 200px;
-    }
-    @include wrapper(1200px) {
-        margin-top: 2vh;
-        width: 450px;
-        height: 240px;
-    }
-    @include wrapper(1600px) {
-        width: 520px;
-        height: 285px;
-    }
-    @include wrapper(1800px) {
-        width: 550px;
     }
 }
 
@@ -111,4 +84,58 @@ span {
     font-weight: bold;
     justify-content: center;
     align-items: center;
+}
+
+
+/* Media screen */
+
+@include wrapper(600px) {
+    li {
+        max-width: none;
+        max-height: none;
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@include wrapper(700px) {
+    .content {
+        flex-flow: row wrap;
+    }
+    li {
+        margin-top: 0;
+    }
+}
+
+@include wrapper(750px) {
+    li {
+        width: 375px;
+        height: 200px;
+    }
+}
+
+@include wrapper(1200px) {
+    li {
+        width: 450px;
+        height: 240px;
+    }
+}
+
+@include wrapper(1350px) {
+    li:nth-child(3) {
+        display: flex;
+    }
+}
+
+@include wrapper(1600px) {
+    li {
+        width: 520px;
+        height: 285px;
+    }
+}
+
+@include wrapper(1800px) {
+    li {
+        width: 550px;
+    }
 }

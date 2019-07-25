@@ -2,57 +2,130 @@
 @import "../../../scss/variables";
 .container {
     width: 100vw;
-    padding-top: 20px;
-    @include wrapper(700px) {}
-}
-
-ul {
-    list-style: none;
     display: flex;
     justify-content: space-evenly;
-    flex-flow: row wrap;
-}
-
-li {
-    width: 150px;
-    margin-top: 5vh;
-    height: 30px;
-    @include wrapper(800px) {
-        width: 250px;
-        height: 50px;
+    ul {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5vw;
     }
-    &:nth-child(2) {
-        display: block;
-        @include wrapper(1350px) {
-            display: none;
+    li {
+        width: 150px;
+        margin-top: 5vh;
+        height: 30px;
+    }
+    .button {
+        text-transform: uppercase;
+        background-color: #6300e5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        letter-spacing: 5px;
+        color: white;
+        cursor: pointer;
+        transition: all .3s linear;
+        mat-icon {
+            color: white;
+            font-size: 1.5rem;
+        }
+        &:hover {
+            background-color: rgba(#6300e5, 0.8);
+        }
+    }
+    .social-media {
+        background: transparent;
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid #e5002a;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        color: white;
+        transition: all .3s linear;
+    }
+    .icon {
+        cursor: pointer;
+        transition: all .1s linear;
+        &:hover {
+            &:first-child {
+                color: rgb(79, 119, 206);
+            }
+            &:nth-child(2) {
+                color: #e5002a;
+            }
+            &:last-child {
+                color: #00acee;
+            }
+        }
+        cursor: pointer;
+    }
+    /* Media screen */
+    @include wrapper(600px) {
+        .icon {
+            font-size: 1.5rem;
+        }
+        .button {
+            font-size: 75%;
+        }
+        li {
+            width: 250px;
+            height: 50px;
+        }
+    }
+    @include wrapper(700px) {
+        .social-media {
+            border: 1px solid #6300e5;
+        }
+    }
+    @include wrapper(750px) {
+        li {
+            width: 300px;
+            height: 50px;
+        }
+    }
+    @include wrapper(900px) {
+        .container {
+            width: 80vw;
+        }
+    }
+    @include wrapper(1100px) {
+        li {
+            width: 350px;
+            height: 60px;
+        }
+    }
+    @include wrapper(1300px) {
+        .icon {
+            font-size: 2.5rem;
+        }
+        .button {
+            font-size: 1rem;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        li {
+            width: 320px;
+            height: 65px;
         }
     }
 }
 
-a {
-    text-transform: uppercase;
-    background-color: #6300e5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 3px;
-    letter-spacing: 5px;
-    color: white;
-    cursor: pointer;
-    transition: all .3s linear;
-    mat-icon {
-        color: white;
-        font-size: 1.5rem;
+@include wrapper(1300px) {
+    .container {
+        width: 100vw;
+        display: block;
     }
-    @include wrapper(700px) {
-        font-size: 75%;
-    }
-    @include wrapper(1300px) {
-        font-size: 1rem;
-    }
-    &:hover {
-        background-color: rgba(#6300e5, 0.8);
+}
+
+@include wrapper(1700px) {
+    .container {
+        width: 80vw;
     }
 }

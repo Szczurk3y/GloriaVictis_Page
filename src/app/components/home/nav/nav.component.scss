@@ -7,16 +7,6 @@
 
 .navigation {
     margin-left: 3vw;
-    @include wrapper(700px) {
-        margin: 0;
-        display: block;
-    }
-    @include wrapper(1300px) {
-        z-index: 1;
-        position: fixed;
-        top: 50px;
-        right: 100px;
-    }
 }
 
 .menu {
@@ -30,9 +20,6 @@
     border-top: 0.3vw solid white;
     justify-content: center;
     border-radius: 2px;
-    @include wrapper(700px) {
-        display: none;
-    }
 }
 
 .hamburger {
@@ -43,7 +30,7 @@
     position: relative;
     top: 10px;
     right: 20px;
-    transition: .3s all linear;
+    transition: .3s transform linear;
     &::before,
     &::after {
         content: '';
@@ -56,7 +43,7 @@
     }
     &::after {
         transform: translateY(25px);
-        transition: .3s all linear;
+        transition: .3s transform linear;
     }
 }
 
@@ -90,12 +77,6 @@ ul {
     list-style: none;
     flex-direction: column;
     width: 100vw;
-    @include wrapper(700px) {
-        flex-direction: row;
-    }
-    @include wrapper(1300px) {
-        width: 1000px;
-    }
 }
 
 li {
@@ -103,13 +84,6 @@ li {
     min-width: 140px;
     &:not(:last-child) {
         margin-bottom: 1%;
-        @include wrapper(700px) {
-            margin-bottom: 0;
-        }
-    }
-    @include wrapper(700px) {
-        width: 20%;
-        height: 50px;
     }
 }
 
@@ -135,19 +109,13 @@ a {
         font-size: 1.5rem;
         margin-bottom: 1%;
     }
-    @include wrapper(700px) {
-        font-size: 75%;
-        justify-content: center;
-        animation: none;
-        border-radius: 0;
-    }
-    @include wrapper(1300px) {
-        font-size: 1rem;
-    }
     &:hover {
         background-color: rgba(#e5002a, 0.8);
     }
 }
+
+
+/* Keyframes */
 
 @keyframes scrollAnimation {
     0% {
@@ -169,5 +137,49 @@ a {
     100% {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+
+/* Media screen */
+
+@include wrapper(700px) {
+    .navigation {
+        margin: 0;
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    ul {
+        flex-direction: row;
+    }
+    li {
+        width: 20%;
+        height: 50px;
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+    a {
+        font-size: 75%;
+        justify-content: center;
+        animation: none;
+        border-radius: 0;
+    }
+}
+
+@include wrapper(1300px) {
+    .navigation {
+        z-index: 1;
+        position: fixed;
+        top: 50px;
+        right: 100px;
+    }
+    ul {
+        width: 1000px;
+    }
+    a {
+        font-size: 1rem;
     }
 }
