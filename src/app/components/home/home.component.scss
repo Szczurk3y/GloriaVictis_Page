@@ -19,6 +19,12 @@
     }
 }
 
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
 .logo {
     width: 100vw;
     display: flex;

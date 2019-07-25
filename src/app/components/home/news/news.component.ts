@@ -10,7 +10,6 @@ export class NewsComponent implements OnInit {
 
   @Input() isMenuClicked: boolean = false;
 
-  public isButtonClicked: boolean = false;
   public imageArray = [];
 
   constructor() {
@@ -24,7 +23,5 @@ export class NewsComponent implements OnInit {
   ngOnInit() {
   }
 
-  click() {
-    this.isButtonClicked = !this.isButtonClicked;
-  }
+  
 }

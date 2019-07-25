@@ -93,7 +93,7 @@ export class TeamComponent implements OnInit {
     this.currentDescription = description;
   }
   setDefault() {
-    this.currentDescription = "Hover a player to show his description";
-    this.currentNickname = "Hover on player";
+    this.currentDescription = "tap player to show his description";
+    this.currentNickname = "tap player";
   }
 }

@@ -8,7 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/home/nav/nav.component';
-import { WelcomeAnimationComponent } from './components/home/welcome-animation/welcome-animation.component';
 import { TeamComponent } from './components/team/team.component';
 import { SocialMediaComponent } from './components/home/social-media/social-media.component';
 import { NewsComponent } from './components/home/news/news.component';
@@ -23,7 +22,6 @@ import { HomeMiddleButtonsComponent } from './components/home/home-middle-button
       AppComponent,
       HomeComponent,
       NavComponent,
-      WelcomeAnimationComponent,
       TeamComponent,
       SocialMediaComponent,
       NewsComponent,

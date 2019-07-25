@@ -1,5 +1,8 @@
 <div id="home">
     <div class="logo"><img src="../../../assets/home/logo_gora.png" alt="logo_gora"></div>
     <div app-nav (menuEvent)="isMenuClicked = $event"> </div>
-    <div app-news [isMenuClicked]="!isMenuClicked"></div>
+    <div class="content">
+        <div app-news></div>
+        <div app-home-middle-buttons (click)="click()"></div>
+    </div>
 </div>
