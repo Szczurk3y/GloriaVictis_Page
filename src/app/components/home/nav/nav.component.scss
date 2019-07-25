@@ -23,12 +23,12 @@
 }
 
 .hamburger {
-    width: 45px;
+    width: 35px;
     border: 0;
-    border-top: 5px solid #e5002a;
+    border-top: 3px solid #e5002a;
     background: transparent;
     position: relative;
-    top: 10px;
+    top: 12px;
     right: 20px;
     transition: .3s transform linear;
     &::before,
@@ -38,17 +38,17 @@
         top: 0;
         left: 0;
         width: 100%;
-        border-top: 5px solid #e5002a;
+        border-top: 3px solid #e5002a;
         transform: translateY(10px);
     }
     &::after {
-        transform: translateY(25px);
+        transform: translateY(23px);
         transition: .3s transform linear;
     }
 }
 
 .hamburgerAnimation {
-    transform: rotate(45deg) translateY(0);
+    transform: rotate(45deg) translateY(-3px);
     border: none;
     &::after {
         transform: rotate(-90deg) translateX(-10px);
