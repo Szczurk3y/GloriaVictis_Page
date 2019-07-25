@@ -9,6 +9,14 @@
     flex-shrink: 2;
 }
 
+.activated {
+    display: flex;
+}
+
+.disactivated {
+    display: none;
+}
+
 .content {
     padding: 0;
     margin: 0;
@@ -21,25 +29,8 @@
     @include wrapper(1300px) {}
 }
 
-.button {
-    letter-spacing: 0.7vw;
-    background-color: #6300e5;
-    color: white;
-    cursor: pointer;
-    border-radius: 3px;
-    font-size: 75%;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Darker Grotesque', sans-serif;
-    @include wrapper(750px) {
-        letter-spacing: 0.3vw;
-        font-size: 120%;
-        height: 100%;
-        width: 100%;
-    }
-}
-
 li {
+    box-shadow: 0px 0px 50px 10px #000000;
     margin-top: 5vh;
     align-self: center;
     width: 73vw;
@@ -68,7 +59,6 @@ li {
     @include wrapper(600px) {
         max-width: none;
         max-height: none;
-        box-shadow: 0px 0px 50px 10px #000000;
         width: 300px;
         height: 150px;
     }

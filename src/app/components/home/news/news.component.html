@@ -1,14 +1,14 @@
-<div id="newsContainer">
+<div id="newsContainer" [class.activated]="isMenuClicked" [class.disactivated]="!isMenuClicked">
     <ul class="content">
-        <li class="item--1">
+        <li class="item--1" [class.activated]="!isButtonClicked" [class.disactivated]="isButtonClicked">
             <span class="__item__1">we won the tournament</span>
         </li>
-        <li class="item--2">
+        <li class="item--2" [class.activated]="!isButtonClicked" [class.disactivated]="isButtonClicked">
             <span class="__item__2">a new team</span>
         </li>
-        <li class="item--3">
+        <li class="item--3" [class.activated]="!isButtonClicked" [class.disactivated]="isButtonClicked">
             <span class="__item__3">recruitment starts</span>
         </li>
-        <div app-home-middle-buttons></div>
+        <div app-home-middle-buttons (click)="click()"></div>
     </ul>
 </div>

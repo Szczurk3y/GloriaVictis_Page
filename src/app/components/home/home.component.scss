@@ -2,9 +2,9 @@
 @import "../../scss/variables";
 #home {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     // background: url("/assets/home/background.png") no-repeat;
-    background-color: #060b15;
+    background-color: #0e1a31;
     background-size: 250% 100%;
     background-position-x: -100vw;
     position: relative;

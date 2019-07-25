@@ -21,17 +21,54 @@
 
 .menu {
     display: flex;
-    justify-content: center;
     font-family: 'Catamaran', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1vw;
-    color: complement($color: $redColor);
+    color: white;
     cursor: pointer;
-    font-size: -webkit-calc(2.5vh + 1vw);
+    font-size: 35px;
     border-top: 0.3vw solid white;
+    justify-content: center;
     border-radius: 2px;
     @include wrapper(700px) {
         display: none;
+    }
+}
+
+.hamburger {
+    width: 45px;
+    border: 0;
+    border-top: 5px solid #e5002a;
+    background: transparent;
+    position: relative;
+    top: 10px;
+    right: 20px;
+    transition: .3s all linear;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 5px solid #e5002a;
+        transform: translateY(10px);
+    }
+    &::after {
+        transform: translateY(25px);
+        transition: .3s all linear;
+    }
+}
+
+.hamburgerAnimation {
+    transform: rotate(45deg) translateY(0);
+    border: none;
+    &::after {
+        transform: rotate(-90deg) translateX(-10px);
+        border-top: 5px solid rgb(65, 211, 65);
+    }
+    &::before {
+        border-top: 5px solid rgb(65, 211, 65);
     }
 }
 
@@ -92,6 +129,7 @@ a {
     text-align: left;
     animation: onLoadAnimation .3s ease-in-out;
     transition: all .3s linear;
+    font-size: 70%;
     mat-icon {
         color: white;
         font-size: 1.5rem;

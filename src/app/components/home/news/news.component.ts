@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core'
+import { NavComponent } from '../nav/nav.component';
 
 @Component({
   selector: '[app-news]',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsComponent implements OnInit {
 
+  @Input() isMenuClicked: boolean = false;
+
+  public isButtonClicked: boolean = false;
   public imageArray = [];
 
   constructor() {
@@ -20,8 +24,7 @@ export class NewsComponent implements OnInit {
   ngOnInit() {
   }
 
-  setImage() {
-
+  click() {
+    this.isButtonClicked = !this.isButtonClicked;
   }
-
 }

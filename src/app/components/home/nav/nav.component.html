@@ -1,6 +1,9 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div class="container">
-    <div class="menu" (click)="expandList()">menu</div>
+    <div class="menu" (click)="expandList()">
+        <div class="hamburger" [class.hamburgerAnimation]="isMenuClicked"></div>
+        menu
+    </div>
     <nav class="navigation" [class.activated]="isMenuClicked" [class.disactivated]="!isMenuClicked" [class.scrolling]="is_a_clicked">
         <ul>
             <li>

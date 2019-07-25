@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core'
+import { NewsComponent } from './news/news.component'
+import { NavComponent } from './nav/nav.component'
 
 @Component({
   selector: '[app-home]',
@@ -8,7 +10,6 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   public background = "";
-  public isMenuClicked: boolean = false;
   
   constructor() { }
 

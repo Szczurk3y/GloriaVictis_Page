@@ -3,23 +3,29 @@
 .container {
     width: 100vw;
     padding-top: 20px;
-    @include wrapper(700px) {
-        padding: 5vh;
-    }
+    @include wrapper(700px) {}
 }
 
 ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    flex-flow: row wrap;
 }
 
 li {
     width: 150px;
+    margin-top: 5vh;
     height: 30px;
     @include wrapper(700px) {
         width: 250px;
         height: 50px;
+    }
+    &:nth-child(2) {
+        display: block;
+        @include wrapper(1300px) {
+            display: none;
+        }
     }
 }
 
