@@ -27,7 +27,6 @@ ul {
     justify-content: space-around;
     flex-flow: column wrap;
     flex-shrink: 2;
-    width: 100vw;
 }
 
 li {
@@ -43,9 +42,6 @@ li {
     align-items: flex-end;
     cursor: pointer;
     transition: all .2s ease-in;
-    &:nth-child(3) {
-        display: none;
-    }
     &:hover {
         span {
             height: 100%;
@@ -65,8 +61,21 @@ li {
 }
 
 .item--3 {
-    background: url("../../../../assets/home/jez.jpg") no-repeat;
-    background-size: 100% 100%;
+    display: none;
+    @include wrapper(1000px) {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.item--4 {
+    display: none;
+    @include wrapper(1600px) {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
 }
 
 span {
@@ -98,7 +107,7 @@ span {
     }
 }
 
-@include wrapper(750px) {
+@include wrapper(700px) {
     li {
         width: 375px;
         height: 200px;
@@ -106,19 +115,20 @@ span {
 }
 
 @include wrapper(1000px) {
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
     li {
+        margin: 0;
         width: 450px;
         height: 240px;
     }
 }
 
 @include wrapper(1300px) {
-    li:nth-child(3) {
-        display: flex;
-    }
-    ul {
-        flex-flow: row wrap;
-    }
     li {
         width: 480px;
         height: 260px;
@@ -126,14 +136,15 @@ span {
 }
 
 @include wrapper(1600px) {
-    li {
-        width: 520px;
-        height: 285px;
+    ul {
+        margin-top: 10vh;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @include wrapper(1800px) {
     li {
-        width: 550px;
+        width: 500px;
     }
 }
