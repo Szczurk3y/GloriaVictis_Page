@@ -19,7 +19,7 @@
     }
 }
 
-.content {
+ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -98,15 +98,6 @@ span {
     }
 }
 
-@include wrapper(700px) {
-    .content {
-        flex-flow: row wrap;
-    }
-    li {
-        margin-top: 0;
-    }
-}
-
 @include wrapper(750px) {
     li {
         width: 375px;
@@ -114,16 +105,23 @@ span {
     }
 }
 
-@include wrapper(1200px) {
+@include wrapper(1000px) {
     li {
         width: 450px;
         height: 240px;
     }
 }
 
-@include wrapper(1350px) {
+@include wrapper(1300px) {
     li:nth-child(3) {
         display: flex;
+    }
+    ul {
+        flex-flow: row wrap;
+    }
+    li {
+        width: 480px;
+        height: 260px;
     }
 }
 

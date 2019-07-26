@@ -4,10 +4,14 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: #0e1a31;
     position: relative;
     display: flex;
     flex-direction: column;
+    background: url("../../../assets/home/esport_bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .content {
@@ -24,9 +28,9 @@
     img {
         width: 100px;
         height: 100px;
-    }
-    &:hover {
-        cursor: pointer;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 

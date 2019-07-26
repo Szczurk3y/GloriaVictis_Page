@@ -59,16 +59,31 @@
     }
     &:last-child {
         width: 100%;
+        height: 60%;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         img {
             width: 100vw;
             height: 100vw;
         }
-        @include wrapper(850px) {
-            width: 70vw;
-            height: 70vw;
+        @include wrapper(600px) {
+            img {
+                width: 520px;
+                height: 520px;
+            }
+        }
+        @include wrapper(750px) {
+            img {
+                width: 600px;
+                height: 600px;
+            }
+        }
+        @include wrapper(900px) {
+            img {
+                width: 800px;
+                height: 800px;
+            }
         }
         @include wrapper(1050px) {
             display: none;
@@ -115,13 +130,24 @@
     }
     #desc {
         width: 100%;
-        font-size: 7px;
+        font-size: 5px;
         line-height: 20px;
         text-align: center;
         letter-spacing: 1px;
-        @include wrapper(900px) {
+        @include wrapper(700px) {
             font-size: 10px;
             letter-spacing: 2px;
+            line-height: 30px;
+        }
+        @include wrapper(900px) {
+            font-size: 15px;
+            letter-spacing: 2px;
+            line-height: 30px;
+        }
+        @include wrapper(1000px) {
+            font-size: 20px;
+            letter-spacing: 3px;
+            line-height: 30px;
         }
         @include wrapper(1050px) {
             font-size: -webkit-calc(0.7vw);
@@ -157,6 +183,11 @@
     font-family: 'Darker Grotesque', sans-serif;
     max-width: 300px;
     font-size: 75%;
+    @include wrapper(800px) {
+        letter-spacing: 0.3vw;
+        font-size: 100%;
+        height: 50px;
+    }
     @include wrapper(1050px) {
         margin: 0;
         letter-spacing: 0.3vw;
