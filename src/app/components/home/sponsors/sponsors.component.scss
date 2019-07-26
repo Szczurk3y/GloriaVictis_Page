@@ -6,21 +6,21 @@
 
 .container {
     display: none;
-    @include wrapper(850px) {
+    @include wrapperW(850px) {
         width: 100vw;
         height: 15vh;
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-    @include wrapper(1050px) {
+    @include wrapperW(1050px) {
         margin-top: 1%;
         flex-direction: row;
     }
 }
 
 span {
-    @include wrapper(1050px) {
+    @include wrapperW(1050px) {
         font-family: 'Darker Grotesque', sans-serif;
         width: 15%;
         margin-top: 1%;
@@ -40,7 +40,7 @@ span {
     justify-content: center;
     width: 100%;
     margin-top: 2%;
-    @include wrapper(1050px) {
+    @include wrapperW(1050px) {
         margin: 0;
         width: 85%;
         justify-content: left;

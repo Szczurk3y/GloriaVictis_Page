@@ -67,7 +67,7 @@
 
 .disactivated {
     display: none;
-    @include wrapper(700px) {
+    @include wrapperW(700px) {
         display: block;
     }
 }
@@ -143,7 +143,7 @@ a {
 
 /* Media screen */
 
-@include wrapper(700px) {
+@include wrapperW(700px) {
     .navigation {
         margin: 0;
         display: block;
@@ -169,12 +169,12 @@ a {
     }
 }
 
-@include wrapper(1300px) {
+@include wrapperW(1300px) {
     .navigation {
         z-index: 1;
         position: fixed;
         top: 50px;
-        right: 100px;
+        right: 50px;
     }
     ul {
         width: 1000px;

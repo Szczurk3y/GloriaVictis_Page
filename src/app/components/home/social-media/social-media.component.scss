@@ -60,7 +60,7 @@
 
 /* Media screen */
 
-@include wrapper(750px) {
+@include wrapperW(750px) {
     .button {
         margin-right: 5%;
         letter-spacing: 0.3vw;
@@ -69,7 +69,7 @@
     }
 }
 
-@include wrapper(1050px) {
+@include wrapperW(1050px) {
     .icon {
         width: 60px;
         font-size: 220%;
@@ -77,7 +77,7 @@
     }
 }
 
-@include wrapper(1300px) {
+@include wrapperW(1300px) {
     #socialmediaContainer {
         width: 20vw;
         display: flex;

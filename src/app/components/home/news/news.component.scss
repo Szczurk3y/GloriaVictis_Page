@@ -14,23 +14,21 @@
 
 .disactivated {
     display: none;
-    @include wrapper(1300px) {
+    @include wrapperW(1300px) {
         display: flex;
     }
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+    margin-top: 20px;
     list-style: none;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column wrap;
-    flex-shrink: 2;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
 li {
-    margin-top: 5vh;
     box-shadow: 0px 0px 30px 0 #000000;
     align-self: center;
     width: 73vw;
@@ -50,28 +48,46 @@ li {
     }
 }
 
-.item--1 {
+.phone_news--1 {
     background: url("../../../../assets/home/kotek.jpg") no-repeat;
     background-size: 100% 100%;
 }
 
-.item--2 {
+.phone_news--2 {
     background: url("../../../../assets/home/piesek.jpg") no-repeat;
     background-size: 100% 100%;
 }
 
-.item--3 {
+.tablet_news--1 {
     display: none;
-    @include wrapper(1000px) {
+    @include wrapperW(750px) {
         display: flex;
         background: url("../../../../assets/home/jez.jpg") no-repeat;
         background-size: 100% 100%;
     }
 }
 
-.item--4 {
+.tablet_news--2 {
     display: none;
-    @include wrapper(1600px) {
+    @include wrapperW(750px) {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.pc_news--1 {
+    display: none;
+    @include wrapperW(1600px) {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.pc_news--2 {
+    display: none;
+    @include wrapperW(1600px) {
         display: flex;
         background: url("../../../../assets/home/jez.jpg") no-repeat;
         background-size: 100% 100%;
@@ -98,52 +114,53 @@ span {
 
 /* Media screen */
 
-@include wrapper(600px) {
+@include wrapperW(600px) {
     li {
         max-width: none;
         max-height: none;
-        width: 300px;
-        height: 150px;
+        width: 65vw;
+        height: 35vw;
     }
 }
 
-@include wrapper(700px) {
-    li {
-        width: 375px;
-        height: 200px;
-    }
-}
-
-@include wrapper(1000px) {
+@include wrapperW(750px) {
     ul {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    li {
+        width: 45vw;
+        height: 25vw;
+    }
+}
+
+@include wrapperW(1000px) {
+    ul {
         grid-column-gap: 30px;
         grid-row-gap: 30px;
     }
     li {
-        margin: 0;
         width: 450px;
         height: 240px;
     }
 }
 
-@include wrapper(1300px) {
+@include wrapperW(1300px) {
     li {
         width: 480px;
         height: 260px;
     }
+    ul {}
 }
 
-@include wrapper(1600px) {
+@include wrapperW(1600px) {
     ul {
-        margin-top: 10vh;
         width: 100%;
         grid-template-columns: repeat(3, 1fr);
+        margin-top: 5vh;
     }
 }
 
-@include wrapper(1800px) {
+@include wrapperW(1800px) {
     li {
         width: 500px;
     }

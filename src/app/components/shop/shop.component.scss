@@ -15,7 +15,7 @@
     overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    @include wrapper(1050px) {
+    @include wrapperW(1050px) {
         flex-direction: row;
         background: url("/../assets/shop/background/background.png") no-repeat;
         background-size: 100% 100%;
@@ -29,7 +29,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    @include wrapper(1050px) {
+    @include wrapperW(1050px) {
         justify-content: center;
         align-items: center;
         width: 50%;
@@ -38,14 +38,14 @@
     img {
         width: 100%;
         height: 100%;
-        @include wrapper(1050px) {
+        @include wrapperW(1050px) {
             width: 50vw;
             height: 50vw;
         }
     }
     &:first-child {
         display: none;
-        @include wrapper(1050px) {
+        @include wrapperW(1050px) {
             display: block;
             width: 50vw;
             height: 50vw;
@@ -53,7 +53,7 @@
     }
     &:nth-child(2) {
         width: 100%;
-        @include wrapper(1050px) {
+        @include wrapperW(1050px) {
             width: 50%;
         }
     }
@@ -61,31 +61,29 @@
         width: 100%;
         height: 60%;
         display: flex;
-        justify-content: center;
-        align-items: center;
         img {
             width: 100vw;
             height: 100vw;
         }
-        @include wrapper(600px) {
+        @include wrapperW(600px) {
             img {
                 width: 520px;
                 height: 520px;
             }
         }
-        @include wrapper(750px) {
+        @include wrapperW(750px) {
             img {
                 width: 600px;
                 height: 600px;
             }
         }
-        @include wrapper(900px) {
+        @include wrapperW(900px) {
             img {
                 width: 800px;
                 height: 800px;
             }
         }
-        @include wrapper(1050px) {
+        @include wrapperW(1050px) {
             display: none;
         }
     }
@@ -102,7 +100,7 @@
     padding: 10%;
     padding-top: 10%;
     font-family: 'Source Sans Pro', sans-serif;
-    @include wrapper(1050px) {
+    @include wrapperW(1050px) {
         width: auto;
         justify-content: center;
         align-items: center;
@@ -119,10 +117,10 @@
         font-size: 115%;
         letter-spacing: 0.9vw;
         padding-bottom: 3vw;
-        @include wrapper(900px) {
+        @include wrapperW(900px) {
             font-size: 25px;
         }
-        @include wrapper(1050px) {
+        @include wrapperW(1050px) {
             font-size: -webkit-calc(2.1vw);
             text-align: right;
             margin-right: 5%;
@@ -134,22 +132,22 @@
         line-height: 20px;
         text-align: center;
         letter-spacing: 1px;
-        @include wrapper(700px) {
+        @include wrapperW(700px) {
             font-size: 10px;
             letter-spacing: 2px;
             line-height: 30px;
         }
-        @include wrapper(900px) {
+        @include wrapperW(900px) {
             font-size: 15px;
             letter-spacing: 2px;
             line-height: 30px;
         }
-        @include wrapper(1000px) {
+        @include wrapperW(1000px) {
             font-size: 20px;
             letter-spacing: 3px;
             line-height: 30px;
         }
-        @include wrapper(1050px) {
+        @include wrapperW(1050px) {
             font-size: -webkit-calc(0.7vw);
             line-height: 2.5vw;
             margin-right: 10%;
@@ -166,7 +164,7 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: 5%;
-    @include wrapper(1050px) {
+    @include wrapperW(1050px) {
         justify-content: center;
         margin: 0;
     }
@@ -183,12 +181,12 @@
     font-family: 'Darker Grotesque', sans-serif;
     max-width: 300px;
     font-size: 75%;
-    @include wrapper(800px) {
+    @include wrapperW(800px) {
         letter-spacing: 0.3vw;
         font-size: 100%;
         height: 50px;
     }
-    @include wrapper(1050px) {
+    @include wrapperW(1050px) {
         margin: 0;
         letter-spacing: 0.3vw;
         font-size: 20px;

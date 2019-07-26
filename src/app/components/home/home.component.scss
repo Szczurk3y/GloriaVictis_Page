@@ -3,7 +3,6 @@
 #home {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -37,14 +36,14 @@
 
 /* Media screen */
 
-@include wrapper(700px) {
+@include wrapperW(700px) {
     .logo img {
         width: 200px;
         height: 200px;
     }
 }
 
-@include wrapper(1300px) {
+@include wrapperW(1300px) {
     .logo {
         justify-content: flex-start;
         margin-left: 2%;
@@ -52,11 +51,5 @@
             width: 220px;
             height: 220px;
         }
-    }
-}
-
-@include wrapper(1600px) {
-    #home {
-        min-height: 100vh;
     }
 }
