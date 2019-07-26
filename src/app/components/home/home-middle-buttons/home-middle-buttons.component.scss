@@ -101,7 +101,15 @@
             }
         }
     }
-    @include wrapperW(1100px) {
+    @include wrapperW(1300px) {
+        ul {
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 25px;
+            grid-row-gap: 0;
+        }
+        .icon {
+            font-size: 2rem;
+        }
         li {
             width: 320px;
             height: 65px;
@@ -112,13 +120,6 @@
         }
         .button {
             font-size: 1rem;
-        }
-    }
-    @include wrapperW(1300px) {
-        ul {
-            grid-template-columns: repeat(4, 1fr);
-            grid-column-gap: 25px;
-            grid-row-gap: 0;
         }
     }
     @include wrapperW(1500px) {

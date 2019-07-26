@@ -15,9 +15,8 @@
 
 .content {
     display: flex;
-    justify-content: space-evenly;
     flex-flow: row wrap;
-    height: 70vh;
+    justify-content: space-evenly;
 }
 
 .logo {
@@ -38,18 +37,22 @@
 
 @include wrapperW(700px) {
     .logo img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 }
 
 @include wrapperW(1300px) {
+    .content {
+        height: 70vh;
+        justify-content: space-evenly;
+    }
     .logo {
         justify-content: flex-start;
         margin-left: 2%;
         img {
-            width: 220px;
-            height: 220px;
+            width: 250px;
+            height: 250px;
         }
     }
 }

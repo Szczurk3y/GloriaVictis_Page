@@ -54,26 +54,15 @@ li {
 }
 
 .phone_news--2 {
-    background: url("../../../../assets/home/piesek.jpg") no-repeat;
-    background-size: 100% 100%;
+    display: none;
 }
 
 .tablet_news--1 {
     display: none;
-    @include wrapperW(750px) {
-        display: flex;
-        background: url("../../../../assets/home/jez.jpg") no-repeat;
-        background-size: 100% 100%;
-    }
 }
 
 .tablet_news--2 {
     display: none;
-    @include wrapperW(750px) {
-        display: flex;
-        background: url("../../../../assets/home/jez.jpg") no-repeat;
-        background-size: 100% 100%;
-    }
 }
 
 .pc_news--1 {
@@ -114,6 +103,9 @@ span {
 
 /* Media screen */
 
+
+/* phones */
+
 @include wrapperW(600px) {
     li {
         max-width: none;
@@ -123,7 +115,32 @@ span {
     }
 }
 
-@include wrapperW(750px) {
+@include wrapperW(0px,
+560px) {
+    .tablet_news--2 {
+        display: none;
+    }
+    .phone_news--2 {
+        display: flex;
+        background: url("../../../../assets/home/piesek.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+
+/* tablets */
+
+@include wrapperW(700px) {
+    .tablet_news--1 {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+    .tablet_news--2 {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
     ul {
         grid-template-columns: repeat(2, 1fr);
     }
