@@ -9,11 +9,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/home/nav/nav.component';
 import { TeamComponent } from './components/team/team.component';
-import { SocialMediaComponent } from './components/home/social-media/social-media.component';
 import { NewsComponent } from './components/home/news/news.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { SponsorsComponent } from './components/home/sponsors/sponsors.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { HomeMiddleButtonsComponent } from './components/home/home-middle-buttons/home-middle-buttons.component';
 
@@ -23,11 +21,9 @@ import { HomeMiddleButtonsComponent } from './components/home/home-middle-button
       HomeComponent,
       NavComponent,
       TeamComponent,
-      SocialMediaComponent,
       NewsComponent,
       ShopComponent,
       ContactComponent,
-      SponsorsComponent,
       HomeMiddleButtonsComponent
    ],
    imports: [
