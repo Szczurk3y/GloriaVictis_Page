@@ -68,20 +68,10 @@ li {
 
 .pc_news--1 {
     display: none;
-    @include wrapperW(1600px) {
-        display: flex;
-        background: url("../../../../assets/home/jez.jpg") no-repeat;
-        background-size: 100% 100%;
-    }
 }
 
 .pc_news--2 {
     display: none;
-    @include wrapperW(1600px) {
-        display: flex;
-        background: url("../../../../assets/home/jez.jpg") no-repeat;
-        background-size: 100% 100%;
-    }
 }
 
 span {
@@ -152,21 +142,7 @@ span {
     }
 }
 
-@include wrapperWH(970px,
-883px) {
-    ul {
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
-    }
-    li {
-        max-width: none;
-        max-height: none;
-        width: 450px;
-        height: 240px;
-    }
-}
-
-@include wrapperW(1300px) {
+@media screen and (min-width: 970px) and (min-height: 883px) and (max-width: 1300px) {
     .tablet_news--1 {
         display: flex;
         background: url("../../../../assets/home/jez.jpg") no-repeat;
@@ -177,11 +153,71 @@ span {
         background: url("../../../../assets/home/jez.jpg") no-repeat;
         background-size: 100% 100%;
     }
+    ul {
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+    }
     li {
+        max-width: none;
+        max-height: none;
+        width: 450px;
+        height: 240px;
+    }
+}
+
+@media screen and (min-width: 700px) and (min-height: 1050px) and (max-width: 1300px) {
+    .pc_news--1 {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+    .pc_news--2 {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+
+/* PC */
+
+@media screen and (min-width: 1300px) {
+    li {
+        max-width: none;
+        max-height: none;
         width: 480px;
         height: 260px;
     }
-    ul {}
+    ul {
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+    }
+}
+
+@media screen and (min-width: 1300px) and (min-height: 925px) {
+    .tablet_news--1 {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+    .tablet_news--2 {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+@media screen and (min-width: 1300px) and (min-height: 1250px) {
+    .pc_news--1 {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+    .pc_news--2 {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
 }
 
 @include wrapperW(1600px) {
@@ -189,6 +225,16 @@ span {
         width: 100%;
         grid-template-columns: repeat(3, 1fr);
         margin-top: 5vh;
+    }
+    .pc_news--1 {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+    .pc_news--2 {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
     }
 }
 
