@@ -7,9 +7,8 @@
 #shop {
     width: 100vw;
     height: 100vh;
-    background: url("../../../assets/shop/background/background.png") no-repeat;
-    background-size: 100% 100%;
     position: relative;
+    background-color: black;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -17,8 +16,6 @@
     text-transform: uppercase;
     @include wrapperW(1050px) {
         flex-direction: row;
-        background: url("/../assets/shop/background/background.png") no-repeat;
-        background-size: 100% 100%;
         justify-content: center;
         align-items: center;
     }

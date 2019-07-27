@@ -36,15 +36,15 @@
     align-self: flex-start;
     font-size: 75%;
     font-family: 'Darker Grotesque', sans-serif;
-    letter-spacing: 1px;
     line-height: 1rem;
-    margin-top: 5%;
     span {
         font-size: 200%;
         letter-spacing: 5px;
         @include wrapperW (1050px) {
             font-size: 200%;
             letter-spacing: 10px;
+            margin-top: 5%;
+            letter-spacing: 1px;
         }
     }
     a {
