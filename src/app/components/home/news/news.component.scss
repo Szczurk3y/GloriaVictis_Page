@@ -194,7 +194,7 @@ span {
     }
 }
 
-@media screen and (min-width: 1300px) and (min-height: 925px) {
+@media screen and (min-width: 1300px) and (min-height: 925px) and (max-width: 1600px) {
     .tablet_news--1 {
         display: flex;
         background: url("../../../../assets/home/jez.jpg") no-repeat;
@@ -207,7 +207,7 @@ span {
     }
 }
 
-@media screen and (min-width: 1300px) and (min-height: 1250px) {
+@media screen and (min-width: 1300px) and (min-height: 1250px) and (max-width: 1600px) {
     .pc_news--1 {
         display: flex;
         background: url("../../../../assets/home/jez.jpg") no-repeat;
@@ -220,7 +220,7 @@ span {
     }
 }
 
-@include wrapperW(1600px) {
+@media screen and (min-width: 1600px) {
     ul {
         width: 100%;
         grid-template-columns: repeat(3, 1fr);
@@ -231,7 +231,25 @@ span {
         background: url("../../../../assets/home/jez.jpg") no-repeat;
         background-size: 100% 100%;
     }
+}
+
+@media screen and (min-width: 1600px) and (min-height: 960px) {
+    .pc_news--1 {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
     .pc_news--2 {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+    .tablet_news--1 {
+        display: flex;
+        background: url("../../../../assets/home/jez.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+    .tablet_news--2 {
         display: flex;
         background: url("../../../../assets/home/jez.jpg") no-repeat;
         background-size: 100% 100%;
