@@ -1,12 +1,12 @@
 @import "./variables";
-@mixin wrapperW($arg...) {
-    @media screen and (min-width: nth($list: $arg, $n: 1)) {
+@mixin wrapperWH($arg...) {
+    @media screen and (min-width: nth($list: $arg, $n: 1)) and (min-height: nth($list: $arg, $n: 2)) {
         @content;
     }
 }
 
-@mixin wrapperH($arg...) {
-    @media screen and (min-height: nth($list: $arg, $n: 1)) {
+@mixin wrapperW($arg...) {
+    @media screen and (min-width: nth($list: $arg, $n: 1)) {
         @content;
     }
 }
