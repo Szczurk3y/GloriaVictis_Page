@@ -62,7 +62,9 @@
         line-height: 60px;
     }
     span {
+        display: inline-block;
         font-size: 20px;
+        width: 100%;
         letter-spacing: 7px;
         color: $redColor;
         font-weight: bold;
@@ -72,7 +74,7 @@
             letter-spacing: 10px;
         }
         @include wrapperW(1600px) {
-            font-size: 300%;
+            font-size: 100%;
             letter-spacing: 10px;
         }
     }

@@ -32,7 +32,7 @@
         letter-spacing: 5px;
         color: white;
         cursor: pointer;
-        transition: all .3s linear;
+        transition: background-color .3s linear;
         mat-icon {
             color: white;
             font-size: 1.5rem;
@@ -52,6 +52,9 @@
         border-radius: 3px;
         color: white;
         transition: all .3s linear;
+    }
+    .active {
+        background-color: rgb(6, 194, 6);
     }
     .icon {
         cursor: pointer;

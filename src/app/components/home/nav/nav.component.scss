@@ -117,18 +117,6 @@ a {
 
 /* Keyframes */
 
-@keyframes scrollAnimation {
-    0% {
-        display: none;
-    }
-    80% {
-        opacity: 0.3;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 @keyframes onLoadAnimation {
     0% {
         transform: translateX(-20px);
