@@ -10,18 +10,10 @@ import { NavComponent } from './nav/nav.component'
 export class HomeComponent implements OnInit {
 
   public background = "";
-  public isButtonClicked: boolean = false;
   
   constructor() { }
 
   ngOnInit() {
-  }
-  
-  setBackground() {
-    this.background = "../../../assets/home/bg1.jpg";
-  }
-  click() {
-    this.isButtonClicked = !this.isButtonClicked;
   }
 
 }

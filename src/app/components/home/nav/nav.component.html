@@ -4,28 +4,28 @@
         <div class="hamburger" [class.hamburgerAnimation]="isMenuClicked"></div>
         menu
     </div>
-    <nav class="navigation" [class.activated]="isMenuClicked" [class.disactivated]="!isMenuClicked" [class.scrolling]="is_a_clicked">
+    <nav class="navigation" [class.activated]="isMenuClicked" [class.disactivated]="!isMenuClicked">
         <ul>
             <li>
-                <a mat-flat-button (click)="onClick()" href="#home">
+                <a mat-flat-button href="#home">
                     <mat-icon>home</mat-icon>
                     home
                 </a>
             </li>
             <li>
-                <a mat-flat-button (click)="onClick()" href="#team">
+                <a mat-flat-button href="#team">
                     <mat-icon>supervisor_account</mat-icon>
                     team
                 </a>
             </li>
             <li>
-                <a mat-flat-button (click)="onClick()" href="#scores">
+                <a mat-flat-button href="#scores">
                     <mat-icon>whatshot</mat-icon>
                     trophies
                 </a>
             </li>
             <li>
-                <a mat-flat-button (click)="onClick()" href="#shop">
+                <a mat-flat-button href="#shop">
                     <mat-icon>shopping_cart</mat-icon>
                     shop
                 </a>

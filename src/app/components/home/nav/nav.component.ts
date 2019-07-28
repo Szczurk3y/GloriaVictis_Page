@@ -25,13 +25,4 @@ export class NavComponent implements OnInit {
     this.isMenuClicked = !this.isMenuClicked;
     this.menuEvent.emit(this.isMenuClicked);
   }
-
-  onClick() {
-    this.is_a_clicked = true;
-    console.log(this.is_a_clicked);
-    setTimeout(() => {
-      this.is_a_clicked = false;
-      console.log(this.is_a_clicked);
-    }, 1000);
-  }
 }
