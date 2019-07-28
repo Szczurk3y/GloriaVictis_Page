@@ -3,6 +3,9 @@
     <div app-nav (menuEvent)="isMenuClicked = $event"> </div>
     <div class="content">
         <div app-home-middle-buttons (click)="click()"></div>
-        <div app-news></div>
+        <div class="stuff">
+            <div app-news></div>
+            <router-outlet></router-outlet>
+        </div>
     </div>
 </div>
