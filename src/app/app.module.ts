@@ -4,7 +4,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule, MatCheckboxModule, MatIconModule} from '@angular/material';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './components/home/app-routing.module';
+import { ScheduleComponent } from './components/home/schedule/schedule.component';
+import { ResultsComponent } from './components/home/results/results.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/home/nav/nav.component';
@@ -23,7 +25,9 @@ import { HomeMiddleButtonsComponent } from './components/home/home-middle-button
       TeamComponent,
       NewsComponent,
       ShopComponent,
+      ResultsComponent,
       ContactComponent,
+      ScheduleComponent,
       HomeMiddleButtonsComponent
    ],
    imports: [

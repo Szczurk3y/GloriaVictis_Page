@@ -5,18 +5,6 @@ import { TeamComponent } from '../app/components/team/team.component';
 
 
 const routes: Routes = [
-   {
-      path: 'schedule',
-      component: HomeComponent
-   },
-   {
-      path: 'news',
-      component: HomeComponent
-   },
-   {
-      path: 'results',
-      component: HomeComponent
-   }
 ];
 
 @NgModule({
