@@ -9,11 +9,16 @@ import { NavComponent } from './nav/nav.component'
 })
 export class HomeComponent implements OnInit {
 
-  public background = "";
-  
+
+  public cardNumber = 0;
+    
   constructor() { }
 
   ngOnInit() {
+  }
+
+  cardChange(n: number) {
+    this.cardNumber = n;
   }
 
 }

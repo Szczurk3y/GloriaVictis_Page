@@ -1,20 +1,20 @@
 <div class="container">
     <ul>
         <li>
-            <a mat-button class="button" routerLink="/news" routerLinkActive="active">
+            <a mat-button (click)="buttonEvent.emit(0)" class="button">
                 <mat-icon>new_releases</mat-icon>
                 news
             </a>
         </li>
         <li>
-            <a mat-button class="button" routerLink="/schedule" routerLinkActive="active">
+            <a mat-button (click)="buttonEvent.emit(1)" class="button">
                 <mat-icon>event</mat-icon>
                 schedule
             </a>
         </li>
 
         <li>
-            <a mat-button class="button" routerLink="/results" routerLinkActive="active">
+            <a mat-button (click)="buttonEvent.emit(2)" class="button">
                 <mat-icon>poll</mat-icon>
                 results
             </a>

@@ -4,7 +4,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule, MatCheckboxModule, MatIconModule} from '@angular/material';
 
-import { AppRoutingModule } from './components/home/app-routing.module';
 import { ScheduleComponent } from './components/home/schedule/schedule.component';
 import { ResultsComponent } from './components/home/results/results.component';
 import { AppComponent } from './app.component';
@@ -14,7 +13,6 @@ import { TeamComponent } from './components/team/team.component';
 import { NewsComponent } from './components/home/news/news.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { HomeMiddleButtonsComponent } from './components/home/home-middle-buttons/home-middle-buttons.component';
 
 @NgModule({
@@ -32,13 +30,11 @@ import { HomeMiddleButtonsComponent } from './components/home/home-middle-button
    ],
    imports: [
       BrowserModule,
-      AppRoutingModule,
       HttpClientModule,
       BrowserAnimationsModule,
       MatButtonModule,
       MatCheckboxModule,
       MatIconModule,
-      AngularFontAwesomeModule
    ],
    providers: [
       NavComponent

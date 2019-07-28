@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: '[app-home-middle-buttons]',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-middle-buttons.component.scss']
 })
 export class HomeMiddleButtonsComponent implements OnInit {
+
+  @Output("buttonEvent") buttonEvent = new EventEmitter<number>();
 
   constructor() {
     

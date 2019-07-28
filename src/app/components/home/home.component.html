@@ -2,9 +2,11 @@
     <div class="logo"><img src="../../../assets/home/logo_gora.png" alt="logo_gora"></div>
     <div app-nav> </div>
     <div class="content">
-        <div app-home-middle-buttons></div>
+        <div app-home-middle-buttons (buttonEvent)="cardChange($event)"></div>
         <div class="stuff">
-            <router-outlet></router-outlet>
+            <div *ngIf="cardNumber == 0" app-news></div>
+            <div *ngIf="cardNumber == 1" app-schedule></div>
+            <div *ngIf="cardNumber == 2" app-results></div>
         </div>
     </div>
 </div>
