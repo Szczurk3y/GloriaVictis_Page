@@ -1,3 +1,7 @@
-<div id="results">
-    results
-</div>
+<ul class="container">
+    <li *ngFor="let result of results" [ngStyle]="{'background-image': 'url('+ result.path +')'}">
+        <a mat-button class="button">
+            more info
+        </a>
+    </li>
+</ul>

@@ -1,20 +1,20 @@
 <div class="container">
     <ul>
         <li>
-            <a mat-button (click)="buttonEvent.emit(0)" class="button">
+            <a mat-button (click)="buttonEvent.emit(0); onClick(0,1,2)" [class.active]="buttons[0]" class="button">
                 <mat-icon>new_releases</mat-icon>
                 news
             </a>
         </li>
         <li>
-            <a mat-button (click)="buttonEvent.emit(1)" class="button">
+            <a mat-button (click)="buttonEvent.emit(1); onClick(1,0,2)" [class.active]="buttons[1]" class="button">
                 <mat-icon>event</mat-icon>
                 schedule
             </a>
         </li>
 
         <li>
-            <a mat-button (click)="buttonEvent.emit(2)" class="button">
+            <a mat-button (click)="buttonEvent.emit(2); onClick(2,0,1)" [class.active]="buttons[2]" class="button">
                 <mat-icon>poll</mat-icon>
                 results
             </a>

@@ -1,6 +1,47 @@
-#results {
-    background-color: red;
-    opacity: 0.2;
+@import "../../../scss/mixins";
+@import "../../../scss/variables";
+.container {
+    @include commonPageStylizer;
+    list-style-type: none;
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
     width: 1340px;
-    height: 480px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: none;
+    background-color: rgba(white, 0.2);
+    li {
+        box-shadow: 10px 10px 30px 0 black;
+        border-bottom: solid 1px red;
+        width: 420px;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.button {
+    margin-bottom: 5%;
+    font-size: 75%;
+    height: 15%;
+    width: 30%;
+    background-color: #e5002a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    letter-spacing: 3px;
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+    cursor: pointer;
+    transition: background-color .3s linear;
+    text-decoration: none;
+    &:hover {
+        background-color: rgba(#6300e5, 0.8);
+    }
 }

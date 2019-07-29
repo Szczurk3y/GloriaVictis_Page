@@ -179,6 +179,8 @@
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
+    outline: none;
+    border: 0;
     @include wrapperW(450px) {
         font-size: 75%;
     }

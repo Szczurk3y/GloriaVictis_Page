@@ -182,6 +182,8 @@
     font-family: 'Darker Grotesque', sans-serif;
     max-width: 300px;
     font-size: 75%;
+    outline: none;
+    border: 0;
     @include wrapperW(800px) {
         letter-spacing: 0.3vw;
         font-size: 100%;
