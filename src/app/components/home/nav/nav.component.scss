@@ -144,7 +144,7 @@ a {
     }
     li {
         width: 20%;
-        height: 50px;
+        height: 40px;
         &:not(:last-child) {
             margin-bottom: 0;
         }
@@ -157,7 +157,7 @@ a {
     }
 }
 
-@include wrapperW(1300px) {
+@include wrapperW(1200px) {
     .navigation {
         z-index: 1;
         position: fixed;
@@ -165,9 +165,9 @@ a {
         right: 50px;
     }
     ul {
-        width: 1000px;
+        width: 800px;
     }
     a {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }

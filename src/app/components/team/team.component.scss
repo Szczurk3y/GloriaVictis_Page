@@ -7,9 +7,14 @@
 #team {
     width: 100vw;
     height: 100vh;
-    background-color: #0e1a31;
+    // background-color: #0e1a31;
+    background: url('../../../assets/team/background/background.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     @include wrapperW(1050px) {
-        background-size: 100% 100%;
+        // background-size: 100% 100%;
         display: flex;
         flex-direction: row;
     }

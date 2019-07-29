@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background: url("../../../assets/home/esport_bg.jpg") no-repeat center center fixed;
+    background: url("../../../assets/home/background.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -20,10 +20,13 @@
 }
 
 .stuff {
-    width: 1580px;
-    height: 621px;
-    overflow: hidden;
     display: flex;
+    justify-content: space-around;
+    align-content: center;
+    @include wrapperW(1300px) {
+        width: 1340px;
+        height: 480px;
+    }
 }
 
 .logo {
@@ -52,7 +55,7 @@
     }
 }
 
-@include wrapperW(1300px) {
+@include wrapperW(1200px) {
     .content {
         height: 70vh;
         justify-content: space-evenly;
@@ -61,8 +64,8 @@
         justify-content: flex-start;
         margin-left: 2%;
         img {
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
         }
     }
 }

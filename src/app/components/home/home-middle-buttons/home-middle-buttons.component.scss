@@ -112,21 +112,21 @@
             font-size: 100%;
         }
     }
-    @include wrapperW(1300px) {
+    @include wrapperW(1200px) {
         ul {
             grid-template-columns: repeat(4, 1fr);
             grid-column-gap: 25px;
             grid-row-gap: 0;
         }
         .icon {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
         li {
-            width: 320px;
-            height: 65px;
+            width: 250px;
+            height: 45px;
             &:last-child {
-                width: 318px;
-                height: 63px;
+                width: 248px;
+                height: 43px;
             }
         }
         .button {
@@ -135,12 +135,20 @@
     }
     @include wrapperW(1500px) {
         ul {
-            grid-column-gap: 90px;
+            grid-column-gap: 70px;
+        }
+        li {
+            width: 275px;
+            height: 50px;
+            &:last-child {
+                width: 273px;
+                height: 48px;
+            }
         }
     }
     @include wrapperW(1800px) {
-        ul {
-            grid-column-gap: 120px;
+        .button {
+            font-size: 0.8rem;
         }
     }
 }

@@ -8,8 +8,12 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-color: black;
     display: flex;
+    background: url("../../../assets/home/background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     flex-direction: column;
     overflow: hidden;
     font-family: 'Open Sans', sans-serif;
