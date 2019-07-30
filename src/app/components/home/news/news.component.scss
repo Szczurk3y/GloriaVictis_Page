@@ -125,8 +125,8 @@ span {
     li {
         max-width: none;
         max-height: none;
-        width: 420px;
-        height: 220px;
+        width: 350px;
+        height: 200px;
     }
     .square3 {
         display: flex;
@@ -150,12 +150,24 @@ span {
             grid-row-start: 1;
             grid-row-end: 3;
             grid-column: 3;
-            width: 420px;
-            height: 220px * 2 + 40px;
+            width: 350px;
+            height: 200px * 2 + 40px;
             background-size: cover;
             span {
                 height: 66px;
             }
+        }
+    }
+    @media screen and (min-height: 1400px) {
+        li {
+            max-width: none;
+            max-height: none;
+            width: 420px;
+            height: 220px;
+        }
+        .square5 {
+            width: 420px;
+            height: 220px * 2 + 40px;
         }
     }
 }
