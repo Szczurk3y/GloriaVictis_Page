@@ -8,6 +8,43 @@ import { NavComponent } from '../nav/nav.component';
 })
 export class NewsComponent implements OnInit {
 
+  public news = [
+    {
+      desc: "we won the tournament",
+      path: "../../../../assets/home/kotek.jpg",
+      id: "1"
+    },
+    {
+      desc: "A new team",
+      path: "../../../../assets/home/kotek.jpg",
+      id: "2"
+    },
+    {
+      desc: "recruitment starts",
+      path: "../../../../assets/home/jez.jpg",
+      id: "3"
+
+    },
+    {
+      desc: "recruitment starts",
+      path: "../../../../assets/home/jez.jpg",
+      id: "4"
+
+    },
+    {
+      desc: "recruitment starts",
+      path: "../../../../assets/home/jez.jpg",
+      id: "5"
+
+    },
+    {
+      desc: "recruitment starts",
+      path: "../../../../assets/home/jez.jpg",
+      id: "6"
+
+    },
+  ];
+
   constructor() {
   }
 

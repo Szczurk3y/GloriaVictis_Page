@@ -78,23 +78,6 @@
         cursor: pointer;
     }
     /* Media screen */
-    @include wrapperW(600px) {
-        .icon {
-            font-size: 1.5rem;
-        }
-        .button {
-            font-size: 75%;
-            justify-content: center;
-        }
-        li {
-            width: 250px;
-            height: 50px;
-            &:last-child {
-                width: 248px;
-                height: 48px;
-            }
-        }
-    }
     @include wrapperW(700px) {
         .social-media {
             border: 1px solid #6300e5;
@@ -106,6 +89,13 @@
                 width: 298px;
                 height: 48px;
             }
+        }
+        .icon {
+            font-size: 1.5rem;
+        }
+        .button {
+            font-size: 75%;
+            justify-content: center;
         }
     }
     @include wrapperW(950px) {

@@ -9,9 +9,8 @@
     width: 1340px;
     grid-template-columns: repeat(3, 1fr);
     max-width: none;
-    background-color: rgba(white, 0.2);
     li {
-        box-shadow: 10px 10px 30px 0 black;
+        box-shadow: 5px 5px 30px 0 rgba(white, 0.1);
         border-bottom: solid 1px red;
         width: 420px;
         height: 220px;

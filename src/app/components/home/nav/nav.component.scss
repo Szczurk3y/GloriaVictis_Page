@@ -11,6 +11,7 @@
 
 .menu {
     display: flex;
+    width: 100vw;
     font-family: 'Catamaran', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1vw;
@@ -145,7 +146,7 @@ a {
     }
     li {
         width: 20%;
-        height: 40px;
+        height: 50px;
         &:not(:last-child) {
             margin-bottom: 0;
         }
@@ -170,5 +171,8 @@ a {
     }
     a {
         font-size: 0.8rem;
+    }
+    li {
+        height: 40px;
     }
 }

@@ -15,18 +15,9 @@
 
 .content {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-.stuff {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    @include wrapperW(1300px) {
-        width: 1340px;
-        height: 480px;
-    }
+    align-items: center;
+    flex-flow: row column;
+    flex-direction: column;
 }
 
 .logo {
