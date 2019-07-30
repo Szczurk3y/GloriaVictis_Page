@@ -3,8 +3,8 @@
     <div app-nav> </div>
     <div class="content">
         <div app-home-middle-buttons (buttonEvent)="cardChange($event)"></div>
-        <div *ngIf="cardNumber == 2" app-news></div>
+        <div *ngIf="cardNumber == 0" app-news></div>
         <div *ngIf="cardNumber == 1" app-schedule></div>
-        <div *ngIf="cardNumber == 0" app-results></div>
+        <div *ngIf="cardNumber == 2" app-results></div>
     </div>
 </div>

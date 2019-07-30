@@ -1,5 +1,5 @@
 <ul class="container">
-    <li *ngFor="let result of results" [ngStyle]="{'background-image': 'url('+ result.path +')'}">
+    <li *ngFor="let result of results" [ngStyle]="{'background-image': 'url('+ result.path +')'}" [ngClass]="'square'+ result.id" class="news">
         <a mat-button class="button">
             more info
         </a>

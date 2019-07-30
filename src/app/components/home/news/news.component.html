@@ -1,5 +1,5 @@
 <ul class="container">
-    <li *ngFor="let tempNews of news; let i = index" [ngStyle]="{'background-image': 'url('+ tempNews.path +')'}" [ngClass]="'news-nth'+ tempNews.id" class="news">
+    <li *ngFor="let tempNews of news" [ngStyle]="{'background-image': 'url('+ tempNews.path +')'}" [ngClass]="'square'+ tempNews.id" class="news">
         <span class="__item__1">
             {{tempNews.desc}}
         </span>

@@ -37,20 +37,17 @@
 /* Media screen */
 
 @include wrapperW(700px) {
+    .content {
+        height: 80vh;
+        justify-content: space-evenly;
+    }
     .logo img {
         width: 150px;
         height: 150px;
     }
-    .content {
-        height: 80vh;
-    }
 }
 
 @include wrapperW(1200px) {
-    .content {
-        height: 70vh;
-        justify-content: space-evenly;
-    }
     .logo {
         justify-content: flex-start;
         margin-left: 2%;
