@@ -48,6 +48,10 @@
 }
 
 @include wrapperW(1200px) {
+    .content {
+        height: 80vh;
+        justify-content: left;
+    }
     .logo {
         justify-content: flex-start;
         margin-left: 2%;

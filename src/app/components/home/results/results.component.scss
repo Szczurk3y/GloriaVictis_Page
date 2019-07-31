@@ -95,7 +95,7 @@ li {
             display: flex;
         }
     }
-    @media screen and (min-height: 1000px) {
+    @media screen and (min-height: 1050px) {
         .container {
             grid-column-gap: 50px;
             grid-row-gap: 50px;
@@ -106,6 +106,9 @@ li {
         }
     }
     @media screen and (max-width: 1300px) {
+        .container {
+            margin-top: 50px;
+        }
         li {
             max-width: none;
             max-height: none;
@@ -118,16 +121,17 @@ li {
 
 /* PC */
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
     .container {
         grid-column-gap: 40px;
         grid-row-gap: 40px;
         grid-template-columns: repeat(3, 1fr);
+        margin-top: 50px;
     }
     li {
         max-width: none;
         max-height: none;
-        width: 350px;
+        width: 375px;
         height: 200px;
     }
     .square5 {
@@ -136,6 +140,14 @@ li {
     @media screen and (min-height: 750px) {
         .square6 {
             display: flex;
+        }
+    }
+    @media screen and (min-height: 1400px) {
+        li {
+            max-width: none;
+            max-height: none;
+            width: 420px;
+            height: 220px;
         }
     }
 }

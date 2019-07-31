@@ -1,3 +1,4 @@
-<div class="container">
-
-</div>
+<ul class="container">
+    <li *ngFor="let schedule of schedules" [ngStyle]="{'background-image': 'url('+ schedule.path +')'}" [ngClass]="'square'+ schedule.id" class="news">
+    </li>
+</ul>

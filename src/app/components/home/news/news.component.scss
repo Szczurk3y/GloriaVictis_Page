@@ -93,7 +93,7 @@ span {
             display: flex;
         }
     }
-    @media screen and (min-height: 1000px) {
+    @media screen and (min-height: 1050px) {
         .container {
             grid-column-gap: 50px;
             grid-row-gap: 50px;
@@ -116,11 +116,12 @@ span {
 
 /* PC */
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
     .container {
         grid-column-gap: 40px;
         grid-row-gap: 40px;
         grid-template-columns: repeat(3, 1fr);
+        margin-top: 50px;
     }
     li {
         max-width: none;
