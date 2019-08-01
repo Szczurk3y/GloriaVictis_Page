@@ -15,7 +15,7 @@ export class NewsComponent implements OnInit {
       id: "1"
     },
     {
-      desc: "A new team",
+      desc: "a new team",
       path: "../../../../assets/home/kotek.jpg",
       id: "2"
     },
