@@ -4,7 +4,8 @@ import { stringify } from 'querystring';
 @Component({
   selector: '[app-results]',
   templateUrl: './results.component.html',
-  styleUrls: ['./results.component.scss']
+  styleUrls: ['./results.component.scss'],
+  
 })
 export class ResultsComponent implements OnInit {
 

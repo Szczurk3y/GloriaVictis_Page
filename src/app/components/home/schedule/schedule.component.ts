@@ -1,9 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger, transition, animate, style, keyframes, query, stagger } from '@angular/animations';
 
 @Component({
   selector: '[app-schedule]',
   templateUrl: './schedule.component.html',
-  styleUrls: ['./schedule.component.scss']
+  styleUrls: ['./schedule.component.scss'],
+  animations: [
+    trigger('listAnimation', [
+      transition('* => *', [
+        query(':enter', style({ opacity: 0 })),
+        query(':enter', stagger('175ms', [
+          animate('1s', keyframes([
+            style({opacity: 0, transform: 'translateX(75px)'}),
+            style({opacity: 1, transform: 'scale3d(1.10, 1.10, 1.10)'}),
+            style({transform: 'scale3d(0.95, 0.95, 0.95)'}),
+            style({opacity: 1, transform: 'scale3d(1, 1, 1'}),
+          ]))
+        ]))
+      ])
+    ])
+  ]
 })
 export class ScheduleComponent implements OnInit {
 

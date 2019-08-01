@@ -1,4 +1,4 @@
-<ul class="container">
+<ul class="container" @listAnimation>
     <li *ngFor="let tempNews of news" [ngStyle]="{'background-image': 'url('+ tempNews.path +')'}" [ngClass]="'square'+ tempNews.id" class="news">
         <span class="__item__1">
             {{tempNews.desc}}
