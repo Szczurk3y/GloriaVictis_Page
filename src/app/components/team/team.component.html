@@ -1,20 +1,17 @@
 <div id="team">
     <div class="content--1">
-        <div class="description"><span>„{{currentNickname}}”</span><br/><br/>{{currentDescription}}</div>
+        <div class="description"><span>„{{currentNickname}}”</span><br/>{{currentDescription}}</div>
     </div>
     <div class="content--2">
-        <div (mouseleave)="setDefault()" class="container">
-            <div class="topPlayers">
-                <div *ngFor="let tempPlayer of currentPlayers | slice:0:3" (mouseenter)="div(tempPlayer.nickname, tempPlayer.description)" class="player topPlayer">
-                    <img src="{{tempPlayer.picture}}" alt="playerpicture">
+        <ul class="players" (mouseleave)="setDefault()">
+            <li class="player_frame" *ngFor="let tempPlayer of currentPlayers" (mouseenter)="div(tempPlayer.nickname, tempPlayer.description)">
+                <div class="player" [ngStyle]="{'background-image': 'url('+ tempPlayer.picture +')'}">
+                    <a class="social-media">
+                        <div class="fab fa-facebook icon"></div>
+                    </a>
                 </div>
-            </div>
-            <div class="bottomPlayers">
-                <div *ngFor="let tempPlayer of currentPlayers | slice:3:5" (mouseenter)="div(tempPlayer.nickname, tempPlayer.description)" class="player bottomPlayer">
-                    <img src="{{tempPlayer.picture}}" alt="playerpicture">
-                </div>
-            </div>
-        </div>
+            </li>
+        </ul>
         <div class="buttonsContainer">
             <button mat-flat-button (click)="onCsgoButtonClick()" class="button"><div id="text">&nbsp;&nbsp;&nbsp;Counter Strike&nbsp;&nbsp;&nbsp;</div></button>
             <button mat-flat-button (click)="onLolButtonClick()" class="button"><div id="text">&nbsp;League of Legends</div></button>

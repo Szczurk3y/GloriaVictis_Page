@@ -14,27 +14,27 @@ export class TeamComponent implements OnInit {
     {
       nickname: "Szczurk3y",
       description: "Siema jestem Szczurk3y",
-      picture: "../../../assets/team/players/simple.png"
+      picture: "../../../assets/team/players/player.png"
     },
     {
       nickname: "Głazu",
       description: "Siema jestem Głazu",
-      picture: "../../../assets/team/players/simple.png"
+      picture: "../../../assets/team/players/player.png"
     },
     {
       nickname: "Kubuś",
       description: "Siema jestem Kubuś",
-      picture: "../../../assets/team/players/simple.png"
+      picture: "../../../assets/team/players/player.png"
     },
     {
       nickname: "franeklubi",
       description: "Siema jestem franeklubi",
-      picture: "../../../assets/team/players/simple.png"
+      picture: "../../../assets/team/players/player.png"
     },
     {
       nickname: "kowadło",
       description: "Siema jestem kowadło",
-      picture: "../../../assets/team/players/simple.png"
+      picture: "../../../assets/team/players/player.png"
     }
   ];
   public lolPlayers = [
