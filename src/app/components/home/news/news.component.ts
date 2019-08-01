@@ -12,7 +12,7 @@ import { trigger, transition, animate, style, keyframes, query, stagger } from '
         query(':enter', style({ opacity: 0 })),
         query(':enter', stagger('75ms', [
           animate('1s', keyframes([
-            style({opacity: 0, transform: 'scale3d(0.3, 0.3, 0.3'}),
+            style({opacity: 0, transform: 'translateX(-75px)'}),
             style({opacity: 1, transform: 'scale3d(1.10, 1.10, 1.10)'}),
             style({transform: 'scale3d(0.9, 0.9, 0.9)'}),
             style({transform: 'scale3d(1.03, 1.03, 1.03'}),

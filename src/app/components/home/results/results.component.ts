@@ -1,11 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { stringify } from 'querystring';
+import { trigger, transition, animate, style, keyframes, query, stagger } from '@angular/animations';
 
 @Component({
   selector: '[app-results]',
   templateUrl: './results.component.html',
   styleUrls: ['./results.component.scss'],
-  
+  animations: [
+    trigger('listAnimation', [
+      transition('* => *', [
+        query(':enter', style({ opacity: 0 })),
+        query(':enter', stagger('75ms', [
+          animate('1s', keyframes([
+            style({opacity: 0, transform: 'translateY(75px)'}),
+            style({opacity: 1, transform: 'scale3d(1.10, 1.10, 1.10)'}),
+            style({transform: 'scale3d(0.95, 0.95, 0.95)'}),
+            style({opacity: 1, transform: 'scale3d(1, 1, 1'}),
+          ]))
+        ]))
+      ])
+    ])
+  ]
 })
 export class ResultsComponent implements OnInit {
 
