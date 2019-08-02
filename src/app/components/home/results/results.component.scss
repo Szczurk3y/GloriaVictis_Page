@@ -21,14 +21,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    cursor: pointer;
     transition: all .2s ease-in;
-    &:hover {
-        span {
-            height: 100%;
-            border: solid 1px red;
-        }
-    }
 }
 
 .button {
@@ -50,6 +43,12 @@ li {
     &:hover {
         background-color: rgba(#e5002a, 0.8);
     }
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    border: solid 1px red;
 }
 
 .news {

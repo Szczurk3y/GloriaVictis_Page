@@ -14,6 +14,7 @@ import { NewsComponent } from './components/home/news/news.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeMiddleButtonsComponent } from './components/home/home-middle-buttons/home-middle-buttons.component';
+import { TrophiesComponent } from './components/trophies/trophies.component';
 
 @NgModule({
    declarations: [
@@ -26,7 +27,8 @@ import { HomeMiddleButtonsComponent } from './components/home/home-middle-button
       ResultsComponent,
       ContactComponent,
       ScheduleComponent,
-      HomeMiddleButtonsComponent
+      HomeMiddleButtonsComponent,
+      TrophiesComponent
    ],
    imports: [
       BrowserModule,

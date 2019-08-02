@@ -1,5 +1,13 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+* {
+    @include commonPageStylizer;
+}
+
 #trophies {
     width: 100vw;
     height: 100vh;
-    background-color: red;
+    background-color: rgba(grey, 0.6);
+    max-width: none;
+    position: relative;
 }

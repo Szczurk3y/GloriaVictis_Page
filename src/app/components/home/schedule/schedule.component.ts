@@ -9,7 +9,7 @@ import { trigger, transition, animate, style, keyframes, query, stagger } from '
     trigger('listAnimation', [
       transition('* => *', [
         query(':enter', style({ opacity: 0 })),
-        query(':enter', stagger('175ms', [
+        query(':enter', stagger('100ms', [
           animate('0.7s', keyframes([
             style({opacity: 0, transform: 'translateX(75px)'}),
             style({opacity: 1, transform: 'scale3d(1.10, 1.10, 1.10)'}),

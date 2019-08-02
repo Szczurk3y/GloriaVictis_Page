@@ -1,5 +1,6 @@
 @import "../../../scss/mixins";
 @import "../../../scss/variables";
+$bgColor: #6300e5;
 .container {
     width: 100vw;
     display: flex;
@@ -23,7 +24,7 @@
     .button {
         font-size: 50%;
         text-transform: uppercase;
-        background-color: #6300e5;
+        background-color: $bgColor;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -40,7 +41,7 @@
             font-size: 1.5rem;
         }
         &:hover {
-            background-color: rgba(#6300e5, 0.8);
+            background-color: rgba($bgColor, 0.8);
         }
     }
     .social-media {
@@ -56,9 +57,9 @@
         transition: all .3s linear;
     }
     .active {
-        background-color: rgb(6, 194, 6);
+        background-color: #00ff00;
         &:hover {
-            background-color: rgba(6, 194, 6, 0.8);
+            background-color: #00ff00;
         }
     }
     .icon {
@@ -79,7 +80,7 @@
     /* Media screen */
     @include wrapperW(700px) {
         .social-media {
-            border: 1px solid #6300e5;
+            border: 1px solid $bgColor;
         }
         li {
             width: 300px;

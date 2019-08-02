@@ -11,12 +11,10 @@ import { trigger, transition, animate, style, keyframes, query, stagger } from '
       transition('* => *', [
         query(':enter', style({ opacity: 0 })),
         query(':enter', stagger('75ms', [
-          animate('1s', keyframes([
+          animate('0.75s', keyframes([
             style({opacity: 0, transform: 'translateX(-75px)'}),
             style({opacity: 1, transform: 'scale3d(1.10, 1.10, 1.10)'}),
-            style({transform: 'scale3d(0.9, 0.9, 0.9)'}),
-            style({transform: 'scale3d(1.03, 1.03, 1.03'}),
-            style({transform: 'scale3d(0.97, 0.97, 0.97'}),
+            style({transform: 'scale3d(0.95, 0.95, 0.95)'}),
             style({opacity: 1, transform: 'scale3d(1, 1, 1'}),
           ]))
         ]))
