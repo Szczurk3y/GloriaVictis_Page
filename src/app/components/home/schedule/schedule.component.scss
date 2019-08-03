@@ -19,6 +19,7 @@ li {
     display: none;
     justify-content: center;
     align-items: flex-end;
+    height: 100px;
 }
 
 .date {
@@ -35,19 +36,25 @@ li {
 
 /* phones */
 
-@media screen and (min-width: 0px) and (max-width: 700px) {
-    li {
-        height: 100px;
-        width: 300px;
-        background-position-x: -138px;
-    }
+@media screen and (min-width: 0px) {
     .square1,
     .square2 {
         display: flex;
     }
-    @media screen and (min-height: 735px) {
-        .square3 {
-            display: flex;
+    @media screen and (max-width: 700px) {
+        li {
+            width: 300px;
+            background-position-x: -138px;
+        }
+        @media screen and (min-height: 650px) {
+            .square3 {
+                display: flex;
+            }
+        }
+        @media screen and (min-height: 775px) {
+            .square4 {
+                display: flex;
+            }
         }
     }
 }
@@ -55,36 +62,28 @@ li {
 
 /* tablets */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
+    .container {
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+    }
     li {
-        background-position-x: 0px;
-        background-position-x: 50px;
-        width: 1000px;
-        height: 100px;
+        background-position-x: -125px;
+        width: 750px;
     }
     .date {
         display: none;
     }
-    .button {
-        margin-bottom: 5%;
-        font-size: 75%;
-        height: 15%;
-    }
-    @media screen and (min-height: 750px) {
-        .square3,
-        .square4 {
-            display: flex;
+    @media screen and (max-width: 1200px) {
+        @media screen and (min-height: 800px) {
+            .square3 {
+                display: flex;
+            }
         }
-    }
-    @media screen and (min-height: 1050px) {
-        .container {
-            grid-column-gap: 50px;
-            grid-row-gap: 50px;
-        }
-    }
-    @media screen and (min-width: 900px) {
-        li {
-            background-position-x: 0px;
+        @media screen and (min-height: 950px) {
+            .square4 {
+                display: flex;
+            }
         }
     }
 }
@@ -94,6 +93,17 @@ li {
 
 @media screen and (min-width: 1200px) {
     li {
+        width: 1000px;
         background-position-x: 0px;
+    }
+    @media screen and (min-height: 730px) {
+        .square3 {
+            display: flex;
+        }
+    }
+    @media screen and (min-height: 880px) {
+        .square4 {
+            display: flex;
+        }
     }
 }
