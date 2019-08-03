@@ -135,22 +135,41 @@
 
 .social-media {
     display: flex;
-    height: 55%;
+    justify-content: center;
+    align-items: center;
     width: 75%;
     transition: all .5s;
     opacity: 0;
+    margin-bottom: 10%;
 }
 
 .icon {
-    border-radius: 3px;
-    color: #00acee;
-    transition: all .3s linear;
-    font-size: 25px;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: #e5002a;
+    color: white;
+    font-size: 20px;
     &:hover {
-        color: rgb(79, 119, 206);
+        &:first-child {
+            background-color: rgb(60, 90, 153);
+        }
+        &:nth-child(2) {
+            background-color: rgb(131, 58, 180);
+        }
+        &:last-child {
+            background-color: #00acee;
+        }
     }
-    @include wrapperW(700px) {
-        font-size: 27px;
+    &:not(:first-child) {
+        margin-left: 7%;
     }
 }
 

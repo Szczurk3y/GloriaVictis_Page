@@ -6,9 +6,11 @@
         <ul class="players" (mouseleave)="setDefault()">
             <li class="player_frame" *ngFor="let tempPlayer of currentPlayers" (mouseenter)="div(tempPlayer.nickname, tempPlayer.description)">
                 <div class="player" [ngStyle]="{'background-image': 'url('+ tempPlayer.picture +')'}">
-                    <a class="social-media">
-                        <div class="fab fa-facebook icon"></div>
-                    </a>
+                    <div class="social-media">
+                        <a class="fab fa-facebook icon" href="https://www.facebook.com/GloriaVictisTeam/" target="_blank"></a>
+                        <a class="fab fa-instagram icon" href="https://www.instagram.com/gloriavictis_esport/" target="_blank"></a>
+                        <a class="fab fa-twitter icon" href="https://twitter.com/EsportsGloria" target="_blank"></a>
+                    </div>
                 </div>
             </li>
         </ul>

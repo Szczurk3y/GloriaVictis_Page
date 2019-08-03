@@ -67,6 +67,11 @@ export class TeamComponent implements OnInit {
       nickname: "kowadło2",
       description: "Siema jestem kowadło2",
       picture: "../../../assets/team/players/stewie2k.png"
+    },
+    {
+      nickname: "trener2",
+      description: "Siema jestem trener2",
+      picture: "../../../assets/team/players/stewie2k.png"
     }
   ];
   public currentPlayers = [];
