@@ -35,6 +35,11 @@ export class TeamComponent implements OnInit {
       nickname: "kowadło",
       description: "Siema jestem kowadło",
       picture: "../../../assets/team/players/player.png"
+    },
+    {
+      nickname: "trener",
+      description: "Siema jestem trener",
+      picture: "../../../assets/team/players/player.png"
     }
   ];
   public lolPlayers = [

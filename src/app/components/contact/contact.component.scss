@@ -84,7 +84,7 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    div {
+    a {
         &:not(:first-child) {
             margin-left: 10%;
         }
@@ -98,6 +98,7 @@
     width: 20px;
     height: 20px;
     display: flex;
+    text-decoration: none;
     justify-content: center;
     align-items: center;
     transition: all .2s ease-in;

@@ -57,13 +57,14 @@ $bgColor: #6300e5;
         transition: all .3s linear;
     }
     .active {
-        background-color: #00ff00;
+        background-color: #33c26c;
         &:hover {
-            background-color: #00ff00;
+            background-color: #33c26c;
         }
     }
     .icon {
         cursor: pointer;
+        color: white;
         transition: all .1s linear;
         &:hover {
             &:first-child {
@@ -92,6 +93,8 @@ $bgColor: #6300e5;
         }
         .icon {
             font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
         }
         .button {
             font-size: 75%;

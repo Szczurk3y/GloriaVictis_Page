@@ -1,3 +1,5 @@
+@import "../../../scss/mixins";
+@import "../../../scss/variables";
 .container {
     margin-top: 20px;
     list-style: none;
@@ -12,12 +14,20 @@
 li {
     border-bottom: solid 1px red;
     box-shadow: 5px 5px 30px 0 rgba(white, 0.1);
-}
-
-.news {
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     display: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include textDecoration;
+    color: #33c26c;
 }
 
 
@@ -29,8 +39,8 @@ li {
 @media screen and (min-width: 0px) {
     li {
         height: 100px;
-        width: 1000px;
-        background-position-x: 200px;
+        width: 300px;
+        background-position-x: -138px;
     }
     .square1,
     .square2 {
@@ -46,10 +56,15 @@ li {
 
 /* tablets */
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
     li {
         background-position-x: 0px;
         background-position-x: 50px;
+        width: 1000px;
+        height: 100px;
+    }
+    .date {
+        display: none;
     }
     .button {
         margin-bottom: 5%;

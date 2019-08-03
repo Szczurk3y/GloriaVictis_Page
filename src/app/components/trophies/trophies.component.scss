@@ -9,5 +9,50 @@
     height: 100vh;
     background-color: rgba(grey, 0.6);
     max-width: none;
+    background-color: #04070d;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content--1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content--2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.medal {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    height: 25%;
+    img {
+        width: 105px;
+        height: 140px;
+    }
+}
+
+ul {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+li {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 100%;
+    margin-top: 15px;
 }
