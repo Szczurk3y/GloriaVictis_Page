@@ -7,9 +7,8 @@
 #trophies {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(grey, 0.6);
     max-width: none;
-    background-color: #04070d;
+    background-color: #101d38;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -24,9 +23,7 @@
 }
 
 .content--2 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    display: none;
 }
 
 .medal {
@@ -55,4 +52,110 @@ li {
     text-decoration: none;
     font-size: 100%;
     margin-top: 15px;
+}
+
+
+/* media screen */
+
+
+/* Phones */
+
+@media screen and (min-width: 0px) and (max-width: 1200px) {
+    #trophies {
+        flex-direction: column;
+    }
+    .content--1 {
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+        justify-content: space-around;
+        img {
+            width: 70px;
+            height: 85px;
+        }
+    }
+    ul {
+        width: 60%;
+        margin: 0;
+    }
+    li {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        &:not(:first-child) {
+            margin-top: 15px;
+        }
+    }
+    .medal {
+        width: 100%;
+    }
+    @media screen and (min-height: 680px) {
+        .content--1 {
+            height: 50%;
+        }
+        .content--2 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+            height: 50%;
+            img {
+                width: 70vw;
+                height: 80vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .content--1 {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+    .content--2 {
+        display: none;
+    }
+    .medal {
+        width: 33%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        img {
+            width: 105px;
+            height: 140px;
+        }
+    }
+    ul {
+        width: 100%;
+        align-items: center;
+    }
+    @media screen and (min-height: 850px) {
+        .content--1 {
+            height: 50%;
+        }
+        .content--2 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+            height: 50%;
+            img {
+                width: 500px;
+                height: 600px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content--2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 650px;
+            height: 900px;
+        }
+    }
 }

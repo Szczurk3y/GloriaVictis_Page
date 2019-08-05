@@ -60,7 +60,6 @@
         display: flex;
         img {
             width: 100vw;
-            height: 100vw;
         }
         @include wrapperW(600px) {
             img {
