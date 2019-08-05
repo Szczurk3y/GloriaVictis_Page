@@ -28,40 +28,40 @@ export class ResultsComponent implements OnInit {
   public results = [
     {
       name: "result1",
-      path: "../../../../assets/home/results/rectangle.png",
+      path: "./assets/home/results/rectangle.png",
       id: '1',
       info: "result1"
     },
     {
       name: "result2",
-      path: "../../../../assets/home/results/rectangle.png",
+      path: "./assets/home/results/rectangle.png",
       id: '2',
       info: "result2"
 
     },
     {
       name: "result3",
-      path: "../../../../assets/home/results/rectangle.png",
+      path: "./assets/home/results/rectangle.png",
       id: '3',
       info: "result3"
 
     },
     {
       name: "result4",
-      path: "../../../../assets/home/results/rectangle.png",
+      path: "./assets/home/results/rectangle.png",
       id: '4',
       info: "result4"
 
     },
     {
       name: "result5",
-      path: "../../../../assets/home/results/rectangle.png",
+      path: "./assets/home/results/rectangle.png",
       id: '5',
       info: "result5"
     },
     {
       name: "result6",
-      path: "../../../../assets/home/results/rectangle.png",
+      path: "./assets/home/results/rectangle.png",
       id: '6',
       info: "result6"
     }

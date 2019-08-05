@@ -26,27 +26,27 @@ export class ScheduleComponent implements OnInit {
   public schedules = [
     {
       name: "schedule1",
-      path: "../../../../assets/home/schedule/schedule1.png",
+      path: "./assets/home/schedule/schedule1.png",
       id: '1',
       date: "10.10.2019"
     },
     {
       name: "schedule2",
-      path: "../../../../assets/home/schedule/schedule1.png",
+      path: "./assets/home/schedule/schedule1.png",
       id: '2',
       date: "10.10.2019"
 
     },
     {
       name: "schedule3",
-      path: "../../../../assets/home/schedule/schedule1.png",
+      path: "./assets/home/schedule/schedule1.png",
       id: '3',
       date: "10.10.2019"
 
     },
     {
       name: "schedule4",
-      path: "../../../../assets/home/schedule/schedule1.png",
+      path: "./assets/home/schedule/schedule1.png",
       id: '4',
       date: "10.10.2019"
 
