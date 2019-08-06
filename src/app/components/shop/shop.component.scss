@@ -36,16 +36,21 @@
         width: 100%;
         height: 100%;
         @include wrapperW(1050px) {
-            width: 50vw;
-            height: 50vw;
+            width: 700px;
+            height: 700px;
+        }
+        @include wrapperW(1500px) {
+            width: 1000px;
+            height: 1000px;
         }
     }
     &:first-child {
         display: none;
         @include wrapperW(1050px) {
-            display: block;
-            width: 50vw;
-            height: 50vw;
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
         }
     }
     &:nth-child(2) {
@@ -58,25 +63,21 @@
         width: 100%;
         height: 60%;
         display: flex;
+        align-items: center;
         img {
-            width: 100vw;
+            width: 350px;
+            height: 350px;
         }
-        @include wrapperW(600px) {
+        @include wrapperW(700px) {
             img {
                 width: 520px;
                 height: 520px;
             }
         }
-        @include wrapperW(750px) {
-            img {
-                width: 600px;
-                height: 600px;
-            }
-        }
         @include wrapperW(900px) {
             img {
-                width: 800px;
-                height: 800px;
+                width: 700px;
+                height: 700px;
             }
         }
         @include wrapperW(1050px) {
@@ -124,7 +125,7 @@
     }
     #desc {
         width: 100%;
-        font-size: 5px;
+        font-size: 8px;
         line-height: 20px;
         text-align: center;
         letter-spacing: 1px;
@@ -139,7 +140,6 @@
             line-height: 30px;
         }
         @include wrapperW(1000px) {
-            font-size: 20px;
             letter-spacing: 3px;
             line-height: 30px;
         }

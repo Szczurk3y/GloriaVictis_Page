@@ -1,5 +1,7 @@
 # Gloria Victis WebPage
 
+Check it out here: https://szczurk3y.github.io/GloriaVictis_Page/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

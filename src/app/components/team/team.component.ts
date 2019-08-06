@@ -14,64 +14,64 @@ export class TeamComponent implements OnInit {
     {
       nickname: "Szczurk3y",
       description: "Siema jestem Szczurk3y",
-      picture: "./assets/team/players/player.png"
+      picture: "../../../assets/team/players/player.png"
     },
     {
       nickname: "Głazu",
       description: "Siema jestem Głazu",
-      picture: "./assets/team/players/player.png"
+      picture: "../../../assets/team/players/player.png"
     },
     {
       nickname: "Kubuś",
       description: "Siema jestem Kubuś",
-      picture: "./assets/team/players/player.png"
+      picture: "../../../assets/team/players/player.png"
     },
     {
       nickname: "franeklubi",
       description: "Siema jestem franeklubi",
-      picture: "./assets/team/players/player.png"
+      picture: "../../../assets/team/players/player.png"
     },
     {
       nickname: "kowadło",
       description: "Siema jestem kowadło",
-      picture: "./assets/team/players/player.png"
+      picture: "../../../assets/team/players/player.png"
     },
     {
       nickname: "trener",
       description: "Siema jestem trener",
-      picture: "./assets/team/players/player.png"
+      picture: "../../../assets/team/players/player.png"
     }
   ];
   public lolPlayers = [
     {
       nickname: "Szczurk3y2",
       description: "Siema jestem Szczurk3y2",
-      picture: "./assets/team/players/stewie2k.png"
+      picture: "../../../assets/team/players/stewie2k.png"
     },
     {
       nickname: "Głazu2",
       description: "Siema jestem Głazu2",
-      picture: "./assets/team/players/stewie2k.png"
+      picture: "../../../assets/team/players/stewie2k.png"
     },
     {
       nickname: "Kubuś2",
       description: "Siema jestem Kubuś2",
-      picture: "./assets/team/players/stewie2k.png"
+      picture: "../../../assets/team/players/stewie2k.png"
     },
     {
       nickname: "franeklubi2",
       description: "Siema jestem franeklubi2",
-      picture: "./assets/team/players/stewie2k.png"
+      picture: "../../../assets/team/players/stewie2k.png"
     },
     {
       nickname: "kowadło2",
       description: "Siema jestem kowadło2",
-      picture: "./assets/team/players/stewie2k.png"
+      picture: "../../../assets/team/players/stewie2k.png"
     },
     {
       nickname: "trener2",
       description: "Siema jestem trener2",
-      picture: "./assets/team/players/stewie2k.png"
+      picture: "../../../assets/team/players/stewie2k.png"
     }
   ];
   public currentPlayers = [];
