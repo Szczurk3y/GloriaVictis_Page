@@ -1,8 +1,8 @@
 <div id="team">
-    <div class="content--1">
+    <div class="description_frame">
         <div class="description"><span>„{{currentNickname}}”</span><br/>{{currentDescription}}</div>
     </div>
-    <div class="content--2">
+    <div class="content">
         <ul class="players" (mouseleave)="setDefault()">
             <li class="player_frame" *ngFor="let tempPlayer of currentPlayers" (mouseenter)="div(tempPlayer.nickname, tempPlayer.description)">
                 <div class="player" [ngStyle]="{'background-image': 'url('+ tempPlayer.picture +')'}">

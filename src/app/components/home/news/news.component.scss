@@ -17,10 +17,8 @@
 li {
     box-shadow: 5px 5px 30px 0 rgba(white, 0.1);
     align-self: center;
-    width: 73vw;
-    height: 40vw;
-    max-width: 327px;
-    max-height: 161px;
+    width: 275px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -70,7 +68,7 @@ a {
     .square2 {
         display: flex;
     }
-    @media screen and (min-height: 700px) and (max-width: 700px) {
+    @media screen and (min-height: 770px) and (max-width: 700px) {
         .square3 {
             display: flex;
         }
