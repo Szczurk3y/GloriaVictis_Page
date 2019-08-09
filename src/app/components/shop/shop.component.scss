@@ -14,7 +14,7 @@
     overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    @include wrapperW(1050px) {
+    @include wrapperW(1200px) {
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -26,7 +26,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    @include wrapperW(1050px) {
+    @include wrapperW(1200px) {
         justify-content: center;
         align-items: center;
         width: 50%;
@@ -35,7 +35,7 @@
     img {
         width: 100%;
         height: 100%;
-        @include wrapperW(1050px) {
+        @include wrapperW(1200px) {
             width: 700px;
             height: 700px;
         }
@@ -46,7 +46,7 @@
     }
     &:first-child {
         display: none;
-        @include wrapperW(1050px) {
+        @include wrapperW(1200px) {
             display: flex;
             width: 50%;
             justify-content: center;
@@ -55,7 +55,10 @@
     }
     &:nth-child(2) {
         width: 100%;
-        @include wrapperW(1050px) {
+        @include wrapperW(1200px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 50%;
         }
     }
@@ -80,13 +83,13 @@
                 height: 700px;
             }
         }
-        @include wrapperW(1050px) {
+        @include wrapperW(1200px) {
             display: none;
         }
     }
 }
 
-.description {
+.description_frame {
     @include textDecoration;
     width: 100%;
     height: 100%;
@@ -95,14 +98,13 @@
     flex-direction: column;
     align-items: center;
     padding: 10%;
-    padding-top: 10%;
     font-family: 'Source Sans Pro', sans-serif;
-    @include wrapperW(1050px) {
+    @include wrapperW(1200px) {
         width: auto;
         justify-content: center;
         align-items: center;
         text-align: right;
-        margin-top: 25%;
+        margin: 0;
     }
     span {
         margin: 0;
@@ -117,13 +119,13 @@
         @include wrapperW(900px) {
             font-size: 25px;
         }
-        @include wrapperW(1050px) {
+        @include wrapperW(1200px) {
             font-size: -webkit-calc(2.1vw);
             text-align: right;
             margin-right: 5%;
         }
     }
-    #desc {
+    .description {
         width: 100%;
         font-size: 8px;
         line-height: 20px;
@@ -134,18 +136,9 @@
             letter-spacing: 2px;
             line-height: 30px;
         }
-        @include wrapperW(900px) {
+        @include wrapperW(1200px) {
             font-size: 15px;
-            letter-spacing: 2px;
-            line-height: 30px;
-        }
-        @include wrapperW(1000px) {
-            letter-spacing: 3px;
-            line-height: 30px;
-        }
-        @include wrapperW(1050px) {
-            font-size: -webkit-calc(0.7vw);
-            line-height: 2.5vw;
+            line-height: 50px;
             margin-right: 10%;
             text-align: right;
             padding-left: 10%;
@@ -160,7 +153,7 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: 5%;
-    @include wrapperW(1050px) {
+    @include wrapperW(1200px) {
         justify-content: center;
         margin: 0;
     }
@@ -170,23 +163,23 @@
     @include textDecoration;
     width: 30vw;
     background-color: #e5002a;
-    letter-spacing: 0.7vw;
     color: white;
-    border-radius: 50px;
+    letter-spacing: 3px;
+    border-radius: 25px;
     text-transform: uppercase;
     font-family: 'Darker Grotesque', sans-serif;
     max-width: 300px;
     font-size: 75%;
     outline: none;
     border: 0;
-    @include wrapperW(800px) {
-        letter-spacing: 0.3vw;
+    @include wrapperW(700px) {
+        letter-spacing: 4px;
         font-size: 100%;
         height: 50px;
     }
-    @include wrapperW(1050px) {
+    @include wrapperW(1200px) {
+        letter-spacing: 7px;
         margin: 0;
-        letter-spacing: 0.3vw;
         font-size: 20px;
         height: 50px;
         width: 300px;

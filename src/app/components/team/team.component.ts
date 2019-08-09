@@ -12,34 +12,34 @@ export class TeamComponent implements OnInit {
 
   public csgoPlayers = [
     {
-      nickname: "Szczurk3y",
-      description: "Siema jestem Szczurk3y",
-      picture: "../../../assets/team/players/player.png"
+      nickname: "Player1",
+      description: "I am player 1",
+      picture: "../../../assets/team/players/player1.png"
     },
     {
-      nickname: "Głazu",
-      description: "Siema jestem Głazu",
-      picture: "../../../assets/team/players/player.png"
+      nickname: "Player2",
+      description: "I am player 2",
+      picture: "../../../assets/team/players/player2.png"
     },
     {
-      nickname: "Kubuś",
-      description: "Siema jestem Kubuś",
-      picture: "../../../assets/team/players/player.png"
+      nickname: "Player3",
+      description: "I am player 3",
+      picture: "../../../assets/team/players/player3.png"
     },
     {
-      nickname: "franeklubi",
-      description: "Siema jestem franeklubi",
-      picture: "../../../assets/team/players/player.png"
+      nickname: "Player4",
+      description: "I am player 4",
+      picture: "../../../assets/team/players/player4.png"
     },
     {
-      nickname: "kowadło",
-      description: "Siema jestem kowadło",
-      picture: "../../../assets/team/players/player.png"
+      nickname: "Player 5",
+      description: "I am player 5",
+      picture: "../../../assets/team/players/player5.png"
     },
     {
-      nickname: "trener",
-      description: "Siema jestem trener",
-      picture: "../../../assets/team/players/player.png"
+      nickname: "Coach",
+      description: "Hi i am their coach :-)",
+      picture: "../../../assets/team/players/coach.png"
     }
   ];
   public lolPlayers = [

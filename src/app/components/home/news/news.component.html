@@ -1,7 +1,9 @@
 <ul class="container" @listAnimation>
     <li *ngFor="let tempNews of news" [ngStyle]="{'background-image': 'url('+ tempNews.path +')'}" [ngClass]="'square'+ tempNews.id" class="news">
-        <span class="__item__1">
-            {{tempNews.desc}}
-        </span>
+        <a href={{tempNews.href}} target="_blank" rel="nofollow
+        noreferrer
+        noopener">
+        {{tempNews.desc}}
+        </a>
     </li>
 </ul>

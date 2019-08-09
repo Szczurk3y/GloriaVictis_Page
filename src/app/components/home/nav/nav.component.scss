@@ -145,8 +145,8 @@ a {
         flex-direction: row;
     }
     li {
-        width: 20%;
-        height: 50px;
+        width: 25%;
+        height: 40px;
         &:not(:last-child) {
             margin-bottom: 0;
         }
@@ -164,10 +164,10 @@ a {
         z-index: 1;
         position: fixed;
         top: 50px;
-        right: 50px;
+        right: 100px;
     }
     ul {
-        width: 800px;
+        width: 700px;
     }
     a {
         font-size: 0.8rem;
