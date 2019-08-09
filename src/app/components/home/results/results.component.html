@@ -1,6 +1,9 @@
 <ul class="container" @listAnimation>
-    <li *ngFor="let result of results" [ngStyle]="{'background-image': 'url('+ result.path +')'}" [ngClass]="'square'+ result.id" class="news">
-
-        <span class="content" *ngIf="isClicked"> {{ result.info }} </span>
+    <li *ngFor="let result of results; let i = index" [ngStyle]="{'background-image': 'url('+ result.path +')'}" [ngClass]="'square'+ result.id" class="news">
+        <a mat-button class="button" (click)="onClick(i)">
+            <a *ngIf="result.isClicked; else elseBlock">less info</a>
+            <ng-template #elseBlock>more info</ng-template>
+        </a>
+        <span class="content" [class.activated]="result.isClicked" [class.disactivated]="!result.isClicked"><a *ngIf="result.isClicked">{{result.info}}</a></span>
     </li>
 </ul>

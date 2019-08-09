@@ -23,47 +23,45 @@ import { trigger, transition, animate, style, keyframes, query, stagger } from '
 })
 export class ResultsComponent implements OnInit {
 
-  public isClicked = false;
-
   public results = [
     {
-      name: "result1",
-      path: "../../../../assets/home/results/result1.png",
       id: '1',
-      info: "result1"
+      info: "We lost a first map against ex-superious gamig in the Elovego Esports Cup tournament",
+      path: "../../../../assets/home/results/result1.png",
+      isClicked: false
     },
     {
-      name: "result2",
-      path: "../../../../assets/home/results/result2.png",
       id: '2',
-      info: "result2"
-
+      info: "Now we won the second map against ex-superious gamig and we have 1:1 map-score during the Elovego Esports Cup tournament",
+      path: "../../../../assets/home/results/result2.png",
+      isClicked: false
     },
     {
-      name: "result3",
+      id: "3",
+      info: "The second win in EzLeague tournament, opponent time ended. ^^",
       path: "../../../../assets/home/results/result3.png",
-      id: '3',
-      info: "result3"
-
+      isClicked: false
     },
     {
-      name: "result4",
-      path: "../../../../assets/home/results/result4.png",
       id: '4',
-      info: "result4"
+      info: "Close to lose, but fortunelly we'd won. Now it's time for the next stage in Elovego Esports Cup!",
+      path: "../../../../assets/home/results/result4.png",
+      isClicked: false
 
     },
     {
-      name: "result5",
-      path: "../../../../assets/home/results/result5.png",
       id: '5',
-      info: "result5"
+      info: "We weren't scared about strong opponent, so we got the certain win against Pompa Team!",
+      path: "../../../../assets/home/results/result5.png",
+      isClicked: false
+
     },
     {
-      name: "result6",
-      path: "../../../../assets/home/results/result6.png",
       id: '6',
-      info: "result6"
+      info: "The Night Clan did play good, but not enough to win with our strong team. Isn't it a good start in EzLeague tournament season II? :)",
+      path: "../../../../assets/home/results/result6.png",
+      isClicked: false
+
     }
   ];
 
@@ -73,12 +71,13 @@ export class ResultsComponent implements OnInit {
   ngOnInit() {
   }
 
-  getUrl(url: string)
-  {
-    return url;
-  }
-
-  onClick() {
-    this.isClicked = true;
+  onClick(index: number) {
+    this.results.forEach(element => {
+      if (element == this.results[index]) {
+        element.isClicked = !element.isClicked;
+      } else {
+        element.isClicked = false;
+      }     
+    });
   }
 }
